@@ -340,7 +340,7 @@ void sendDatatoSI5351(void)
 {
 	if ((VFOhasChangedforSI5351 == TRUE) && (readyToSendI2C == TRUE))
 	{
-		xSemaphoreTake(i2cMutexHandle, (TickType_t ) 10);
+		//xSemaphoreTake(i2cMutexHandle, (TickType_t ) 10);
 		switch (stateBand)
 		{
 		case BAND_80M:
@@ -355,13 +355,13 @@ void sendDatatoSI5351(void)
 		}
 		phaseOffset = (uint8_t) outConf.div;
 
-		si5351_SetupOutput(0, SI5351_PLL_A, SI5351_DRIVE_STRENGTH_8MA, &outConf, 0);
-		si5351_SetupOutput(2, SI5351_PLL_A, SI5351_DRIVE_STRENGTH_8MA, &outConf,phaseOffset);
+		si5351_SetupOutput(0, SI5351_PLL_A, SI5351_DRIVE_STRENGTH_6MA, &outConf, 0);
+		si5351_SetupOutput(2, SI5351_PLL_A, SI5351_DRIVE_STRENGTH_6MA, &outConf,phaseOffset);
 		//si5351_EnableOutputs((0 << 0) | (0 << 2));
 		si5351_SetupPLL(SI5351_PLL_A, &pllConf);
 		//si5351_EnableOutputs((1 << 0) | (1 << 2));
 		VFOhasChangedforSI5351 = FALSE;
-		xSemaphoreGive(i2cMutexHandle);
+		//xSemaphoreGive(i2cMutexHandle);
 	}
 }
 

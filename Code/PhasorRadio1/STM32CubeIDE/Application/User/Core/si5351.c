@@ -148,7 +148,7 @@ void si5351_SetupPLL(si5351PLL_t pll, si5351PLLConfig_t *conf)
 	si5351_writeBulk(baseaddr, P1, P2, P3, 0, 0);
 
 	// Reset both PLLs
-	si5351_write(SI5351_REGISTER_177_PLL_RESET, (1 << 7) | (1 << 5)); // Delete?
+	si5351_write(SI5351_REGISTER_177_PLL_RESET, (1 << 7) | (1 << 5));
 }
 
 void si5351_SetupPLL_No_Reset(si5351PLL_t pll, si5351PLLConfig_t *conf)
@@ -167,8 +167,9 @@ void si5351_SetupPLL_No_Reset(si5351PLL_t pll, si5351PLLConfig_t *conf)
 	uint8_t baseaddr = (pll == SI5351_PLL_A ? 26 : 34);
 	si5351_writeBulk(baseaddr, P1, P2, P3, 0, 0);
 
-	// Reset both PLLs
-	si5351_write(SI5351_REGISTER_177_PLL_RESET, (1 << 7)); // Delete?
+	// do not reset PLLs; but attention: phase of the outputs not guaranteed
+	//a solution would be; to only use one channel and generate the quadrature signal in HW
+	//si5351_write(SI5351_REGISTER_177_PLL_RESET, (1 << 7) | (1 << 5));
 }
 
 // Configures PLL source, drive strength, multisynth divider, Rdivider and phaseOffset.
