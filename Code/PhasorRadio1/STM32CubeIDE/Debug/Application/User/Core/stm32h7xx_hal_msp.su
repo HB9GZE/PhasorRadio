@@ -1,0 +1,17 @@
+C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/Core/Src/stm32h7xx_hal_msp.c:67:6:HAL_MspInit	16	static
+C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/Core/Src/stm32h7xx_hal_msp.c:109:6:HAL_ADC_MspInit	216	static
+C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/Core/Src/stm32h7xx_hal_msp.c:227:6:HAL_ADC_MspDeInit	16	static
+C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/Core/Src/stm32h7xx_hal_msp.c:292:6:HAL_CRC_MspInit	24	static
+C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/Core/Src/stm32h7xx_hal_msp.c:314:6:HAL_CRC_MspDeInit	16	static
+C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/Core/Src/stm32h7xx_hal_msp.c:336:6:HAL_DMA2D_MspInit	24	static
+C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/Core/Src/stm32h7xx_hal_msp.c:361:6:HAL_DMA2D_MspDeInit	16	static
+C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/Core/Src/stm32h7xx_hal_msp.c:386:6:HAL_I2C_MspInit	232	static
+C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/Core/Src/stm32h7xx_hal_msp.c:432:6:HAL_I2C_MspDeInit	16	static
+C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/Core/Src/stm32h7xx_hal_msp.c:463:6:HAL_LTDC_MspInit	256	static
+C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/Core/Src/stm32h7xx_hal_msp.c:638:6:HAL_LTDC_MspDeInit	16	static
+C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/Core/Src/stm32h7xx_hal_msp.c:711:6:HAL_OSPI_MspInit	80	static
+C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/Core/Src/stm32h7xx_hal_msp.c:859:6:HAL_OSPI_MspDeInit	16	static
+C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/Core/Src/stm32h7xx_hal_msp.c:945:6:HAL_TIM_Base_MspInit	24	static
+C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/Core/Src/stm32h7xx_hal_msp.c:967:6:HAL_TIM_Encoder_MspInit	48	static
+C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/Core/Src/stm32h7xx_hal_msp.c:1013:6:HAL_TIM_Base_MspDeInit	16	static
+C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/Core/Src/stm32h7xx_hal_msp.c:1035:6:HAL_TIM_Encoder_MspDeInit	16	static
