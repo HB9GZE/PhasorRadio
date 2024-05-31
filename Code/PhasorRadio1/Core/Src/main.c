@@ -490,8 +490,8 @@ int main(void)
 	 * However since _SetupPLL() always resets the PLL this would only cause
 	 * sending extra I2C commands.
 	 */
-	si5351_SetupOutput(0, SI5351_PLL_A, SI5351_DRIVE_STRENGTH_8MA, &outConf, 0);
-	si5351_SetupOutput(2, SI5351_PLL_A, SI5351_DRIVE_STRENGTH_8MA, &outConf, phaseOffset);
+	si5351_SetupOutput(0, SI5351_PLL_A, SI5351_DRIVE_STRENGTH_6MA, &outConf, 0);
+	si5351_SetupOutput(2, SI5351_PLL_A, SI5351_DRIVE_STRENGTH_6MA, &outConf, phaseOffset);
 	si5351_SetupPLL(SI5351_PLL_A, &pllConf);
 	si5351_EnableOutputs((1 << 0) | (1 << 2));
 
