@@ -6156,3 +6156,112 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64 C:\ProjectsOnC\PhasorR
 
 !ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-05-31 09:29:26.913
 !MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+!SESSION 2024-05-31 14:34:04.262 -----------------------------------------------
+eclipse.buildId=Version 1.15.1
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Framework arguments:  C:\ProjectsOnC\PhasorRadio\Code\PhasorRadio1\STM32CubeIDE\.cproject
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 C:\ProjectsOnC\PhasorRadio\Code\PhasorRadio1\STM32CubeIDE\.cproject
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-05-31 14:34:18.601
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-05-31 14:34:18.601
+!MESSAGE Log4j2 initialized with config file C:\ProjectsOnC\PhasorRadio\Code\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-05-31 14:34:24.689
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-05-31 14:34:37.998
+!MESSAGE Indexed 'STM32H735G-DK' (105 sources, 379 headers) in 13.1 sec: 37,653 declarations; 164,684 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.00099%)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-05-31 14:39:10.553
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-05-31 14:39:55.360
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-05-31 15:26:13.661
+!MESSAGE Indexed 'CustomSTM32H735' (37 sources, 138 headers) in 2.81 sec: 20,485 declarations; 148,182 references; 3 unresolved inclusions; 46 syntax errors; 171 unresolved names (0.1%)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-05-31 15:26:51.405
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-05-31 15:27:25.433
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-05-31 15:27:55.342
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-05-31 15:28:33.621
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+!SESSION 2024-05-31 15:29:24.550 -----------------------------------------------
+eclipse.buildId=Version 1.15.1
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Framework arguments:  C:\ProjectsOnC\PhasorRadio\Code\PhasorRadio1\STM32CubeIDE\.cproject
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 C:\ProjectsOnC\PhasorRadio\Code\PhasorRadio1\STM32CubeIDE\.cproject
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-05-31 15:29:29.678
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-05-31 15:29:29.679
+!MESSAGE Log4j2 initialized with config file C:\ProjectsOnC\PhasorRadio\Code\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-05-31 15:29:32.833
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-05-31 15:29:42.662
+!MESSAGE Indexed 'STM32H735G-DK' (105 sources, 379 headers) in 9.64 sec: 37,650 declarations; 164,675 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.00099%)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-05-31 15:29:49.399
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-05-31 15:32:42.901
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+!SESSION 2024-05-31 15:36:21.991 -----------------------------------------------
+eclipse.buildId=Version 1.15.1
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Framework arguments:  C:\ProjectsOnC\PhasorRadio\Code\PhasorRadio1\STM32CubeIDE\.cproject
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 C:\ProjectsOnC\PhasorRadio\Code\PhasorRadio1\STM32CubeIDE\.cproject
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-05-31 15:36:26.421
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-05-31 15:36:26.422
+!MESSAGE Log4j2 initialized with config file C:\ProjectsOnC\PhasorRadio\Code\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-05-31 15:36:30.017
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-05-31 15:36:39.614
+!MESSAGE Indexed 'STM32H735G-DK' (105 sources, 379 headers) in 9.44 sec: 37,650 declarations; 164,675 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.00099%)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-05-31 15:38:10.336
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+!SESSION 2024-05-31 15:45:10.374 -----------------------------------------------
+eclipse.buildId=Version 1.15.1
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Framework arguments:  C:\ProjectsOnC\PhasorRadio\Code\PhasorRadio1\STM32CubeIDE\.cproject
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 C:\ProjectsOnC\PhasorRadio\Code\PhasorRadio1\STM32CubeIDE\.cproject
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-05-31 15:45:21.044
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-05-31 15:45:21.044
+!MESSAGE Log4j2 initialized with config file C:\ProjectsOnC\PhasorRadio\Code\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-05-31 15:45:24.701
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-05-31 15:45:36.142
+!MESSAGE Indexed 'STM32H735G-DK' (105 sources, 379 headers) in 11.3 sec: 37,650 declarations; 164,679 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.00099%)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-05-31 15:45:44.294
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
