@@ -175,19 +175,19 @@
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:79:10:void touchgfx::TextAreaWithOneWildcard::setWildcard1(const touchgfx::Unicode::UnicodeChar*)	16	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:84:41:virtual const touchgfx::Unicode::UnicodeChar* touchgfx::TextAreaWithOneWildcard::getWildcard1() const	16	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:98:10:void touchgfx::TextAreaWithOneWildcard::setWildcard(const touchgfx::Unicode::UnicodeChar*)	16	static
-../../TouchGFX/generated/gui_generated/include/gui_generated/screen1_screen/Screen1ViewBase.hpp:29:18:virtual void Screen1ViewBase::toggleLSBUSB()	16	static
-../../TouchGFX/generated/gui_generated/include/gui_generated/screen1_screen/Screen1ViewBase.hpp:33:18:virtual void Screen1ViewBase::selectBand()	16	static
-../../TouchGFX/generated/gui_generated/include/gui_generated/screen1_screen/Screen1ViewBase.hpp:37:18:virtual void Screen1ViewBase::toggleRXTX()	16	static
-../../TouchGFX/generated/gui_generated/include/gui_generated/screen1_screen/Screen1ViewBase.hpp:41:18:virtual void Screen1ViewBase::setWFBWup()	16	static
-../../TouchGFX/generated/gui_generated/include/gui_generated/screen1_screen/Screen1ViewBase.hpp:45:18:virtual void Screen1ViewBase::setWFBWdown()	16	static
-../../TouchGFX/generated/gui_generated/include/gui_generated/screen1_screen/Screen1ViewBase.hpp:49:18:virtual void Screen1ViewBase::changeStepSize()	16	static
+../../TouchGFX/generated/gui_generated/include/gui_generated/screen1_screen/Screen1ViewBase.hpp:30:18:virtual void Screen1ViewBase::toggleLSBUSB()	16	static
+../../TouchGFX/generated/gui_generated/include/gui_generated/screen1_screen/Screen1ViewBase.hpp:34:18:virtual void Screen1ViewBase::selectBand()	16	static
+../../TouchGFX/generated/gui_generated/include/gui_generated/screen1_screen/Screen1ViewBase.hpp:38:18:virtual void Screen1ViewBase::toggleRXTX()	16	static
+../../TouchGFX/generated/gui_generated/include/gui_generated/screen1_screen/Screen1ViewBase.hpp:42:18:virtual void Screen1ViewBase::setWFBWup()	16	static
+../../TouchGFX/generated/gui_generated/include/gui_generated/screen1_screen/Screen1ViewBase.hpp:46:18:virtual void Screen1ViewBase::setWFBWdown()	16	static
+../../TouchGFX/generated/gui_generated/include/gui_generated/screen1_screen/Screen1ViewBase.hpp:50:18:virtual void Screen1ViewBase::changeStepSize()	16	static
 ../../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp:36:7:touchgfx::View<Screen1Presenter>::~View()	16	static
 ../../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp:36:7:virtual touchgfx::View<Screen1Presenter>::~View()	16	static
-C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/TouchGFX/generated/gui_generated/src/screen1_screen/Screen1ViewBase.cpp:10:1:Screen1ViewBase::Screen1ViewBase()	9792	static
-C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/TouchGFX/generated/gui_generated/src/screen1_screen/Screen1ViewBase.cpp:437:1:Screen1ViewBase::~Screen1ViewBase()	16	static
-C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/TouchGFX/generated/gui_generated/src/screen1_screen/Screen1ViewBase.cpp:437:1:virtual Screen1ViewBase::~Screen1ViewBase()	16	static
-C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/TouchGFX/generated/gui_generated/src/screen1_screen/Screen1ViewBase.cpp:442:6:virtual void Screen1ViewBase::setupScreen()	16	static
-C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/TouchGFX/generated/gui_generated/src/screen1_screen/Screen1ViewBase.cpp:447:6:void Screen1ViewBase::buttonCallbackHandler(const touchgfx::AbstractButton&)	16	static
+C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/TouchGFX/generated/gui_generated/src/screen1_screen/Screen1ViewBase.cpp:10:1:Screen1ViewBase::Screen1ViewBase()	9872	static
+C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/TouchGFX/generated/gui_generated/src/screen1_screen/Screen1ViewBase.cpp:452:1:Screen1ViewBase::~Screen1ViewBase()	16	static
+C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/TouchGFX/generated/gui_generated/src/screen1_screen/Screen1ViewBase.cpp:452:1:virtual Screen1ViewBase::~Screen1ViewBase()	16	static
+C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/TouchGFX/generated/gui_generated/src/screen1_screen/Screen1ViewBase.cpp:457:6:virtual void Screen1ViewBase::setupScreen()	16	static
+C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/TouchGFX/generated/gui_generated/src/screen1_screen/Screen1ViewBase.cpp:462:6:void Screen1ViewBase::buttonCallbackHandler(const touchgfx::AbstractButton&)	16	static
 ../../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp:39:5:touchgfx::View<T>::View() [with T = Screen1Presenter]	16	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphWrapAndClear.hpp:31:7:touchgfx::GraphWrapAndClearData::~GraphWrapAndClearData()	16	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphWrapAndClear.hpp:31:7:virtual touchgfx::GraphWrapAndClearData::~GraphWrapAndClearData()	16	static

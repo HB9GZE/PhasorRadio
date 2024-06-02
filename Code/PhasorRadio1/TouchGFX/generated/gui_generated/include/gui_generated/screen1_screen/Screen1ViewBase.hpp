@@ -15,6 +15,7 @@
 #include <touchgfx/widgets/canvas/PainterRGB888.hpp>
 #include <touchgfx/containers/progress_indicators/BoxProgress.hpp>
 #include <touchgfx/widgets/TextAreaWithWildcard.hpp>
+#include <touchgfx/widgets/TextArea.hpp>
 
 class Screen1ViewBase : public touchgfx::View<Screen1Presenter>
 {
@@ -74,6 +75,8 @@ protected:
     touchgfx::Button buttonVFO;
     touchgfx::TextAreaWithOneWildcard textAreaStepsize;
     touchgfx::TextAreaWithOneWildcard textAreaVFO;
+    touchgfx::TextAreaWithOneWildcard textAreaWFBW;
+    touchgfx::TextArea textAreaHB9GZE;
 
     /*
      * Wildcard Buffers
@@ -82,6 +85,8 @@ protected:
     touchgfx::Unicode::UnicodeChar textAreaStepsizeBuffer[TEXTAREASTEPSIZE_SIZE];
     static const uint16_t TEXTAREAVFO_SIZE = 10;
     touchgfx::Unicode::UnicodeChar textAreaVFOBuffer[TEXTAREAVFO_SIZE];
+    static const uint16_t TEXTAREAWFBW_SIZE = 7;
+    touchgfx::Unicode::UnicodeChar textAreaWFBWBuffer[TEXTAREAWFBW_SIZE];
 
 private:
 

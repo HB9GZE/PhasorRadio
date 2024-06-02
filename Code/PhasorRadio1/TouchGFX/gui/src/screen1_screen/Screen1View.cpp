@@ -8,7 +8,7 @@
 #define PIXEL_W 341
 #define PIXEL_H 80
 
-unsigned char pixel_data[PIXEL_H * PIXEL_W *3];
+unsigned char pixel_data[PIXEL_H * PIXEL_W * 3];
 touchgfx::PixelDataWidget pixelDataWidget;
 uint8_t stateView_band = 40;
 uint8_t stateView_WFBW; //0 = wide (100kHz), 1 = narrow (16kHz)
@@ -214,6 +214,11 @@ void Screen1View::setGraph(QueueElement graphValue)
 			pixel_data[(i * 3) + 2] = 55;
 		}
 	}
+
+	pixel_data[170 * 3] = 255;  //yellow vertical line
+	pixel_data[(170 * 3) + 1] = 255;
+	pixel_data[(170 * 3) + 2] = 0;
+
 	dynamicGraph1.invalidate();
 	pixelDataWidget.invalidate();
 	graphDisplayedFinished = 1;
@@ -227,6 +232,22 @@ void Screen1View::setWFBWup()
 		stateView_WFBW++;
 	}
 	presenter->wfbwSelected(stateView_WFBW);
+	textAreaWFBW.invalidate();
+	if (stateView_WFBW == 1)
+	{
+		Unicode::snprintf(textAreaWFBWBuffer, TEXTAREAWFBW_SIZE,"50kHz");
+		textAreaWFBW.invalidate();
+	}
+	else if(stateView_WFBW == 2)
+	{
+		Unicode::snprintf(textAreaWFBWBuffer, TEXTAREAWFBW_SIZE,"30kHz");
+		textAreaWFBW.invalidate();
+	}
+	else if(stateView_WFBW == 3)
+	{
+		Unicode::snprintf(textAreaWFBWBuffer, TEXTAREAWFBW_SIZE, "10kHz");
+		textAreaWFBW.invalidate();
+	}
 }
 
 void Screen1View::setWFBWdown()
@@ -236,6 +257,21 @@ void Screen1View::setWFBWdown()
 		stateView_WFBW--;
 	}
 	presenter->wfbwSelected(stateView_WFBW);
+	if (stateView_WFBW == 0)
+	{
+		Unicode::snprintf(textAreaWFBWBuffer, TEXTAREAWFBW_SIZE,"100kHz");
+		textAreaWFBW.invalidate();
+	}
+	else if(stateView_WFBW == 1)
+	{
+		Unicode::snprintf(textAreaWFBWBuffer, TEXTAREAWFBW_SIZE,"50kHz");
+		textAreaWFBW.invalidate();
+	}
+	else if(stateView_WFBW == 2)
+	{
+		Unicode::snprintf(textAreaWFBWBuffer, TEXTAREAWFBW_SIZE,"30kHz");
+		textAreaWFBW.invalidate();
+	}
 }
 
 void Screen1View::changeStepSize()

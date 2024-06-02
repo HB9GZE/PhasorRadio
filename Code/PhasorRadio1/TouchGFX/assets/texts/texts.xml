@@ -10,6 +10,15 @@
       </Text>
     </TextGroup>
     <TextGroup Id="Unsorted">
+      <Text Id="__SingleUse_DC2O" Alignment="Left" TypographyId="Typography_01">
+        <Translation Language="GB">HB9GZE</Translation>
+      </Text>
+      <Text Id="__SingleUse_XU68" Alignment="Left" TypographyId="Typography_01">
+        <Translation Language="GB">100kHz</Translation>
+      </Text>
+      <Text Id="__SingleUse_0S1Z" Alignment="Center" TypographyId="Typography_01">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
       <Text Id="__SingleUse_JJV9" Alignment="Left" TypographyId="Typography_00">
         <Translation Language="GB">7074.00</Translation>
       </Text>
@@ -29,6 +38,6 @@
     <Typography Id="Large" Font="verdana.ttf" Size="40" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
     <Typography Id="Small" Font="verdana.ttf" Size="12" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
     <Typography Id="Typography_00" Font="verdana.ttf" Size="30" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacters="-,,,.," WildcardCharacterRanges="0-9" />
-    <Typography Id="Typography_01" Font="verdana.ttf" Size="20" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="Typography_01" Font="verdana.ttf" Size="12" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0x20-0x7E" />
   </Typographies>
 </TextDatabase>

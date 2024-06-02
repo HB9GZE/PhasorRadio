@@ -48,11 +48,11 @@ C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/TouchGFX/gui/src/screen1_screen/Scr
 C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:106:6:virtual void Screen1View::setSmeter(int)	16	static
 C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:155:6:virtual void Screen1View::setVFO(float)	16	static
 C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:168:6:virtual void Screen1View::setGraph(QueueElement)	48	static
-C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:223:6:virtual void Screen1View::setWFBWup()	16	static
-C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:232:6:virtual void Screen1View::setWFBWdown()	16	static
-C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:241:6:virtual void Screen1View::changeStepSize()	16	static
+C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:228:6:virtual void Screen1View::setWFBWup()	16	static
+C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:253:6:virtual void Screen1View::setWFBWdown()	16	static
+C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:277:6:virtual void Screen1View::changeStepSize()	16	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/PixelDataWidget.hpp:35:7:touchgfx::PixelDataWidget::~PixelDataWidget()	16	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/PixelDataWidget.hpp:35:7:virtual touchgfx::PixelDataWidget::~PixelDataWidget()	16	static
-C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:262:1:void __static_initialization_and_destruction_0(int, int)	16	static
-C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:262:1:cpp)	8	static
-C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:262:1:cpp)	8	static
+C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:298:1:void __static_initialization_and_destruction_0(int, int)	16	static
+C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:298:1:cpp)	8	static
+C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:298:1:cpp)	8	static

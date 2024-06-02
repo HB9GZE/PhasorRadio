@@ -138,7 +138,7 @@
             "Type": "TextArea",
             "Name": "textAreaStepsize",
             "X": 191,
-            "Y": 53,
+            "Y": 54,
             "Width": 150,
             "Height": 18,
             "TextId": "__SingleUse_20KO",
@@ -163,6 +163,41 @@
               "UseBuffer": true,
               "BufferSize": 10
             }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textAreaWFBW",
+            "X": 11,
+            "Y": 158,
+            "Width": 46,
+            "Height": 15,
+            "TextId": "__SingleUse_0S1Z",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_XU68",
+              "UseBuffer": true,
+              "BufferSize": 7
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textAreaHB9GZE",
+            "X": 420,
+            "Y": 252,
+            "Width": 50,
+            "Height": 15,
+            "TextId": "__SingleUse_DC2O",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255
+            },
+            "AutoSize": true
           }
         ],
         "Interactions": [
