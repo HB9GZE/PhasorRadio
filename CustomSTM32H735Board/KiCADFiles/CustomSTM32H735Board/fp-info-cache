@@ -1,4 +1,4 @@
-23430294393705972
+23445751952966392
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -84343,6 +84343,34 @@ BLP9LA25SGZ_SOT1483-1_TO270
 2
 2
 Private
+CON10_2X5_DUK_FTSH_SAI
+
+FTSH-105-01-L-DV-K 
+0
+10
+10
+Private
+CON10_2X5_DUK_FTSH_SAI-L
+
+FTSH-105-01-L-DV-K 
+0
+10
+10
+Private
+CON10_2X5_DUK_FTSH_SAI-M
+
+FTSH-105-01-L-DV-K 
+0
+10
+10
+Private
+CON50_2X25_UF_FLE_SAI
+
+FLE-125-01-G-DV 
+0
+50
+50
+Private
 ESD_PGB1010603MR
 
 
@@ -84378,6 +84406,27 @@ IND_SRF1260-1R0Y
 4
 4
 Private
+LQFP176_STM32H735IGT6_STM
+
+STM32H735IGT6 
+0
+176
+176
+Private
+LQFP176_STM32H735IGT6_STM-L
+
+STM32H735IGT6 
+0
+176
+176
+Private
+LQFP176_STM32H735IGT6_STM-M
+
+STM32H735IGT6 
+0
+176
+176
+Private
 L_Toroid_Vertical_L16.3mm_W7.1mm_P7.11mm_SMD
 L_Toroid, Vertical series, Radial, pin pitch=7.11mm, , length*width=16.26*7.11mm^2, Pulse, H, http://datasheet.octopart.com/PE-92112KNL-Pulse-datasheet-17853305.pdf
 L_Toroid Vertical series Radial pin pitch 7.11mm  length 16.26mm width 7.11mm Pulse H
@@ -84405,6 +84454,13 @@ MAX291ESA+
 0
 8
 8
+Private
+NSC5004_NDK
+
+NSC5004A-25M 
+0
+4
+4
 Private
 OPA1678_L
 
@@ -84531,6 +84587,13 @@ SOP65P640X120-20N
 0
 20
 20
+Private
+SOT65P210X110-5N
+LD59015C25R
+Integrated Circuit
+0
+5
+5
 Private
 SOT95P275X120-5N
 
