@@ -1,4 +1,4 @@
-23438881649810706
+23445751952966392
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -84343,6 +84343,27 @@ BLP9LA25SGZ_SOT1483-1_TO270
 2
 2
 Private
+CON10_2X5_DUK_FTSH_SAI
+
+FTSH-105-01-L-DV-K 
+0
+10
+10
+Private
+CON10_2X5_DUK_FTSH_SAI-L
+
+FTSH-105-01-L-DV-K 
+0
+10
+10
+Private
+CON10_2X5_DUK_FTSH_SAI-M
+
+FTSH-105-01-L-DV-K 
+0
+10
+10
+Private
 CON50_2X25_UF_FLE_SAI
 
 FLE-125-01-G-DV 
@@ -84566,6 +84587,13 @@ SOP65P640X120-20N
 0
 20
 20
+Private
+SOT65P210X110-5N
+LD59015C25R
+Integrated Circuit
+0
+5
+5
 Private
 SOT95P275X120-5N
 
