@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="BW"/>
+		<item key="selection" value=""/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="PWR"/>
+			<item value="SMPS"/>
+			<item value="LDO"/>
+			<item value="power"/>
 			<item value="BW"/>
 			<item value="enable"/>
 			<item value="SI5351_DRIVE_STRENGTH_2MA"/>
@@ -19,10 +23,6 @@
 			<item value="myTimerI2CWindow"/>
 			<item value="myTimerI2CWindowA"/>
 			<item value="startTimer"/>
-			<item value="Fclk"/>
-			<item value="si5351_Calc"/>
-			<item value="swapIQ"/>
-			<item value="graphHasBeenDisplayed"/>
 		</list>
 		<list key="replacehistory">
 			<item value="WFBW"/>
