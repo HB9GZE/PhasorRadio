@@ -235,17 +235,17 @@ void Screen1View::setWFBWup()
 	textAreaWFBW.invalidate();
 	if (stateView_WFBW == 1)
 	{
-		Unicode::snprintf(textAreaWFBWBuffer, TEXTAREAWFBW_SIZE,"50kHz");
+		Unicode::snprintf(textAreaWFBWBuffer, TEXTAREAWFBW_SIZE,"66kHz");
 		textAreaWFBW.invalidate();
 	}
 	else if(stateView_WFBW == 2)
 	{
-		Unicode::snprintf(textAreaWFBWBuffer, TEXTAREAWFBW_SIZE,"30kHz");
+		Unicode::snprintf(textAreaWFBWBuffer, TEXTAREAWFBW_SIZE,"33kHz");
 		textAreaWFBW.invalidate();
 	}
 	else if(stateView_WFBW == 3)
 	{
-		Unicode::snprintf(textAreaWFBWBuffer, TEXTAREAWFBW_SIZE, "10kHz");
+		Unicode::snprintf(textAreaWFBWBuffer, TEXTAREAWFBW_SIZE, "17kHz");
 		textAreaWFBW.invalidate();
 	}
 }
@@ -264,12 +264,12 @@ void Screen1View::setWFBWdown()
 	}
 	else if(stateView_WFBW == 1)
 	{
-		Unicode::snprintf(textAreaWFBWBuffer, TEXTAREAWFBW_SIZE,"50kHz");
+		Unicode::snprintf(textAreaWFBWBuffer, TEXTAREAWFBW_SIZE,"66kHz");
 		textAreaWFBW.invalidate();
 	}
 	else if(stateView_WFBW == 2)
 	{
-		Unicode::snprintf(textAreaWFBWBuffer, TEXTAREAWFBW_SIZE,"30kHz");
+		Unicode::snprintf(textAreaWFBWBuffer, TEXTAREAWFBW_SIZE,"33kHz");
 		textAreaWFBW.invalidate();
 	}
 }

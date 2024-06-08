@@ -163,7 +163,7 @@ uint8_t startTimerA;
 //FFT
 uint32_t adcDualInputBuffer[INPUT_SAMPLES];
 uint16_t fftComplexIntBuffer[2 * INPUT_SAMPLES];
-float32_t fftComplexFloatBuffer[2 * INPUT_SAMPLES], fftOutputComplexMagnitudeBuffer[INPUT_SAMPLES];
+float32_t fftComplexFloatBuffer[2 * INPUT_SAMPLES], fftOutputComplexMagnitudeBuffer[INPUT_SAMPLES], fftAdjustedMagnitudeBuffer[INPUT_SAMPLES];
 
 float32_t hanningWIN[INPUT_SAMPLES];
 uint16_t sMeterAverageValue[10];
@@ -1542,26 +1542,28 @@ void StartTaskFFT(void *argument)
 			}
 
 			arm_cmplx_mag_f32(fftComplexFloatBuffer, fftOutputComplexMagnitudeBuffer, INPUT_SAMPLES);
-			fftOutputComplexMagnitudeBuffer[0] = 0;
+			//fftOutputComplexMagnitudeBuffer[0] = 0;
 			fftOutputComplexMagnitudeBuffer[1] = 0;
+			fftOutputComplexMagnitudeBuffer[2047] = 0;
+			fftOutputComplexMagnitudeBuffer[2046] = 0;
+
+			for (uint16_t i = 0; i < 1024; i++) //move the bins at the edges (upper and lower) to the middle of the array
+			{
+				fftAdjustedMagnitudeBuffer[i] = fftOutputComplexMagnitudeBuffer[1024 + i];
+			}
+			for (uint16_t i = 1024; i < 2048; i++)
+			{
+				fftAdjustedMagnitudeBuffer[i] = fftOutputComplexMagnitudeBuffer[i - 1024];
+			}
 
 			uint16_t j = 0;
-			if (INPUT_SAMPLES == 2048 && stateWFBW == 0) //100k BW
+
+			if (INPUT_SAMPLES == 2048 && stateWFBW == 0)
 			{
-				for (uint16_t i = 1024; i <= 2032; i += 6)
+				for (uint16_t i = 0; i < 2048; i += 6)
 				{
-					dynamicGraphValue[j] = (int) ((fftOutputComplexMagnitudeBuffer[i] + fftOutputComplexMagnitudeBuffer[i + 1]
-							+ fftOutputComplexMagnitudeBuffer[i + 2] + fftOutputComplexMagnitudeBuffer[i + 3] + fftOutputComplexMagnitudeBuffer[i + 4]
-							+ fftOutputComplexMagnitudeBuffer[i + 5]) / 6);
-					if (dynamicGraphValue[j] > 50)
-						dynamicGraphValue[j] = 50;
-					j++;
-				}
-				for (uint16_t i = 0; i <= 1020; i += 6)
-				{
-					dynamicGraphValue[j] = (int) ((fftOutputComplexMagnitudeBuffer[i] + fftOutputComplexMagnitudeBuffer[i + 1]
-							+ fftOutputComplexMagnitudeBuffer[i + 2] + fftOutputComplexMagnitudeBuffer[i + 3] + fftOutputComplexMagnitudeBuffer[i + 4]
-							+ fftOutputComplexMagnitudeBuffer[i + 5]) / 6);
+					dynamicGraphValue[j] = (int) ((fftAdjustedMagnitudeBuffer[i] + fftAdjustedMagnitudeBuffer[i + 1] + fftAdjustedMagnitudeBuffer[i + 2]
+							+ fftAdjustedMagnitudeBuffer[i + 3] + fftAdjustedMagnitudeBuffer[i + 4] + fftAdjustedMagnitudeBuffer[i + 5]) / 6);
 					if (dynamicGraphValue[j] > 50)
 						dynamicGraphValue[j] = 50;
 					j++;
@@ -1570,154 +1572,141 @@ void StartTaskFFT(void *argument)
 
 			if (INPUT_SAMPLES == 2048 && stateWFBW == 1) //16k BW
 			{
-				for (uint16_t i = 1367; i <= 2019; i += 4)
+				for (uint16_t i = 342; i < 1707; i += 4)
 				{
-					dynamicGraphValue[j] = (int) ((fftOutputComplexMagnitudeBuffer[i] + fftOutputComplexMagnitudeBuffer[i + 1]
-							+ fftOutputComplexMagnitudeBuffer[i + 2] + fftOutputComplexMagnitudeBuffer[i + 3]) / 4);
+					dynamicGraphValue[j] = (int) ((fftAdjustedMagnitudeBuffer[i] + fftAdjustedMagnitudeBuffer[i + 1] + fftAdjustedMagnitudeBuffer[i + 2]
+							+ fftAdjustedMagnitudeBuffer[i + 3]) / 4);
+					if (dynamicGraphValue[j] > 50)
+						dynamicGraphValue[j] = 50;
 					j++;
 				}
-				for (uint16_t i = 0; i <= 680; i += 4)
-				{
-					dynamicGraphValue[j] = (int) ((fftOutputComplexMagnitudeBuffer[i] + fftOutputComplexMagnitudeBuffer[i + 1]
-							+ fftOutputComplexMagnitudeBuffer[i + 2] + fftOutputComplexMagnitudeBuffer[i + 3]) / 4);
-					j++;
-				}
-
 			}
 
-			if (INPUT_SAMPLES == 2048 && stateWFBW == 2)
+		if (INPUT_SAMPLES == 2048 && stateWFBW == 2)
+		{
+			for (uint16_t i = 683; i < 1366; i += 2)
 			{
-				for (uint16_t i = 1706; i <= 2046; i += 2)
-				{
-					dynamicGraphValue[j] = (int) ((fftOutputComplexMagnitudeBuffer[i] + fftOutputComplexMagnitudeBuffer[i + 1]) / 2);
-					j++;
-				}
-				for (uint16_t i = 0; i <= 340; i += 2)
-				{
-					dynamicGraphValue[j] = (int) ((fftOutputComplexMagnitudeBuffer[i] + fftOutputComplexMagnitudeBuffer[i + 1]) / 2);
-					j++;
-				}
-
+				dynamicGraphValue[j] = (int) ((fftAdjustedMagnitudeBuffer[i] + fftAdjustedMagnitudeBuffer[i + 1]) / 2);
+				if (dynamicGraphValue[j] > 50)
+					dynamicGraphValue[j] = 50;
+				j++;
 			}
-
-			if (INPUT_SAMPLES == 2048 && stateWFBW == 3) //16k BW
-			{
-				for (uint16_t i = 1877; i <= 2047; i++)
-				{
-					dynamicGraphValue[j] = (int) fftOutputComplexMagnitudeBuffer[i];
-					j++;
-				}
-				for (uint16_t i = 0; i <= 170; i++)
-				{
-					dynamicGraphValue[j] = (int) fftOutputComplexMagnitudeBuffer[i];
-					j++;
-				}
-
-			}
-
-			memcpy(data.dynGraphData, dynamicGraphValue, sizeof(dynamicGraphValue));
-
-			if (osMessageQueueGetCount(dynGraphQueueHandle) == 0)
-				osMessageQueuePut(dynGraphQueueHandle, &data, 0U, 0);
-
-			HAL_ADCEx_MultiModeStart_DMA(&hadc1, adcDualInputBuffer, INPUT_SAMPLES);
-			adcBusy = TRUE;
-			graphHasBeenDisplayed = FALSE;
 		}
 
-		osDelay(20);
+		if (INPUT_SAMPLES == 2048 && stateWFBW == 3) //16k BW
+		{
+			for (uint16_t i = 854; i < 1196; i++)
+			{
+				dynamicGraphValue[j] = (int) fftAdjustedMagnitudeBuffer[i];
+				if (dynamicGraphValue[j] > 50)
+					dynamicGraphValue[j] = 50;
+				j++;
+			}
+		}
+
+		memcpy(data.dynGraphData, dynamicGraphValue, sizeof(dynamicGraphValue));
+
+		if (osMessageQueueGetCount(dynGraphQueueHandle) == 0)
+			osMessageQueuePut(dynGraphQueueHandle, &data, 0U, 0);
+
+		HAL_ADCEx_MultiModeStart_DMA(&hadc1, adcDualInputBuffer, INPUT_SAMPLES);
+		adcBusy = TRUE;
+		graphHasBeenDisplayed = FALSE;
 	}
-	/* USER CODE END StartTaskFFT */
+
+	osDelay(20);
+}
+/* USER CODE END StartTaskFFT */
 }
 
 /* myTimerCallbackA function */
 void myTimerCallbackA(void *argument)
 {
-	/* USER CODE BEGIN myTimerCallbackA */
+/* USER CODE BEGIN myTimerCallbackA */
 //start timer B
-	readyToSendI2C = TRUE;
+readyToSendI2C = TRUE;
 //HAL_GPIO_WritePin(GPIOG, GPIO_PIN_5, GPIO_PIN_SET);
-	osTimerStart(myTimerI2CWindowBHandle, 25);
-	/* USER CODE END myTimerCallbackA */
+osTimerStart(myTimerI2CWindowBHandle, 25);
+/* USER CODE END myTimerCallbackA */
 }
 
 /* myTimerCallbackB function */
 void myTimerCallbackB(void *argument)
 {
-	/* USER CODE BEGIN myTimerCallbackB */
-	readyToSendI2C = FALSE;
+/* USER CODE BEGIN myTimerCallbackB */
+readyToSendI2C = FALSE;
 //	HAL_GPIO_WritePin(GPIOG, GPIO_PIN_5, GPIO_PIN_RESET);
-	/* USER CODE END myTimerCallbackB */
+/* USER CODE END myTimerCallbackB */
 }
 
 /* MPU Configuration */
 
 void MPU_Config(void)
 {
-	MPU_Region_InitTypeDef MPU_InitStruct =
-	{ 0 };
+MPU_Region_InitTypeDef MPU_InitStruct =
+{ 0 };
 
-	/* Disables the MPU */
-	HAL_MPU_Disable();
+/* Disables the MPU */
+HAL_MPU_Disable();
 
-	/** Initializes and configures the Region and the memory to be protected
-	 */
-	MPU_InitStruct.Enable = MPU_REGION_ENABLE;
-	MPU_InitStruct.Number = MPU_REGION_NUMBER0;
-	MPU_InitStruct.BaseAddress = 0x24000000;
-	MPU_InitStruct.Size = MPU_REGION_SIZE_512KB;
-	MPU_InitStruct.SubRegionDisable = 0x0;
-	MPU_InitStruct.TypeExtField = MPU_TEX_LEVEL0;
-	MPU_InitStruct.AccessPermission = MPU_REGION_FULL_ACCESS;
-	MPU_InitStruct.DisableExec = MPU_INSTRUCTION_ACCESS_DISABLE;
-	MPU_InitStruct.IsShareable = MPU_ACCESS_NOT_SHAREABLE;
-	MPU_InitStruct.IsCacheable = MPU_ACCESS_CACHEABLE;
-	MPU_InitStruct.IsBufferable = MPU_ACCESS_BUFFERABLE;
+/** Initializes and configures the Region and the memory to be protected
+ */
+MPU_InitStruct.Enable = MPU_REGION_ENABLE;
+MPU_InitStruct.Number = MPU_REGION_NUMBER0;
+MPU_InitStruct.BaseAddress = 0x24000000;
+MPU_InitStruct.Size = MPU_REGION_SIZE_512KB;
+MPU_InitStruct.SubRegionDisable = 0x0;
+MPU_InitStruct.TypeExtField = MPU_TEX_LEVEL0;
+MPU_InitStruct.AccessPermission = MPU_REGION_FULL_ACCESS;
+MPU_InitStruct.DisableExec = MPU_INSTRUCTION_ACCESS_DISABLE;
+MPU_InitStruct.IsShareable = MPU_ACCESS_NOT_SHAREABLE;
+MPU_InitStruct.IsCacheable = MPU_ACCESS_CACHEABLE;
+MPU_InitStruct.IsBufferable = MPU_ACCESS_BUFFERABLE;
 
-	HAL_MPU_ConfigRegion(&MPU_InitStruct);
+HAL_MPU_ConfigRegion(&MPU_InitStruct);
 
-	/** Initializes and configures the Region and the memory to be protected
-	 */
-	MPU_InitStruct.Number = MPU_REGION_NUMBER1;
-	MPU_InitStruct.BaseAddress = 0x70000000;
-	MPU_InitStruct.Size = MPU_REGION_SIZE_512MB;
-	MPU_InitStruct.AccessPermission = MPU_REGION_NO_ACCESS;
-	MPU_InitStruct.IsCacheable = MPU_ACCESS_NOT_CACHEABLE;
-	MPU_InitStruct.IsBufferable = MPU_ACCESS_NOT_BUFFERABLE;
+/** Initializes and configures the Region and the memory to be protected
+ */
+MPU_InitStruct.Number = MPU_REGION_NUMBER1;
+MPU_InitStruct.BaseAddress = 0x70000000;
+MPU_InitStruct.Size = MPU_REGION_SIZE_512MB;
+MPU_InitStruct.AccessPermission = MPU_REGION_NO_ACCESS;
+MPU_InitStruct.IsCacheable = MPU_ACCESS_NOT_CACHEABLE;
+MPU_InitStruct.IsBufferable = MPU_ACCESS_NOT_BUFFERABLE;
 
-	HAL_MPU_ConfigRegion(&MPU_InitStruct);
+HAL_MPU_ConfigRegion(&MPU_InitStruct);
 
-	/** Initializes and configures the Region and the memory to be protected
-	 */
-	MPU_InitStruct.Number = MPU_REGION_NUMBER2;
-	MPU_InitStruct.Size = MPU_REGION_SIZE_8MB;
-	MPU_InitStruct.AccessPermission = MPU_REGION_FULL_ACCESS;
-	MPU_InitStruct.IsCacheable = MPU_ACCESS_CACHEABLE;
-	MPU_InitStruct.IsBufferable = MPU_ACCESS_BUFFERABLE;
+/** Initializes and configures the Region and the memory to be protected
+ */
+MPU_InitStruct.Number = MPU_REGION_NUMBER2;
+MPU_InitStruct.Size = MPU_REGION_SIZE_8MB;
+MPU_InitStruct.AccessPermission = MPU_REGION_FULL_ACCESS;
+MPU_InitStruct.IsCacheable = MPU_ACCESS_CACHEABLE;
+MPU_InitStruct.IsBufferable = MPU_ACCESS_BUFFERABLE;
 
-	HAL_MPU_ConfigRegion(&MPU_InitStruct);
+HAL_MPU_ConfigRegion(&MPU_InitStruct);
 
-	/** Initializes and configures the Region and the memory to be protected
-	 */
-	MPU_InitStruct.Number = MPU_REGION_NUMBER3;
-	MPU_InitStruct.BaseAddress = 0x90000000;
-	MPU_InitStruct.Size = MPU_REGION_SIZE_512MB;
-	MPU_InitStruct.AccessPermission = MPU_REGION_NO_ACCESS;
-	MPU_InitStruct.IsCacheable = MPU_ACCESS_NOT_CACHEABLE;
-	MPU_InitStruct.IsBufferable = MPU_ACCESS_NOT_BUFFERABLE;
+/** Initializes and configures the Region and the memory to be protected
+ */
+MPU_InitStruct.Number = MPU_REGION_NUMBER3;
+MPU_InitStruct.BaseAddress = 0x90000000;
+MPU_InitStruct.Size = MPU_REGION_SIZE_512MB;
+MPU_InitStruct.AccessPermission = MPU_REGION_NO_ACCESS;
+MPU_InitStruct.IsCacheable = MPU_ACCESS_NOT_CACHEABLE;
+MPU_InitStruct.IsBufferable = MPU_ACCESS_NOT_BUFFERABLE;
 
-	HAL_MPU_ConfigRegion(&MPU_InitStruct);
+HAL_MPU_ConfigRegion(&MPU_InitStruct);
 
-	/** Initializes and configures the Region and the memory to be protected
-	 */
-	MPU_InitStruct.Number = MPU_REGION_NUMBER4;
-	MPU_InitStruct.Size = MPU_REGION_SIZE_64MB;
-	MPU_InitStruct.AccessPermission = MPU_REGION_FULL_ACCESS;
-	MPU_InitStruct.IsCacheable = MPU_ACCESS_CACHEABLE;
+/** Initializes and configures the Region and the memory to be protected
+ */
+MPU_InitStruct.Number = MPU_REGION_NUMBER4;
+MPU_InitStruct.Size = MPU_REGION_SIZE_64MB;
+MPU_InitStruct.AccessPermission = MPU_REGION_FULL_ACCESS;
+MPU_InitStruct.IsCacheable = MPU_ACCESS_CACHEABLE;
 
-	HAL_MPU_ConfigRegion(&MPU_InitStruct);
-	/* Enables the MPU */
-	HAL_MPU_Enable(MPU_PRIVILEGED_DEFAULT);
+HAL_MPU_ConfigRegion(&MPU_InitStruct);
+/* Enables the MPU */
+HAL_MPU_Enable(MPU_PRIVILEGED_DEFAULT);
 
 }
 
@@ -1731,19 +1720,19 @@ void MPU_Config(void)
  */
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 {
-	/* USER CODE BEGIN Callback 0 */
-	if (htim->Instance == TIM6)
-	{
-		//readyToSendI2C = FALSE;
-	}
-	/* USER CODE END Callback 0 */
-	if (htim->Instance == TIM6)
-	{
-		HAL_IncTick();
-	}
-	/* USER CODE BEGIN Callback 1 */
+/* USER CODE BEGIN Callback 0 */
+if (htim->Instance == TIM6)
+{
+	//readyToSendI2C = FALSE;
+}
+/* USER CODE END Callback 0 */
+if (htim->Instance == TIM6)
+{
+	HAL_IncTick();
+}
+/* USER CODE BEGIN Callback 1 */
 
-	/* USER CODE END Callback 1 */
+/* USER CODE END Callback 1 */
 }
 
 /**
@@ -1752,10 +1741,10 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
  */
 void Error_Handler(void)
 {
-	/* USER CODE BEGIN Error_Handler_Debug */
-	/* User can add his own implementation to report the HAL error return state */
+/* USER CODE BEGIN Error_Handler_Debug */
+/* User can add his own implementation to report the HAL error return state */
 
-	/* USER CODE END Error_Handler_Debug */
+/* USER CODE END Error_Handler_Debug */
 }
 
 #ifdef  USE_FULL_ASSERT
