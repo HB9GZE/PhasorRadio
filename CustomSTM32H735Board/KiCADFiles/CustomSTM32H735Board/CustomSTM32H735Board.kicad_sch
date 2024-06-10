@@ -14321,6 +14321,12 @@
 		(uuid "0ef7d935-07c4-4054-a9bb-f190dddfe737")
 	)
 	(junction
+		(at 60.96 285.75)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "14a2ac4e-927a-4fdd-9940-ee1454f8270b")
+	)
+	(junction
 		(at 214.63 261.62)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -14339,12 +14345,6 @@
 		(uuid "167d626b-a9b2-4555-8ea3-6e594b87f857")
 	)
 	(junction
-		(at 133.35 147.32)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "17bcb9f6-73bf-4d87-bdac-b025a8ac4439")
-	)
-	(junction
 		(at 214.63 270.51)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -14357,16 +14357,16 @@
 		(uuid "2164f695-7087-42d2-90c8-ccab19efd43b")
 	)
 	(junction
+		(at 427.99 224.79)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "248eaf96-446c-4b07-8157-0d9bee56f102")
+	)
+	(junction
 		(at 119.38 210.82)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2b540467-41ef-4d5c-a0fb-ec43ef04952d")
-	)
-	(junction
-		(at 302.26 274.32)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "32eb950a-d7e9-4146-b88b-a8910aad0443")
 	)
 	(junction
 		(at 472.44 134.62)
@@ -14379,12 +14379,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "42f01e71-c89a-403f-9d13-f2ea689837be")
-	)
-	(junction
-		(at 302.26 271.78)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4e2ee3aa-b8e8-476d-86bd-87758f88b7ed")
 	)
 	(junction
 		(at 176.53 359.41)
@@ -14417,12 +14411,6 @@
 		(uuid "52d0bb87-7c06-43aa-9e33-91a1f7658331")
 	)
 	(junction
-		(at 302.26 269.24)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "54a4bc1e-c697-465c-a001-e0ca8590cf96")
-	)
-	(junction
 		(at 472.44 109.22)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -14435,34 +14423,28 @@
 		(uuid "577eab4c-b9c9-45be-962b-cd16b0682b2b")
 	)
 	(junction
-		(at 134.62 170.18)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "599b24da-e5f4-435e-ae26-9ec38c9154f3")
-	)
-	(junction
 		(at 175.26 339.09)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "624f16a5-ce98-4870-aa1e-e3ae463e3452")
 	)
 	(junction
+		(at 60.96 293.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "62820f04-3053-4645-8224-71a76ce5f465")
+	)
+	(junction
+		(at 60.96 300.99)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6832439e-a50f-4c52-aa36-4d7bc255b47c")
+	)
+	(junction
 		(at 72.39 149.86)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6a1f589a-1da3-470a-9e2f-14261d0243b7")
-	)
-	(junction
-		(at 71.12 170.18)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6ddc9ff9-4d60-411e-aaf6-ec09a4ee962c")
-	)
-	(junction
-		(at 302.26 284.48)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "73fb522b-d283-4e30-b16b-06fbcb7b23c3")
 	)
 	(junction
 		(at 175.26 328.93)
@@ -14477,22 +14459,28 @@
 		(uuid "79888c58-db4f-4182-b45a-a2b2282ad943")
 	)
 	(junction
+		(at 427.99 229.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7a15a2da-a8d3-4107-8ae9-f5707c5bb6fb")
+	)
+	(junction
 		(at 139.7 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "85026006-5789-4915-9193-c37bc85cc0bc")
 	)
 	(junction
+		(at 427.99 245.11)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "86a0821e-ed78-484d-81b0-e9c13fd3a70b")
+	)
+	(junction
 		(at 467.36 172.72)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "86c8854d-197b-477c-8c92-05c5bad9feb3")
-	)
-	(junction
-		(at 302.26 266.7)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8c78b9b2-4943-4657-b38e-2f97edcb3248")
 	)
 	(junction
 		(at 220.98 308.61)
@@ -14531,16 +14519,10 @@
 		(uuid "97d7eadd-10d5-4d74-a241-453525d60320")
 	)
 	(junction
-		(at 302.26 281.94)
+		(at 60.96 308.61)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "994acb73-8f7f-4c90-bd04-4344565b8865")
-	)
-	(junction
-		(at 161.29 149.86)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a65c598c-da38-4ee8-857e-bd4aa36e59b6")
+		(uuid "adc0d6d8-881d-42fa-ada2-d6eead37f5c6")
 	)
 	(junction
 		(at 133.35 85.09)
@@ -14555,22 +14537,10 @@
 		(uuid "b8b7f838-3855-4290-97ad-e22c44580c4a")
 	)
 	(junction
-		(at 302.26 279.4)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "bd07af2a-a8b2-41e0-87ab-1f9e34931e9c")
-	)
-	(junction
 		(at 120.65 120.65)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c3433084-a4fe-4dce-9c02-fcc093da4c75")
-	)
-	(junction
-		(at 134.62 149.86)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c52c0ba5-4f60-4f27-917d-4fa5019fd45e")
 	)
 	(junction
 		(at 133.35 210.82)
@@ -14655,12 +14625,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f546ee67-392a-4822-bba7-14fe6ea64150")
-	)
-	(junction
-		(at 302.26 276.86)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f57cd32e-f330-4ab0-aecd-8584dbf0d158")
 	)
 	(junction
 		(at 214.63 288.29)
@@ -14794,16 +14758,6 @@
 	)
 	(wire
 		(pts
-			(xy 302.26 279.4) (xy 314.96 279.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0641cf95-c419-4e62-b995-3ad5070ee4eb")
-	)
-	(wire
-		(pts
 			(xy 424.18 147.32) (xy 419.1 147.32)
 		)
 		(stroke
@@ -14894,13 +14848,13 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 92.71) (xy 74.93 100.33)
+			(xy 314.96 271.78) (xy 323.85 271.78)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0bb8a331-4e41-48a4-acb1-05af0bf154d4")
+		(uuid "0bc9baa1-a0e7-4479-9fad-f2d1fd30d906")
 	)
 	(wire
 		(pts
@@ -14911,6 +14865,16 @@
 			(type default)
 		)
 		(uuid "0c62ae0a-dea4-40ba-abb8-903136a081d1")
+	)
+	(wire
+		(pts
+			(xy 427.99 229.87) (xy 438.15 229.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0dce10bc-23da-4ab8-8c7a-a6b827dc2bd2")
 	)
 	(wire
 		(pts
@@ -15001,16 +14965,6 @@
 			(type default)
 		)
 		(uuid "1312c262-5a1a-4835-b573-bb46167c4124")
-	)
-	(wire
-		(pts
-			(xy 69.85 165.1) (xy 69.85 184.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "14cde9f7-9ae6-456d-915e-8a9689138ce2")
 	)
 	(wire
 		(pts
@@ -15184,6 +15138,16 @@
 	)
 	(wire
 		(pts
+			(xy 33.02 308.61) (xy 60.96 308.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1d66b27f-91d4-4a93-940b-30ce59413c52")
+	)
+	(wire
+		(pts
 			(xy 80.01 90.17) (xy 85.09 90.17)
 		)
 		(stroke
@@ -15201,16 +15165,6 @@
 			(type default)
 		)
 		(uuid "1de2bd7a-c568-4ca7-8bce-b77022c64ebf")
-	)
-	(wire
-		(pts
-			(xy 302.26 281.94) (xy 314.96 281.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1effa79c-7fa4-4a15-98fd-187710c660e6")
 	)
 	(wire
 		(pts
@@ -15234,16 +15188,6 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 182.88) (xy 133.35 182.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2016a817-48ca-458d-b953-f2892649713a")
-	)
-	(wire
-		(pts
 			(xy 311.15 154.94) (xy 317.5 154.94)
 		)
 		(stroke
@@ -15261,6 +15205,16 @@
 			(type default)
 		)
 		(uuid "21cccf6a-f2b4-414b-80c7-0dba56a2532f")
+	)
+	(wire
+		(pts
+			(xy 298.45 308.61) (xy 306.07 308.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "22488c65-6ab1-4c16-9d7b-ba62bae96e8c")
 	)
 	(wire
 		(pts
@@ -15304,16 +15258,6 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 149.86) (xy 138.43 149.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "256f8bfd-6917-4749-92da-19bbd94201fc")
-	)
-	(wire
-		(pts
 			(xy 311.15 119.38) (xy 317.5 119.38)
 		)
 		(stroke
@@ -15344,7 +15288,7 @@
 	)
 	(wire
 		(pts
-			(xy 429.26 224.79) (xy 438.15 224.79)
+			(xy 426.72 224.79) (xy 427.99 224.79)
 		)
 		(stroke
 			(width 0)
@@ -15361,16 +15305,6 @@
 			(type default)
 		)
 		(uuid "29b5ec98-d7b1-47c4-83fc-3ce7e143a54f")
-	)
-	(wire
-		(pts
-			(xy 74.93 100.33) (xy 85.09 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2ac11b80-1677-43cc-944f-c15854613541")
 	)
 	(wire
 		(pts
@@ -15534,6 +15468,16 @@
 	)
 	(wire
 		(pts
+			(xy 314.96 269.24) (xy 323.85 269.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3ea29a21-ec61-48d1-abd7-1015d820791e")
+	)
+	(wire
+		(pts
 			(xy 196.85 361.95) (xy 198.12 361.95)
 		)
 		(stroke
@@ -15594,6 +15538,16 @@
 	)
 	(wire
 		(pts
+			(xy 120.65 107.95) (xy 127 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "428aec3d-bd20-4ac8-8c04-798940c00cb0")
+	)
+	(wire
+		(pts
 			(xy 478.79 96.52) (xy 485.14 96.52)
 		)
 		(stroke
@@ -15631,16 +15585,6 @@
 			(type default)
 		)
 		(uuid "440c28d7-e7f9-427e-97d4-55b5e2bd8ec4")
-	)
-	(wire
-		(pts
-			(xy 302.26 274.32) (xy 314.96 274.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "44203bc2-6783-4ce9-bdc5-2ff389fefa79")
 	)
 	(wire
 		(pts
@@ -15884,6 +15828,16 @@
 	)
 	(wire
 		(pts
+			(xy 33.02 300.99) (xy 60.96 300.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "586eed23-8a63-4817-9f9b-9b919e000b75")
+	)
+	(wire
+		(pts
 			(xy 196.85 228.6) (xy 205.74 228.6)
 		)
 		(stroke
@@ -15974,16 +15928,6 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 182.88) (xy 133.35 147.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5b8e202d-4ad8-48c5-8ff2-203c1aa90362")
-	)
-	(wire
-		(pts
 			(xy 196.85 58.42) (xy 205.74 58.42)
 		)
 		(stroke
@@ -16004,17 +15948,7 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 162.56) (xy 71.12 170.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5c86d737-e63b-4a75-8872-6cce85ea88c4")
-	)
-	(wire
-		(pts
-			(xy 415.29 224.79) (xy 421.64 224.79)
+			(xy 412.75 224.79) (xy 419.1 224.79)
 		)
 		(stroke
 			(width 0)
@@ -16164,7 +16098,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 165.1) (xy 69.85 165.1)
+			(xy 80.01 165.1) (xy 73.66 165.1)
 		)
 		(stroke
 			(width 0)
@@ -16214,7 +16148,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 162.56) (xy 71.12 162.56)
+			(xy 80.01 162.56) (xy 73.66 162.56)
 		)
 		(stroke
 			(width 0)
@@ -16254,6 +16188,16 @@
 	)
 	(wire
 		(pts
+			(xy 125.73 170.18) (xy 132.08 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ee9e40b-941e-47e3-a392-544cc5b60b26")
+	)
+	(wire
+		(pts
 			(xy 462.28 172.72) (xy 467.36 172.72)
 		)
 		(stroke
@@ -16264,7 +16208,17 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 149.86) (xy 134.62 149.86)
+			(xy 314.96 281.94) (xy 323.85 281.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "70a952ed-9050-41ed-841b-709758fbc6b1")
+	)
+	(wire
+		(pts
+			(xy 125.73 149.86) (xy 138.43 149.86)
 		)
 		(stroke
 			(width 0)
@@ -16314,6 +16268,16 @@
 	)
 	(wire
 		(pts
+			(xy 314.96 276.86) (xy 323.85 276.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "74143828-8a91-4689-a951-0333c66eefa1")
+	)
+	(wire
+		(pts
 			(xy 196.85 205.74) (xy 205.74 205.74)
 		)
 		(stroke
@@ -16321,16 +16285,6 @@
 			(type default)
 		)
 		(uuid "742c4634-d159-466b-aa10-6f7bc1e354f8")
-	)
-	(wire
-		(pts
-			(xy 125.73 170.18) (xy 134.62 170.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "766a1a8c-f719-4942-baa1-8fad08069f5a")
 	)
 	(wire
 		(pts
@@ -16374,16 +16328,6 @@
 	)
 	(wire
 		(pts
-			(xy 302.26 266.7) (xy 314.96 266.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7b58bbaa-3187-48ec-8d62-17579bce16d6")
-	)
-	(wire
-		(pts
 			(xy 311.15 152.4) (xy 317.5 152.4)
 		)
 		(stroke
@@ -16401,16 +16345,6 @@
 			(type default)
 		)
 		(uuid "7c375739-5ca1-4bd5-8184-108c273cb4a6")
-	)
-	(wire
-		(pts
-			(xy 133.35 147.32) (xy 125.73 147.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7d4a869d-8703-4178-9400-c026f3ec3022")
 	)
 	(wire
 		(pts
@@ -16444,7 +16378,7 @@
 	)
 	(wire
 		(pts
-			(xy 415.29 229.87) (xy 421.64 229.87)
+			(xy 412.75 229.87) (xy 419.1 229.87)
 		)
 		(stroke
 			(width 0)
@@ -16471,6 +16405,16 @@
 			(type default)
 		)
 		(uuid "80245f1c-4fe1-4c2b-b907-765997af4598")
+	)
+	(wire
+		(pts
+			(xy 427.99 224.79) (xy 438.15 224.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "802c054f-8c70-49a3-973a-3405a2f5078f")
 	)
 	(wire
 		(pts
@@ -16564,7 +16508,7 @@
 	)
 	(wire
 		(pts
-			(xy 429.26 245.11) (xy 438.15 245.11)
+			(xy 426.72 245.11) (xy 427.99 245.11)
 		)
 		(stroke
 			(width 0)
@@ -16581,16 +16525,6 @@
 			(type default)
 		)
 		(uuid "8775b3c4-f788-475f-b06f-f8eadbc12605")
-	)
-	(wire
-		(pts
-			(xy 302.26 276.86) (xy 314.96 276.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "87daa10e-eca3-49d4-8595-7566a53edd7e")
 	)
 	(wire
 		(pts
@@ -16644,16 +16578,6 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 170.18) (xy 134.62 149.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8eb327de-4c2e-44f8-90ed-19b6d76f42b7")
-	)
-	(wire
-		(pts
 			(xy 311.15 175.26) (xy 317.5 175.26)
 		)
 		(stroke
@@ -16661,16 +16585,6 @@
 			(type default)
 		)
 		(uuid "908735e7-02c6-4e90-b1f6-4b701427acd3")
-	)
-	(wire
-		(pts
-			(xy 120.65 107.95) (xy 127 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "90e4d20a-e350-4529-866a-6a53b02ae250")
 	)
 	(wire
 		(pts
@@ -16714,6 +16628,16 @@
 	)
 	(wire
 		(pts
+			(xy 314.96 284.48) (xy 323.85 284.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "93ccbc01-8af2-4a6b-8799-56fdf3233439")
+	)
+	(wire
+		(pts
 			(xy 467.36 172.72) (xy 485.14 172.72)
 		)
 		(stroke
@@ -16744,7 +16668,7 @@
 	)
 	(wire
 		(pts
-			(xy 429.26 229.87) (xy 438.15 229.87)
+			(xy 426.72 229.87) (xy 427.99 229.87)
 		)
 		(stroke
 			(width 0)
@@ -16784,6 +16708,16 @@
 	)
 	(wire
 		(pts
+			(xy 125.73 147.32) (xy 132.08 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "99523aa4-56ab-4f2a-9900-8769a3a88009")
+	)
+	(wire
+		(pts
 			(xy 196.85 182.88) (xy 205.74 182.88)
 		)
 		(stroke
@@ -16801,16 +16735,6 @@
 			(type default)
 		)
 		(uuid "99f167d1-1a6c-46a0-9941-5993d599b2d6")
-	)
-	(wire
-		(pts
-			(xy 302.26 271.78) (xy 314.96 271.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9a1ea092-abf5-4b89-b6d1-85bc5c8e9bdc")
 	)
 	(wire
 		(pts
@@ -16934,16 +16858,6 @@
 	)
 	(wire
 		(pts
-			(xy 302.26 269.24) (xy 314.96 269.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a0786782-e66c-4244-8d45-0301a4345eae")
-	)
-	(wire
-		(pts
 			(xy 478.79 170.18) (xy 485.14 170.18)
 		)
 		(stroke
@@ -17041,6 +16955,16 @@
 			(type default)
 		)
 		(uuid "ac63e583-a778-4ec2-bdd1-4531e41c54ce")
+	)
+	(wire
+		(pts
+			(xy 298.45 306.07) (xy 306.07 306.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aca5efa1-4acd-44d0-b9fd-84052194e1bb")
 	)
 	(wire
 		(pts
@@ -17264,7 +17188,7 @@
 	)
 	(wire
 		(pts
-			(xy 415.29 245.11) (xy 421.64 245.11)
+			(xy 412.75 245.11) (xy 419.1 245.11)
 		)
 		(stroke
 			(width 0)
@@ -17324,7 +17248,7 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 170.18) (xy 80.01 170.18)
+			(xy 73.66 170.18) (xy 80.01 170.18)
 		)
 		(stroke
 			(width 0)
@@ -17391,6 +17315,16 @@
 			(type default)
 		)
 		(uuid "beb6043b-4ade-43a0-8c8a-f146f795b818")
+	)
+	(wire
+		(pts
+			(xy 33.02 293.37) (xy 60.96 293.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bf2002b7-4b5c-462a-99f3-de5d03522e89")
 	)
 	(wire
 		(pts
@@ -17564,16 +17498,6 @@
 	)
 	(wire
 		(pts
-			(xy 302.26 284.48) (xy 314.96 284.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ce0efd50-22d8-4275-843f-f0df6906ed15")
-	)
-	(wire
-		(pts
 			(xy 214.63 269.24) (xy 214.63 270.51)
 		)
 		(stroke
@@ -17611,6 +17535,16 @@
 			(type default)
 		)
 		(uuid "cefc8154-07e7-4636-a136-a02bb5916f45")
+	)
+	(wire
+		(pts
+			(xy 81.28 100.33) (xy 85.09 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d1b9a7bd-f15c-49a1-a471-1e916513d474")
 	)
 	(wire
 		(pts
@@ -17704,16 +17638,6 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 184.15) (xy 134.62 170.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d9d7198e-61af-4eb4-a855-d8f4871ef1ac")
-	)
-	(wire
-		(pts
 			(xy 196.85 124.46) (xy 205.74 124.46)
 		)
 		(stroke
@@ -17774,6 +17698,16 @@
 	)
 	(wire
 		(pts
+			(xy 314.96 274.32) (xy 323.85 274.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dfe86a57-a643-4a42-a703-f9346d654e3f")
+	)
+	(wire
+		(pts
 			(xy 195.58 322.58) (xy 189.23 322.58)
 		)
 		(stroke
@@ -17821,6 +17755,16 @@
 			(type default)
 		)
 		(uuid "e1d897b4-3a05-42d0-ada8-c0797d128729")
+	)
+	(wire
+		(pts
+			(xy 427.99 245.11) (xy 438.15 245.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e3333c90-4823-405d-ac6b-6fb8f5016788")
 	)
 	(wire
 		(pts
@@ -17964,16 +17908,6 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 184.15) (xy 134.62 184.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ea2242cf-9db7-444b-a41e-5e7e4d2c86fc")
-	)
-	(wire
-		(pts
 			(xy 290.83 238.76) (xy 281.94 238.76)
 		)
 		(stroke
@@ -18114,6 +18048,16 @@
 	)
 	(wire
 		(pts
+			(xy 33.02 285.75) (xy 60.96 285.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f0e9c4fe-9b61-40c0-8f21-d88bcbc2ede8")
+	)
+	(wire
+		(pts
 			(xy 311.15 180.34) (xy 317.5 180.34)
 		)
 		(stroke
@@ -18141,6 +18085,16 @@
 			(type default)
 		)
 		(uuid "f4925eee-56aa-4e39-8a8b-6a40a29016f6")
+	)
+	(wire
+		(pts
+			(xy 314.96 266.7) (xy 323.85 266.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f4e75085-5d59-49d0-ad78-527db1e30c17")
 	)
 	(wire
 		(pts
@@ -18254,13 +18208,13 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 170.18) (xy 71.12 182.88)
+			(xy 314.96 279.4) (xy 323.85 279.4)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ffc2c860-6751-478d-a381-23e59ed3cbb4")
+		(uuid "ffbae414-39bf-40d7-86ac-4017898d2e82")
 	)
 	(text_box "Pin17: VFBSMPS"
 		(exclude_from_sim no)
@@ -18293,6 +18247,17 @@
 		)
 		(uuid "4cf61fba-2438-4115-ba5f-4ee3ff1d11ad")
 	)
+	(text "Radio Connectors:\nRXTX:	PD15\nNRXTX:	PD14\nLSBUSB:	PD13\nS0:		PD12\nS1:		PD11\nTIM23_CH1:	PF6\nTIM23_CH2:	PF7\nADC1_INP2:	PF11\nADC2_INP2:	PF13"
+		(exclude_from_sim no)
+		(at 328.422 276.606 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5d605390-9969-4b40-b092-f349b2262e58")
+	)
 	(text "I2C1:\n2: SDA	PB7\n3: SCL	PB6"
 		(exclude_from_sim no)
 		(at 245.364 305.054 0)
@@ -18303,6 +18268,16 @@
 			(justify left)
 		)
 		(uuid "922c46ae-4ab2-4178-959f-f91703217739")
+	)
+	(text "do not fit"
+		(exclude_from_sim no)
+		(at 77.724 98.552 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "a0fbeb4d-706c-4712-bfb0-cd2d3caa0fdc")
 	)
 	(text "UART4:\n2: RX	PC11\n3: TX	PA0"
 		(exclude_from_sim no)
@@ -18390,6 +18365,17 @@
 			(justify left bottom)
 		)
 		(uuid "02b18f3f-008a-4fa0-a698-077ca2bfc151")
+	)
+	(label "PD14"
+		(at 318.77 276.86 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "02daa21c-2c17-4d57-a0c0-54be596aeccf")
 	)
 	(label "PD11"
 		(at 311.15 71.12 0)
@@ -18479,6 +18465,17 @@
 		)
 		(uuid "08734bb2-f578-4e90-a4d1-4b24fd55941c")
 	)
+	(label "VSS"
+		(at 73.66 170.18 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0954a910-afae-430d-9cee-6e63bf5857cf")
+	)
 	(label "PG10"
 		(at 311.15 180.34 0)
 		(fields_autoplaced yes)
@@ -18500,6 +18497,17 @@
 			(justify left bottom)
 		)
 		(uuid "0b1d9e8d-ac41-48cc-9cb0-130026f0e122")
+	)
+	(label "PB13"
+		(at 298.45 308.61 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0bd4a9ce-8c11-478c-b91c-33c4060e34c3")
 	)
 	(label "PA9"
 		(at 478.79 91.44 0)
@@ -18854,7 +18862,7 @@
 		(uuid "2a552320-2649-49e4-bf44-c3788208ab3c")
 	)
 	(label "NRST"
-		(at 415.29 245.11 0)
+		(at 412.75 245.11 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -19062,6 +19070,17 @@
 		)
 		(uuid "3e379253-5d66-4b72-97bc-b9a03bce0d9e")
 	)
+	(label "PB12"
+		(at 298.45 306.07 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "40537783-f2ae-4aee-9beb-1a93ccec3f2d")
+	)
 	(label "PG2"
 		(at 311.15 111.76 0)
 		(fields_autoplaced yes)
@@ -19106,8 +19125,8 @@
 		)
 		(uuid "42a597a0-57b3-4035-b8e8-49ea2960ff53")
 	)
-	(label "PC2_C"
-		(at 120.65 107.95 0)
+	(label "PE8"
+		(at 121.92 107.95 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -19117,7 +19136,7 @@
 		)
 		(uuid "4336f06b-099c-439a-ab3d-35d4f9b3ba8e")
 	)
-	(label "S0"
+	(label "PD12"
 		(at 292.1 281.94 0)
 		(fields_autoplaced yes)
 		(effects
@@ -19204,6 +19223,17 @@
 			(justify left bottom)
 		)
 		(uuid "4d5ed52c-8b60-4b5f-a54d-ef12bd866f3d")
+	)
+	(label "VSS"
+		(at 73.66 162.56 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4e1e4520-4b97-4a93-85ea-cbb3397f1051")
 	)
 	(label "VDD_SDC"
 		(at 290.83 208.28 180)
@@ -19304,7 +19334,18 @@
 		)
 		(uuid "54edb227-53c7-469b-bdce-9300d4356ceb")
 	)
-	(label "R_CH1"
+	(label "VDD"
+		(at 127 149.86 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5528ab55-835e-4e64-9ca1-ff71fcb0c60a")
+	)
+	(label "PF6"
 		(at 292.1 287.02 0)
 		(fields_autoplaced yes)
 		(effects
@@ -19381,7 +19422,7 @@
 		)
 		(uuid "594dc393-e8db-4543-a6bc-eccbc3eeb874")
 	)
-	(label "LSBUSB"
+	(label "PD13"
 		(at 292.1 279.4 0)
 		(fields_autoplaced yes)
 		(effects
@@ -19711,6 +19752,28 @@
 		)
 		(uuid "76fc96be-8164-4a79-a065-315dfba6f316")
 	)
+	(label "VSS"
+		(at 127 147.32 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7704b944-11be-474e-99e4-6e41ea3bec5a")
+	)
+	(label "VDD"
+		(at 127 170.18 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "781ac0ce-ad2b-48da-8e6d-5ccc7fc71228")
+	)
 	(label "PE5"
 		(at 478.79 68.58 0)
 		(fields_autoplaced yes)
@@ -19832,6 +19895,17 @@
 		)
 		(uuid "83cac280-b592-42df-b7ac-a446eaceb1b1")
 	)
+	(label "VDD"
+		(at 73.66 165.1 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "84f2ac4e-26b6-419b-826f-3903cce7f9ac")
+	)
 	(label "PE7"
 		(at 121.92 105.41 0)
 		(fields_autoplaced yes)
@@ -19910,7 +19984,7 @@
 		(uuid "8a572aa7-01e3-4ea5-8dc5-d1c8eea95269")
 	)
 	(label "PA14"
-		(at 415.29 229.87 0)
+		(at 412.75 229.87 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -19930,6 +20004,17 @@
 			(justify left bottom)
 		)
 		(uuid "8d3c76c3-a0b3-4f67-a204-cc0ab9c1143b")
+	)
+	(label "PD13"
+		(at 318.77 279.4 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8da15de2-fa17-4898-b44b-a79772cf8f89")
 	)
 	(label "PA5"
 		(at 196.85 175.26 0)
@@ -20018,6 +20103,17 @@
 			(justify left bottom)
 		)
 		(uuid "96ca1ffc-2a60-48e0-a2d3-27ce87154a92")
+	)
+	(label "PD15"
+		(at 318.77 269.24 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "97de1383-55f1-4a58-afdd-d12ab07bcc57")
 	)
 	(label "PF1"
 		(at 196.85 104.14 0)
@@ -20140,6 +20236,17 @@
 		)
 		(uuid "a5181084-b9fd-4bd4-b34a-e25f1fe7e9b6")
 	)
+	(label "PD14"
+		(at 318.77 274.32 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a7fd3218-49b3-4127-9040-263efb89f49d")
+	)
 	(label "PC5"
 		(at 80.01 105.41 0)
 		(fields_autoplaced yes)
@@ -20162,7 +20269,7 @@
 		)
 		(uuid "aa2fb276-29b1-44f1-8fc9-df9fcf166430")
 	)
-	(label "RXTX"
+	(label "PD15"
 		(at 292.1 269.24 0)
 		(fields_autoplaced yes)
 		(effects
@@ -20184,7 +20291,7 @@
 		)
 		(uuid "ac78fba9-8ec0-466d-b913-09215bf8db3e")
 	)
-	(label "RXTX"
+	(label "PD15"
 		(at 292.1 271.78 0)
 		(fields_autoplaced yes)
 		(effects
@@ -20206,7 +20313,7 @@
 		)
 		(uuid "aeb466c2-b574-4f5c-92c9-01db9dbe1910")
 	)
-	(label "ADC1"
+	(label "PF11"
 		(at 292.1 289.56 0)
 		(fields_autoplaced yes)
 		(effects
@@ -20316,7 +20423,7 @@
 		)
 		(uuid "bf373962-be69-4114-94ae-85d4046f372f")
 	)
-	(label "nRXTX"
+	(label "PD14"
 		(at 292.1 276.86 0)
 		(fields_autoplaced yes)
 		(effects
@@ -20370,6 +20477,17 @@
 			(justify left bottom)
 		)
 		(uuid "c4fe547f-ed97-4ca1-a60b-22d19633f02a")
+	)
+	(label "PD15"
+		(at 318.77 271.78 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c5b1824f-96d2-44cc-8981-7959a24091b3")
 	)
 	(label "PC5"
 		(at 196.85 185.42 0)
@@ -20459,6 +20577,17 @@
 		)
 		(uuid "d2f05fb4-72d7-4b12-8688-283339a22b96")
 	)
+	(label "PD12"
+		(at 318.77 281.94 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d374d987-72c4-4a8c-8940-248a7a945b5d")
+	)
 	(label "VDD_SDC"
 		(at 419.1 124.46 0)
 		(fields_autoplaced yes)
@@ -20537,7 +20666,7 @@
 		(uuid "d7aa2d96-2a47-47cc-8bf3-be59874cb249")
 	)
 	(label "PA13"
-		(at 415.29 224.79 0)
+		(at 412.75 224.79 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -20657,7 +20786,7 @@
 		)
 		(uuid "e63a9767-0593-4c88-9470-2ac4136be464")
 	)
-	(label "ADC2"
+	(label "PF13"
 		(at 318.77 289.56 0)
 		(fields_autoplaced yes)
 		(effects
@@ -20668,7 +20797,7 @@
 		)
 		(uuid "ea07fc91-1688-4be1-94fd-40cb6e91e0a3")
 	)
-	(label "nRXTX"
+	(label "PD14"
 		(at 292.1 274.32 0)
 		(fields_autoplaced yes)
 		(effects
@@ -20712,7 +20841,7 @@
 		)
 		(uuid "edba39b0-c177-4929-8c09-22aaf3c66285")
 	)
-	(label "S1"
+	(label "PD11"
 		(at 292.1 284.48 0)
 		(fields_autoplaced yes)
 		(effects
@@ -20756,8 +20885,8 @@
 		)
 		(uuid "f7235c10-f426-4d82-88a7-5594e5dc16c4")
 	)
-	(label "R_CH2"
-		(at 317.5 287.02 0)
+	(label "PF7"
+		(at 320.04 287.02 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -20789,6 +20918,17 @@
 		)
 		(uuid "fcf56493-8ba1-4388-ab93-fbc62a68a122")
 	)
+	(label "PD11"
+		(at 318.77 284.48 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "fee99f63-4750-4f88-8dda-cc3fbe3e6d04")
+	)
 	(label "PA15"
 		(at 478.79 142.24 0)
 		(fields_autoplaced yes)
@@ -20801,6 +20941,73 @@
 		(uuid "ff03a8c3-c949-4459-b852-1dcd2c3f15bc")
 	)
 	(symbol
+		(lib_id "power:+3.3V")
+		(at 73.66 100.33 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "022c791c-9dcf-46a9-a8e9-05c58fa95326")
+		(property "Reference" "#PWR010"
+			(at 77.47 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 69.85 100.3299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 73.66 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 73.66 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 73.66 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "42e1723e-7092-448b-a93d-848179155c13")
+		)
+		(instances
+			(project "CustomSTM32H735Board"
+				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
+					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 444.5 119.38 90)
 		(unit 1)
@@ -20809,7 +21016,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "03362f1b-2573-4d37-8650-aba9dc534773")
-		(property "Reference" "R22"
+		(property "Reference" "R23"
 			(at 444.5 115.316 90)
 			(effects
 				(font
@@ -20861,7 +21068,7 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "R22")
+					(reference "R23")
 					(unit 1)
 				)
 			)
@@ -20876,7 +21083,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "037796fc-a022-4843-b3a9-e2bd041eb99c")
-		(property "Reference" "R7"
+		(property "Reference" "R8"
 			(at 171.196 371.856 90)
 			(effects
 				(font
@@ -20928,7 +21135,7 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "R7")
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -20942,9 +21149,8 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "049c77b4-e93d-4936-93c3-2fdec0966ab9")
-		(property "Reference" "#PWR047"
+		(property "Reference" "#PWR061"
 			(at 431.8 232.41 0)
 			(effects
 				(font
@@ -20954,7 +21160,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 434.34 232.4099 90)
+			(at 435.61 232.4099 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20995,7 +21201,7 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "#PWR047")
+					(reference "#PWR061")
 					(unit 1)
 				)
 			)
@@ -21078,7 +21284,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "06e26865-ef6f-4f6a-805d-d57b292a0bf2")
-		(property "Reference" "C15"
+		(property "Reference" "C19"
 			(at 294.64 209.55 90)
 			(effects
 				(font
@@ -21130,7 +21336,7 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "C15")
+					(reference "C19")
 					(unit 1)
 				)
 			)
@@ -21146,7 +21352,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "074afc8f-e79c-4c04-8d89-0ca80f6d05e4")
-		(property "Reference" "JP1"
+		(property "Reference" "JP3"
 			(at 176.53 158.7499 90)
 			(effects
 				(font
@@ -21204,7 +21410,7 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "JP1")
+					(reference "JP3")
 					(unit 1)
 				)
 			)
@@ -21219,7 +21425,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "08dd6697-e3bb-4f16-ac8d-cd0b8e8eccea")
-		(property "Reference" "R6"
+		(property "Reference" "R7"
 			(at 170.688 341.376 90)
 			(effects
 				(font
@@ -21271,7 +21477,7 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "R6")
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -21279,7 +21485,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad_MP")
-		(at 69.85 298.45 0)
+		(at 60.96 298.45 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -21288,7 +21494,7 @@
 		(fields_autoplaced yes)
 		(uuid "09feddf5-5e0a-46f7-95b3-65e9eb29a32f")
 		(property "Reference" "H7"
-			(at 72.39 295.9099 0)
+			(at 63.5 295.9099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21297,7 +21503,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad_MP"
-			(at 72.39 298.4499 0)
+			(at 63.5 298.4499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21306,7 +21512,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5_Pad_TopBottom"
-			(at 69.85 298.45 0)
+			(at 60.96 298.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21315,7 +21521,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 69.85 298.45 0)
+			(at 60.96 298.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21324,7 +21530,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection as pad named MP"
-			(at 69.85 298.45 0)
+			(at 60.96 298.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21354,7 +21560,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0b2f0eb4-9800-4c34-8e6d-2702a8f770ae")
-		(property "Reference" "#PWR054"
+		(property "Reference" "#PWR02"
 			(at 50.8 200.66 0)
 			(effects
 				(font
@@ -21404,7 +21610,7 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "#PWR054")
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -21420,7 +21626,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0b7dca4d-5951-4f5c-8095-84434135e4d8")
-		(property "Reference" "U?"
+		(property "Reference" "U1"
 			(at 117.475 321.31 0)
 			(effects
 				(font
@@ -21492,7 +21698,7 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "U?")
+					(reference "U1")
 					(unit 3)
 				)
 			)
@@ -21567,7 +21773,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad_MP")
-		(at 69.85 283.21 0)
+		(at 60.96 283.21 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -21576,7 +21782,7 @@
 		(fields_autoplaced yes)
 		(uuid "0cd0cd96-5cc6-45d0-b953-dbe46a674e3f")
 		(property "Reference" "H5"
-			(at 72.39 280.6699 0)
+			(at 63.5 280.6699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21585,7 +21791,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad_MP"
-			(at 72.39 283.2099 0)
+			(at 63.5 283.2099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21594,7 +21800,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5_Pad_TopBottom"
-			(at 69.85 283.21 0)
+			(at 60.96 283.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21603,7 +21809,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 69.85 283.21 0)
+			(at 60.96 283.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21612,7 +21818,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection as pad named MP"
-			(at 69.85 283.21 0)
+			(at 60.96 283.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21641,7 +21847,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0f25af4b-cafc-4444-bbaa-cad8e10a0f64")
-		(property "Reference" "R9"
+		(property "Reference" "R10"
 			(at 179.07 371.856 90)
 			(effects
 				(font
@@ -21693,7 +21899,7 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "R9")
+					(reference "R10")
 					(unit 1)
 				)
 			)
@@ -21776,7 +21982,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "10f1e1a5-9a99-42da-9519-5d1eaf6c0751")
-		(property "Reference" "#PWR035"
+		(property "Reference" "#PWR044"
 			(at 223.52 285.75 0)
 			(effects
 				(font
@@ -21827,7 +22033,7 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "#PWR035")
+					(reference "#PWR044")
 					(unit 1)
 				)
 			)
@@ -21843,7 +22049,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "111c631f-1bfd-4bbe-b331-b9978d3e6412")
-		(property "Reference" "JP?"
+		(property "Reference" "JP1"
 			(at 161.29 337.8199 90)
 			(effects
 				(font
@@ -21901,7 +22107,7 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "JP?")
+					(reference "JP1")
 					(unit 1)
 				)
 			)
@@ -21917,7 +22123,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "118a3f91-6a23-49ce-8edf-992611366a7f")
-		(property "Reference" "#PWR07"
+		(property "Reference" "#PWR015"
 			(at 120.65 88.9 0)
 			(effects
 				(font
@@ -21967,7 +22173,146 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "#PWR07")
+					(reference "#PWR015")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Private:PGB1010603")
+		(at 427.99 222.25 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "11b10ce2-e062-44a0-9dfb-eb443c125a17")
+		(property "Reference" "C21"
+			(at 421.132 260.35 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PGB1010603"
+			(at 430.53 260.35 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 415.29 220.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 427.99 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "\n150V (Typ) Clamp - Ipp Tvs Diode Surface Mount 0603 (1608 Metric)\n"
+			(at 435.61 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MF" "Littelfuse Inc."
+			(at 410.21 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Package" "0603 Littelfuse Inc."
+			(at 412.75 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Price" "None"
+			(at 417.83 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/PGB1010603/Littelfuse+Inc./view-part/?ref=snap"
+			(at 445.77 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MP" "PGB1010603"
+			(at 417.83 196.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Availability" "In Stock"
+			(at 417.83 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/PGB1010603/Littelfuse+Inc./view-part/?ref=eda"
+			(at 440.69 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "52148be1-1320-4714-83b9-d0e2fa234122")
+		)
+		(pin "2"
+			(uuid "0e7b35db-645f-4b09-ab65-632abd18c250")
+		)
+		(instances
+			(project "CustomSTM32H735Board"
+				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
+					(reference "C21")
 					(unit 1)
 				)
 			)
@@ -21982,7 +22327,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "12291cd1-6e74-4185-9793-5ad32ded25de")
-		(property "Reference" "#PWR030"
+		(property "Reference" "#PWR039"
 			(at 215.9 300.99 0)
 			(effects
 				(font
@@ -22032,7 +22377,7 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "#PWR030")
+					(reference "#PWR039")
 					(unit 1)
 				)
 			)
@@ -22048,7 +22393,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "134eae3c-fbf8-4611-9b69-dcc9a955ceb0")
-		(property "Reference" "#PWR015"
+		(property "Reference" "#PWR023"
 			(at 149.86 163.83 0)
 			(effects
 				(font
@@ -22098,7 +22443,7 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "#PWR015")
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -22114,7 +22459,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "150d9079-ecad-4dd3-a771-98b8c78d657c")
-		(property "Reference" "#PWR043"
+		(property "Reference" "#PWR057"
 			(at 440.69 124.46 0)
 			(effects
 				(font
@@ -22165,7 +22510,7 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "#PWR043")
+					(reference "#PWR057")
 					(unit 1)
 				)
 			)
@@ -22247,7 +22592,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "17c7d207-21e8-4442-ac04-5fae645cdb76")
-		(property "Reference" "R3"
+		(property "Reference" "R4"
 			(at 165.1 126.9999 0)
 			(effects
 				(font
@@ -22301,7 +22646,7 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "R3")
+					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -22317,7 +22662,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "18216249-9ef5-4939-a0f4-f533cf4943e9")
-		(property "Reference" "J?"
+		(property "Reference" "J1"
 			(at 76.2 201.9299 0)
 			(effects
 				(font
@@ -22335,7 +22680,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical"
 			(at 74.93 201.93 0)
 			(effects
 				(font
@@ -22377,7 +22722,7 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "J?")
+					(reference "J1")
 					(unit 1)
 				)
 			)
@@ -22464,7 +22809,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1bce7f0d-b1f8-4983-b434-0047434e450f")
-		(property "Reference" "#PWR022"
+		(property "Reference" "#PWR028"
 			(at 167.64 344.17 0)
 			(effects
 				(font
@@ -22515,7 +22860,81 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "#PWR022")
+					(reference "#PWR028")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x03_Socket")
+		(at 311.15 306.07 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1c1d8113-908d-4144-95f0-d5287b9c3e9f")
+		(property "Reference" "JGPIO1"
+			(at 312.42 306.0699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x03_Socket"
+			(at 312.42 307.3399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical"
+			(at 311.15 306.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 311.15 306.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x03, script generated"
+			(at 311.15 306.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "19e0f463-4bd1-4127-b0ee-81b0b6d111a0")
+		)
+		(pin "3"
+			(uuid "d90c715c-26c4-4ade-95db-0402471744e4")
+		)
+		(pin "2"
+			(uuid "eae96883-c85e-4323-870d-02c627102737")
+		)
+		(instances
+			(project "CustomSTM32H735Board"
+				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
+					(reference "JGPIO1")
 					(unit 1)
 				)
 			)
@@ -22530,7 +22949,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1c7e42de-14c9-4383-8550-34ab5b29e31a")
-		(property "Reference" "R14"
+		(property "Reference" "R15"
 			(at 213.614 300.228 90)
 			(effects
 				(font
@@ -22583,7 +23002,7 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "R14")
+					(reference "R15")
 					(unit 1)
 				)
 			)
@@ -22599,7 +23018,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1eb9ed2b-031d-4f6c-9a3c-1f6ae831d097")
-		(property "Reference" "#PWR044"
+		(property "Reference" "#PWR058"
 			(at 440.69 137.16 0)
 			(effects
 				(font
@@ -22650,7 +23069,7 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "#PWR044")
+					(reference "#PWR058")
 					(unit 1)
 				)
 			)
@@ -22666,8 +23085,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2223c4b8-38c2-46aa-94e9-13fb2738d1dc")
-		(property "Reference" "J2"
-			(at 308.61 260.35 0)
+		(property "Reference" "JRadio1"
+			(at 308.61 262.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22680,6 +23099,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Connector_IDC:IDC-Header_2x10_P2.54mm_Vertical"
@@ -22772,7 +23192,7 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "J2")
+					(reference "JRadio1")
 					(unit 1)
 				)
 			)
@@ -22788,7 +23208,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "245dd2d0-d0f9-40c0-8e29-29073a78f635")
-		(property "Reference" "#PWR057"
+		(property "Reference" "#PWR030"
 			(at 168.91 374.65 0)
 			(effects
 				(font
@@ -22839,7 +23259,7 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "#PWR057")
+					(reference "#PWR030")
 					(unit 1)
 				)
 			)
@@ -22847,7 +23267,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 425.45 224.79 90)
+		(at 422.91 224.79 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -22855,8 +23275,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "25645cad-ca35-4df7-9b47-1cb3cd039995")
-		(property "Reference" "R18"
-			(at 425.45 218.44 90)
+		(property "Reference" "R19"
+			(at 422.91 218.44 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22864,7 +23284,7 @@
 			)
 		)
 		(property "Value" "22R"
-			(at 425.45 220.98 90)
+			(at 422.91 220.98 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22872,7 +23292,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 425.45 226.568 90)
+			(at 422.91 226.568 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22881,7 +23301,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 425.45 224.79 0)
+			(at 422.91 224.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22890,7 +23310,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 425.45 224.79 0)
+			(at 422.91 224.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22907,7 +23327,7 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "R18")
+					(reference "R19")
 					(unit 1)
 				)
 			)
@@ -22922,7 +23342,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2ed2cd60-f9ff-4dcc-b804-f444658d0b36")
-		(property "Reference" "C19"
+		(property "Reference" "C26"
 			(at 466.852 169.926 90)
 			(effects
 				(font
@@ -22974,7 +23394,7 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "C19")
+					(reference "C26")
 					(unit 1)
 				)
 			)
@@ -23309,7 +23729,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "34b44628-6d5d-446d-b61a-a90f1e2af63f")
-		(property "Reference" "#PWR050"
+		(property "Reference" "#PWR064"
 			(at 482.6 185.42 0)
 			(effects
 				(font
@@ -23360,7 +23780,7 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "#PWR050")
+					(reference "#PWR064")
 					(unit 1)
 				)
 			)
@@ -23444,7 +23864,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "35a8309d-1251-427b-8a9f-3ef682548a80")
-		(property "Reference" "C?"
+		(property "Reference" "C11"
 			(at 159.512 355.6 90)
 			(effects
 				(font
@@ -23496,7 +23916,7 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "C?")
+					(reference "C11")
 					(unit 1)
 				)
 			)
@@ -23511,7 +23931,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "35e05425-ad6e-472a-a55b-d5cdb00537f7")
-		(property "Reference" "R11"
+		(property "Reference" "R12"
 			(at 184.912 355.346 90)
 			(effects
 				(font
@@ -23563,7 +23983,7 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "R11")
+					(reference "R12")
 					(unit 1)
 				)
 			)
@@ -23579,7 +23999,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "361c40ba-7548-4524-b22c-59d135f7506d")
-		(property "Reference" "#PWR020"
+		(property "Reference" "#PWR031"
 			(at 168.91 113.03 0)
 			(effects
 				(font
@@ -23629,7 +24049,7 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "#PWR020")
+					(reference "#PWR031")
 					(unit 1)
 				)
 			)
@@ -23645,7 +24065,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "37a2146b-260c-45d9-aa3b-06d3bc540740")
-		(property "Reference" "#PWR039"
+		(property "Reference" "#PWR048"
 			(at 224.79 340.36 0)
 			(effects
 				(font
@@ -23696,7 +24116,7 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "#PWR039")
+					(reference "#PWR048")
 					(unit 1)
 				)
 			)
@@ -23712,7 +24132,7 @@
 		(dnp no)
 		(uuid "38a1a95c-4abd-4456-81bf-55fc9458763e")
 		(property "Reference" "C1"
-			(at 123.19 209.55 0)
+			(at 111.76 220.218 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23727,7 +24147,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PGB1010603:ESD_PGB1010603MR"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 123.19 203.2 0)
 			(effects
 				(font
@@ -23836,6 +24256,73 @@
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
 					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 60.96 285.75 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3bd6235f-9a57-4aac-bdf7-d398ab425fdd")
+		(property "Reference" "#PWR04"
+			(at 67.31 285.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 64.77 285.7499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 60.96 285.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 60.96 285.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 60.96 285.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "73e84cff-debb-4810-8256-45ccca012337")
+		)
+		(instances
+			(project "CustomSTM32H735Board"
+				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -24443,7 +24930,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3c5a5383-4981-4faa-9b64-c40f65c1fe49")
-		(property "Reference" "#PWR04"
+		(property "Reference" "#PWR011"
 			(at 67.31 157.48 0)
 			(effects
 				(font
@@ -24494,7 +24981,7 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "#PWR04")
+					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -24509,7 +24996,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3c704d9c-ef65-460c-8064-785ba38324a8")
-		(property "Reference" "C14"
+		(property "Reference" "C15"
 			(at 184.15 345.44 90)
 			(effects
 				(font
@@ -24561,7 +25048,7 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "C14")
+					(reference "C15")
 					(unit 1)
 				)
 			)
@@ -24577,7 +25064,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3d1fe1d4-08fc-408b-b422-c73b1ad6b672")
-		(property "Reference" "#PWR013"
+		(property "Reference" "#PWR021"
 			(at 139.7 99.06 0)
 			(effects
 				(font
@@ -24627,7 +25114,7 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "#PWR013")
+					(reference "#PWR021")
 					(unit 1)
 				)
 			)
@@ -24643,7 +25130,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3e3583d6-e390-4e55-b777-2d46178c294f")
-		(property "Reference" "#PWR025"
+		(property "Reference" "#PWR036"
 			(at 193.04 125.73 0)
 			(effects
 				(font
@@ -24693,7 +25180,7 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "#PWR025")
+					(reference "#PWR036")
 					(unit 1)
 				)
 			)
@@ -24709,7 +25196,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3f1a0bc9-a896-46af-8cbf-1ffbc917ef71")
-		(property "Reference" "#PWR024"
+		(property "Reference" "#PWR035"
 			(at 190.5 80.01 0)
 			(effects
 				(font
@@ -24759,7 +25246,7 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "#PWR024")
+					(reference "#PWR035")
 					(unit 1)
 				)
 			)
@@ -24767,15 +25254,15 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 425.45 229.87 90)
+		(at 422.91 229.87 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "3fb77b84-9ab7-479d-bdb3-0e2f82430e54")
-		(property "Reference" "R19"
-			(at 425.45 232.918 90)
+		(property "Reference" "R20"
+			(at 422.91 232.918 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24783,7 +25270,7 @@
 			)
 		)
 		(property "Value" "22R"
-			(at 425.45 235.458 90)
+			(at 422.91 235.458 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24791,7 +25278,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 425.45 231.648 90)
+			(at 422.91 231.648 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24800,7 +25287,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 425.45 229.87 0)
+			(at 422.91 229.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24809,7 +25296,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 425.45 229.87 0)
+			(at 422.91 229.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24826,7 +25313,7 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "R19")
+					(reference "R20")
 					(unit 1)
 				)
 			)
@@ -24909,7 +25396,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "438fb3d6-e3d8-4c96-9496-e54b2392dccb")
-		(property "Reference" "#PWR031"
+		(property "Reference" "#PWR040"
 			(at 223.52 248.92 0)
 			(effects
 				(font
@@ -24960,7 +25447,7 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "#PWR031")
+					(reference "#PWR040")
 					(unit 1)
 				)
 			)
@@ -24975,7 +25462,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "43abdc98-27b5-4c2c-ba05-05c90419819f")
-		(property "Reference" "C10"
+		(property "Reference" "C12"
 			(at 164.846 102.87 90)
 			(effects
 				(font
@@ -25027,7 +25514,7 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "C10")
+					(reference "C12")
 					(unit 1)
 				)
 			)
@@ -25042,7 +25529,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "442431a6-e167-4398-b3ef-8a0b0c423694")
-		(property "Reference" "U?"
+		(property "Reference" "U1"
 			(at 165.354 350.774 0)
 			(effects
 				(font
@@ -25088,33 +25575,33 @@
 			)
 		)
 		(pin "6"
-			(uuid "16ee332a-c3d5-45c2-ac46-b8da54456d6c")
+			(uuid "16ee332a-c3d5-45c2-ac46-b8da54456d6d")
 		)
 		(pin "1"
-			(uuid "bb398088-6e3d-4c70-a593-31f8ffef1ded")
+			(uuid "bb398088-6e3d-4c70-a593-31f8ffef1dee")
 		)
 		(pin "8"
-			(uuid "cba97261-d850-470c-8bf3-51f2a6c86bd5")
+			(uuid "cba97261-d850-470c-8bf3-51f2a6c86bd6")
 		)
 		(pin "3"
-			(uuid "e5443808-29b2-4ee9-bcc3-c2791e6e6dae")
+			(uuid "e5443808-29b2-4ee9-bcc3-c2791e6e6daf")
 		)
 		(pin "5"
-			(uuid "fd22a896-2322-4a9f-8346-757ee58a3661")
+			(uuid "fd22a896-2322-4a9f-8346-757ee58a3662")
 		)
 		(pin "7"
-			(uuid "6c6dee45-2ab4-4204-9785-b5420517315c")
+			(uuid "6c6dee45-2ab4-4204-9785-b5420517315d")
 		)
 		(pin "2"
-			(uuid "a5a15228-6e73-4d73-b039-8c49df848580")
+			(uuid "a5a15228-6e73-4d73-b039-8c49df848581")
 		)
 		(pin "4"
-			(uuid "f575a3b4-7a83-4d3f-9c3e-058274e5ef5d")
+			(uuid "f575a3b4-7a83-4d3f-9c3e-058274e5ef5e")
 		)
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "U?")
+					(reference "U1")
 					(unit 2)
 				)
 			)
@@ -25130,7 +25617,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4445deb5-512e-4c07-bc34-2c08dd272e6b")
-		(property "Reference" "#PWR09"
+		(property "Reference" "#PWR018"
 			(at 133.35 99.06 0)
 			(effects
 				(font
@@ -25180,7 +25667,7 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "#PWR09")
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
@@ -25195,7 +25682,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "45e54264-bf72-4312-8ff7-ca78cedb6c1b")
-		(property "Reference" "C12"
+		(property "Reference" "C16"
 			(at 184.658 84.836 0)
 			(effects
 				(font
@@ -25249,7 +25736,7 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "C12")
+					(reference "C16")
 					(unit 1)
 				)
 			)
@@ -25265,7 +25752,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4c1e7dba-18f0-4abf-b5d4-9c69f5225320")
-		(property "Reference" "#PWR03"
+		(property "Reference" "#PWR09"
 			(at 72.39 146.05 0)
 			(effects
 				(font
@@ -25315,7 +25802,7 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "#PWR03")
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -25330,7 +25817,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4c926ab1-7bc6-4a41-8cf7-b5d36d087273")
-		(property "Reference" "C17"
+		(property "Reference" "C24"
 			(at 426.212 128.778 90)
 			(effects
 				(font
@@ -25382,7 +25869,7 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "C17")
+					(reference "C24")
 					(unit 1)
 				)
 			)
@@ -25464,7 +25951,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4faa1bbf-2d22-4dd8-a35a-e739aeb2162a")
-		(property "Reference" "U?"
+		(property "Reference" "U1"
 			(at 161.544 320.04 0)
 			(effects
 				(font
@@ -25510,33 +25997,100 @@
 			)
 		)
 		(pin "6"
-			(uuid "16ee332a-c3d5-45c2-ac46-b8da54456d6c")
+			(uuid "16ee332a-c3d5-45c2-ac46-b8da54456d6e")
 		)
 		(pin "1"
-			(uuid "bb398088-6e3d-4c70-a593-31f8ffef1ded")
+			(uuid "bb398088-6e3d-4c70-a593-31f8ffef1def")
 		)
 		(pin "8"
-			(uuid "cba97261-d850-470c-8bf3-51f2a6c86bd5")
+			(uuid "cba97261-d850-470c-8bf3-51f2a6c86bd7")
 		)
 		(pin "3"
-			(uuid "e5443808-29b2-4ee9-bcc3-c2791e6e6dae")
+			(uuid "e5443808-29b2-4ee9-bcc3-c2791e6e6db0")
 		)
 		(pin "5"
-			(uuid "fd22a896-2322-4a9f-8346-757ee58a3661")
+			(uuid "fd22a896-2322-4a9f-8346-757ee58a3663")
 		)
 		(pin "7"
-			(uuid "6c6dee45-2ab4-4204-9785-b5420517315c")
+			(uuid "6c6dee45-2ab4-4204-9785-b5420517315e")
 		)
 		(pin "2"
-			(uuid "a5a15228-6e73-4d73-b039-8c49df848580")
+			(uuid "a5a15228-6e73-4d73-b039-8c49df848582")
 		)
 		(pin "4"
-			(uuid "f575a3b4-7a83-4d3f-9c3e-058274e5ef5d")
+			(uuid "f575a3b4-7a83-4d3f-9c3e-058274e5ef5f")
 		)
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "U?")
+					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 60.96 308.61 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "50852064-dd3f-408a-96c3-e56492b7379b")
+		(property "Reference" "#PWR07"
+			(at 67.31 308.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 64.77 308.6099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 60.96 308.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 60.96 308.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 60.96 308.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "73e84cff-debb-4810-8256-45ccca012337")
+		)
+		(instances
+			(project "CustomSTM32H735Board"
+				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -25552,7 +26106,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "515c9fff-a4d0-4c6f-b440-16ba2813d333")
-		(property "Reference" "#PWR021"
+		(property "Reference" "#PWR032"
 			(at 179.07 113.03 0)
 			(effects
 				(font
@@ -25602,7 +26156,7 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "#PWR021")
+					(reference "#PWR032")
 					(unit 1)
 				)
 			)
@@ -25685,7 +26239,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "55505fdc-9fdf-4943-bc89-7a6a62d1dae1")
-		(property "Reference" "#PWR041"
+		(property "Reference" "#PWR050"
 			(at 304.8 213.36 0)
 			(effects
 				(font
@@ -25736,7 +26290,7 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "#PWR041")
+					(reference "#PWR050")
 					(unit 1)
 				)
 			)
@@ -25752,7 +26306,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "57ef238b-a595-4021-9cf7-d9e2631df579")
-		(property "Reference" "#PWR016"
+		(property "Reference" "#PWR024"
 			(at 144.78 132.08 0)
 			(effects
 				(font
@@ -25803,7 +26357,7 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "#PWR016")
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -25819,7 +26373,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "58bcc0a8-a42d-4f27-bd70-e76c3347487b")
-		(property "Reference" "#PWR042"
+		(property "Reference" "#PWR053"
 			(at 424.18 209.55 0)
 			(effects
 				(font
@@ -25869,73 +26423,7 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "#PWR042")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 161.29 149.86 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5aa929c6-9090-4bed-be28-66ba3491b269")
-		(property "Reference" "#PWR017"
-			(at 161.29 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 161.29 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 161.29 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 161.29 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 161.29 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "28589ca6-b04f-4e69-8b7b-a2569e3dae2a")
-		)
-		(instances
-			(project "CustomSTM32H735Board"
-				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "#PWR017")
+					(reference "#PWR053")
 					(unit 1)
 				)
 			)
@@ -25951,7 +26439,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5d704bab-07a7-4d32-af47-87c58acef2ab")
-		(property "Reference" "#PWR08"
+		(property "Reference" "#PWR016"
 			(at 120.65 129.54 0)
 			(effects
 				(font
@@ -26001,7 +26489,72 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "#PWR08")
+					(reference "#PWR016")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 427.99 217.17 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5e50f079-9403-46be-b730-5053aae6ce01")
+		(property "Reference" "#PWR054"
+			(at 427.99 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 427.99 213.614 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 427.99 217.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 427.99 217.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 427.99 217.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8dd730f0-0a79-4a70-a3ce-7d0e3cb74f3f")
+		)
+		(instances
+			(project "CustomSTM32H735Board"
+				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
+					(reference "#PWR054")
 					(unit 1)
 				)
 			)
@@ -26009,7 +26562,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad_MP")
-		(at 69.85 306.07 0)
+		(at 60.96 306.07 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -26018,7 +26571,7 @@
 		(fields_autoplaced yes)
 		(uuid "642f87a7-8fbb-4119-848a-231e42947835")
 		(property "Reference" "H8"
-			(at 72.39 303.5299 0)
+			(at 63.5 303.5299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26027,7 +26580,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad_MP"
-			(at 72.39 306.0699 0)
+			(at 63.5 306.0699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26036,7 +26589,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5_Pad_TopBottom"
-			(at 69.85 306.07 0)
+			(at 60.96 306.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26045,7 +26598,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 69.85 306.07 0)
+			(at 60.96 306.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26054,7 +26607,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection as pad named MP"
-			(at 69.85 306.07 0)
+			(at 60.96 306.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26158,7 +26711,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "66744e4a-6c41-48f5-82b8-9501a072fb7b")
-		(property "Reference" "#PWR06"
+		(property "Reference" "#PWR014"
 			(at 113.03 210.82 0)
 			(effects
 				(font
@@ -26209,7 +26762,7 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "#PWR06")
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -26361,7 +26914,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "69d84c09-23bd-4877-9e5a-3ee84eda1000")
-		(property "Reference" "#PWR040"
+		(property "Reference" "#PWR049"
 			(at 292.1 260.35 0)
 			(effects
 				(font
@@ -26411,7 +26964,7 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "#PWR040")
+					(reference "#PWR049")
 					(unit 1)
 				)
 			)
@@ -26500,7 +27053,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6be054fc-ccfd-4a26-ab15-4cfafc5fcfbe")
-		(property "Reference" "C?"
+		(property "Reference" "C18"
 			(at 201.93 366.014 90)
 			(effects
 				(font
@@ -26552,7 +27105,7 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "C?")
+					(reference "C18")
 					(unit 1)
 				)
 			)
@@ -26567,7 +27120,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6d063691-4e58-468b-90d0-ab6196947967")
-		(property "Reference" "C?"
+		(property "Reference" "C10"
 			(at 158.242 325.12 90)
 			(effects
 				(font
@@ -26619,7 +27172,7 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "C?")
+					(reference "C10")
 					(unit 1)
 				)
 			)
@@ -26635,7 +27188,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6d12f03c-40dc-43d3-bdfd-b769854241e6")
-		(property "Reference" "#PWR049"
+		(property "Reference" "#PWR063"
 			(at 455.93 180.34 0)
 			(effects
 				(font
@@ -26686,7 +27239,7 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "#PWR049")
+					(reference "#PWR063")
 					(unit 1)
 				)
 			)
@@ -26769,7 +27322,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "735dd938-32f3-412b-8629-382d3ca1cbe6")
-		(property "Reference" "#PWR051"
+		(property "Reference" "#PWR065"
 			(at 478.79 199.39 0)
 			(effects
 				(font
@@ -26819,7 +27372,7 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "#PWR051")
+					(reference "#PWR065")
 					(unit 1)
 				)
 			)
@@ -26827,7 +27380,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad_MP")
-		(at 69.85 290.83 0)
+		(at 60.96 290.83 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -26836,7 +27389,7 @@
 		(fields_autoplaced yes)
 		(uuid "735de7fb-27b4-43c3-9477-b5af597b1ec3")
 		(property "Reference" "H6"
-			(at 72.39 288.2899 0)
+			(at 63.5 288.2899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26845,7 +27398,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad_MP"
-			(at 72.39 290.8299 0)
+			(at 63.5 290.8299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26854,7 +27407,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5_Pad_TopBottom"
-			(at 69.85 290.83 0)
+			(at 60.96 290.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26863,7 +27416,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 69.85 290.83 0)
+			(at 60.96 290.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26872,7 +27425,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection as pad named MP"
-			(at 69.85 290.83 0)
+			(at 60.96 290.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27091,532 +27644,532 @@
 			)
 		)
 		(pin "25"
-			(uuid "2d39b4e4-055d-47bf-bf92-c5d85a1375f9")
+			(uuid "2d39b4e4-055d-47bf-bf92-c5d85a1375fa")
 		)
 		(pin "26"
-			(uuid "e1a42235-1d49-447c-ad66-d6c73a906b83")
+			(uuid "e1a42235-1d49-447c-ad66-d6c73a906b84")
 		)
 		(pin "59"
-			(uuid "64138351-b2d3-4028-9a5b-9f5f6c2d083e")
+			(uuid "64138351-b2d3-4028-9a5b-9f5f6c2d083f")
 		)
 		(pin "1"
-			(uuid "54a97a0a-0776-4d63-b281-91aa73373c99")
+			(uuid "54a97a0a-0776-4d63-b281-91aa73373c9a")
 		)
 		(pin "18"
-			(uuid "fb398131-85b0-400a-be7a-1a8387818513")
+			(uuid "fb398131-85b0-400a-be7a-1a8387818514")
 		)
 		(pin "21"
-			(uuid "e6aea0d3-9965-46e5-9229-7168d938e581")
+			(uuid "e6aea0d3-9965-46e5-9229-7168d938e582")
 		)
 		(pin "44"
-			(uuid "e2b6d88b-b394-43fa-8e8b-094d39a0b57f")
+			(uuid "e2b6d88b-b394-43fa-8e8b-094d39a0b580")
 		)
 		(pin "34"
-			(uuid "dc135bda-4354-437c-9c5b-8294b099b360")
+			(uuid "dc135bda-4354-437c-9c5b-8294b099b361")
 		)
 		(pin "42"
-			(uuid "c42d11b0-3b24-41ba-8cc8-10369ea114f2")
+			(uuid "c42d11b0-3b24-41ba-8cc8-10369ea114f3")
 		)
 		(pin "61"
-			(uuid "4afb2189-9975-4b9f-a2ee-e263286ca05c")
+			(uuid "4afb2189-9975-4b9f-a2ee-e263286ca05d")
 		)
 		(pin "62"
-			(uuid "3650fa9c-50c7-4c9a-9772-d872f868e96d")
+			(uuid "3650fa9c-50c7-4c9a-9772-d872f868e96e")
 		)
 		(pin "63"
-			(uuid "d7e73a54-e6b6-4fdb-aed7-e47f20322878")
+			(uuid "d7e73a54-e6b6-4fdb-aed7-e47f20322879")
 		)
 		(pin "64"
-			(uuid "b9dffb3c-b68d-4a4a-bf63-06886c63f4af")
+			(uuid "b9dffb3c-b68d-4a4a-bf63-06886c63f4b0")
 		)
 		(pin "15"
-			(uuid "0995e6bf-f7b5-4fa5-bb36-150fd934ecb0")
+			(uuid "0995e6bf-f7b5-4fa5-bb36-150fd934ecb1")
 		)
 		(pin "33"
-			(uuid "61174a3e-7596-4abb-9602-201493f8e7fa")
+			(uuid "61174a3e-7596-4abb-9602-201493f8e7fb")
 		)
 		(pin "36"
-			(uuid "e5dde364-b7a9-42b6-9909-3440df2546b8")
+			(uuid "e5dde364-b7a9-42b6-9909-3440df2546b9")
 		)
 		(pin "52"
-			(uuid "6bce2fed-3835-4823-b286-0320c30f1d64")
+			(uuid "6bce2fed-3835-4823-b286-0320c30f1d65")
 		)
 		(pin "55"
-			(uuid "82581db1-44e6-4bdf-a771-c01d385088c4")
+			(uuid "82581db1-44e6-4bdf-a771-c01d385088c5")
 		)
 		(pin "65"
-			(uuid "b8c4ce55-6358-44ed-bd84-4c91b3702229")
+			(uuid "b8c4ce55-6358-44ed-bd84-4c91b370222a")
 		)
 		(pin "50"
-			(uuid "05578644-c483-4a6b-92b3-71477985a09b")
+			(uuid "05578644-c483-4a6b-92b3-71477985a09c")
 		)
 		(pin "66"
-			(uuid "c2b2e8f6-eb25-497e-a56b-496952822659")
+			(uuid "c2b2e8f6-eb25-497e-a56b-49695282265a")
 		)
 		(pin "31"
-			(uuid "825351ea-5d39-4db9-a093-cb6107f7267c")
+			(uuid "825351ea-5d39-4db9-a093-cb6107f7267d")
 		)
 		(pin "37"
-			(uuid "204f2955-133a-4ce9-89bb-305080380a07")
+			(uuid "204f2955-133a-4ce9-89bb-305080380a08")
 		)
 		(pin "46"
-			(uuid "109ca3fd-7bd2-46ea-a3d2-79b9846e0ae4")
+			(uuid "109ca3fd-7bd2-46ea-a3d2-79b9846e0ae5")
 		)
 		(pin "53"
-			(uuid "f7089f55-0d52-48ed-92be-c7c0be8d387f")
+			(uuid "f7089f55-0d52-48ed-92be-c7c0be8d3880")
 		)
 		(pin "57"
-			(uuid "12276425-1a18-4aa9-ae3e-1d34403c5ac1")
+			(uuid "12276425-1a18-4aa9-ae3e-1d34403c5ac2")
 		)
 		(pin "23"
-			(uuid "cddd6608-cfec-4a8d-b46f-08c43b4a4be2")
+			(uuid "cddd6608-cfec-4a8d-b46f-08c43b4a4be3")
 		)
 		(pin "14"
-			(uuid "4207d319-d5b5-4f63-b159-91827d678502")
+			(uuid "4207d319-d5b5-4f63-b159-91827d678503")
 		)
 		(pin "22"
-			(uuid "2f339105-051f-4ff4-9210-63df8a2669e6")
+			(uuid "2f339105-051f-4ff4-9210-63df8a2669e7")
 		)
 		(pin "2"
-			(uuid "026ff97e-3815-4e67-a492-463f97ca19a5")
+			(uuid "026ff97e-3815-4e67-a492-463f97ca19a6")
 		)
 		(pin "27"
-			(uuid "a19f8a59-9f52-4c95-9cc3-5e82c8714352")
+			(uuid "a19f8a59-9f52-4c95-9cc3-5e82c8714353")
 		)
 		(pin "17"
-			(uuid "ab6eaf27-521a-4405-990c-27fe0b38e75b")
+			(uuid "ab6eaf27-521a-4405-990c-27fe0b38e75c")
 		)
 		(pin "40"
-			(uuid "1379c9fe-088d-4c63-a56c-b7f2c96a1d93")
+			(uuid "1379c9fe-088d-4c63-a56c-b7f2c96a1d94")
 		)
 		(pin "41"
-			(uuid "2e855c3b-1f39-4daf-a686-d3fc36906a93")
+			(uuid "2e855c3b-1f39-4daf-a686-d3fc36906a94")
 		)
 		(pin "35"
-			(uuid "fb61d1f6-1df3-4843-bd51-3ef63a0edf4a")
+			(uuid "fb61d1f6-1df3-4843-bd51-3ef63a0edf4b")
 		)
 		(pin "47"
-			(uuid "43a57fa9-d40a-4305-8177-3373cbe96c3f")
+			(uuid "43a57fa9-d40a-4305-8177-3373cbe96c40")
 		)
 		(pin "20"
-			(uuid "f1efff62-734c-42cc-a63c-a2d46e03e01d")
+			(uuid "f1efff62-734c-42cc-a63c-a2d46e03e01e")
 		)
 		(pin "54"
-			(uuid "f3fa85f9-127a-411b-9eb4-a306d7977802")
+			(uuid "f3fa85f9-127a-411b-9eb4-a306d7977803")
 		)
 		(pin "56"
-			(uuid "8986a01a-ad8f-42a4-8e45-fccba256ec5a")
+			(uuid "8986a01a-ad8f-42a4-8e45-fccba256ec5b")
 		)
 		(pin "24"
-			(uuid "5b01dbc0-c3aa-46ef-9dd2-fef71688ee2a")
+			(uuid "5b01dbc0-c3aa-46ef-9dd2-fef71688ee2b")
 		)
 		(pin "16"
-			(uuid "0763088f-205e-4db3-b6cc-12add5117775")
+			(uuid "0763088f-205e-4db3-b6cc-12add5117776")
 		)
 		(pin "38"
-			(uuid "0e829a5e-adb4-4e30-b857-e9389048cdfe")
+			(uuid "0e829a5e-adb4-4e30-b857-e9389048cdff")
 		)
 		(pin "5"
-			(uuid "6d54be58-9cee-4ac6-b2a1-dc879e9ceb7c")
+			(uuid "6d54be58-9cee-4ac6-b2a1-dc879e9ceb7d")
 		)
 		(pin "58"
-			(uuid "13f509fb-ee83-4d48-be16-a4a685dd2177")
+			(uuid "13f509fb-ee83-4d48-be16-a4a685dd2178")
 		)
 		(pin "6"
-			(uuid "6f2ea91d-c74d-4344-99cb-24b59059d321")
+			(uuid "6f2ea91d-c74d-4344-99cb-24b59059d322")
 		)
 		(pin "13"
-			(uuid "94b273a0-bab7-4edf-8116-6cd8954f8811")
+			(uuid "94b273a0-bab7-4edf-8116-6cd8954f8812")
 		)
 		(pin "12"
-			(uuid "e3bdfe33-0ba0-4f28-941a-9689a7c5a398")
+			(uuid "e3bdfe33-0ba0-4f28-941a-9689a7c5a399")
 		)
 		(pin "19"
-			(uuid "5831797f-7e23-422c-b1db-2aed28c63b12")
+			(uuid "5831797f-7e23-422c-b1db-2aed28c63b13")
 		)
 		(pin "29"
-			(uuid "f418d0bb-7947-4b52-b55a-ce2ad86db44b")
+			(uuid "f418d0bb-7947-4b52-b55a-ce2ad86db44c")
 		)
 		(pin "51"
-			(uuid "b3682df2-236c-40d3-a006-a2d03b4ac1db")
+			(uuid "b3682df2-236c-40d3-a006-a2d03b4ac1dc")
 		)
 		(pin "10"
-			(uuid "6930c597-002d-45a3-a476-ef9bdf79e8e4")
+			(uuid "6930c597-002d-45a3-a476-ef9bdf79e8e5")
 		)
 		(pin "3"
-			(uuid "5b34cd94-5dd9-41d6-8066-4b07717e5494")
+			(uuid "5b34cd94-5dd9-41d6-8066-4b07717e5495")
 		)
 		(pin "28"
-			(uuid "e738e80a-d662-4d99-815b-ef66ff20fc96")
+			(uuid "e738e80a-d662-4d99-815b-ef66ff20fc97")
 		)
 		(pin "11"
-			(uuid "ffea8574-42b8-433b-9aa5-59a6ca5106c2")
+			(uuid "ffea8574-42b8-433b-9aa5-59a6ca5106c3")
 		)
 		(pin "30"
-			(uuid "a3dc33d6-5f10-402e-9e55-aa4bfdd8586b")
+			(uuid "a3dc33d6-5f10-402e-9e55-aa4bfdd8586c")
 		)
 		(pin "32"
-			(uuid "b9969f11-7c9f-438d-a8b8-2a829f042d4d")
+			(uuid "b9969f11-7c9f-438d-a8b8-2a829f042d4e")
 		)
 		(pin "39"
-			(uuid "96bd0813-2e6d-4a1b-912f-8b22f30e1085")
+			(uuid "96bd0813-2e6d-4a1b-912f-8b22f30e1086")
 		)
 		(pin "4"
-			(uuid "eb347a52-a1ae-4ecb-9d1f-75b8b8f54143")
+			(uuid "eb347a52-a1ae-4ecb-9d1f-75b8b8f54144")
 		)
 		(pin "48"
-			(uuid "7ad84f06-f907-4ea4-8fc8-7ad38d15ae96")
+			(uuid "7ad84f06-f907-4ea4-8fc8-7ad38d15ae97")
 		)
 		(pin "60"
-			(uuid "5179a5d4-1ca5-4394-b0fa-dfd3a920c609")
+			(uuid "5179a5d4-1ca5-4394-b0fa-dfd3a920c60a")
 		)
 		(pin "45"
-			(uuid "d9203fba-c08b-46c9-abd7-5fddce972029")
+			(uuid "d9203fba-c08b-46c9-abd7-5fddce97202a")
 		)
 		(pin "49"
-			(uuid "a65edd45-8e48-4af5-8f72-5bb1f1068379")
+			(uuid "a65edd45-8e48-4af5-8f72-5bb1f106837a")
 		)
 		(pin "43"
-			(uuid "9b5a0bf6-c170-4cf5-ab90-edbbc63e3658")
+			(uuid "9b5a0bf6-c170-4cf5-ab90-edbbc63e3659")
 		)
 		(pin "136"
-			(uuid "29174740-8037-477c-86d6-3fccdaebe6a5")
+			(uuid "29174740-8037-477c-86d6-3fccdaebe6a6")
 		)
 		(pin "103"
-			(uuid "9fb7d6c6-4186-4473-ac7f-1ad0924d22f7")
+			(uuid "9fb7d6c6-4186-4473-ac7f-1ad0924d22f8")
 		)
 		(pin "137"
-			(uuid "626b4304-ba11-4cbe-abed-0bffc291d75f")
+			(uuid "626b4304-ba11-4cbe-abed-0bffc291d760")
 		)
 		(pin "8"
-			(uuid "bafe75fb-438d-4502-a62e-b3d9148b1f2a")
+			(uuid "bafe75fb-438d-4502-a62e-b3d9148b1f2b")
 		)
 		(pin "138"
-			(uuid "be0999f8-789f-470c-bedc-1db5777325c2")
+			(uuid "be0999f8-789f-470c-bedc-1db5777325c3")
 		)
 		(pin "81"
-			(uuid "d55995ab-5903-48d5-b8b5-85218b0bcce6")
+			(uuid "d55995ab-5903-48d5-b8b5-85218b0bcce7")
 		)
 		(pin "70"
-			(uuid "a932d55b-1a4e-4f9d-bffe-8eb2f46a1186")
+			(uuid "a932d55b-1a4e-4f9d-bffe-8eb2f46a1187")
 		)
 		(pin "87"
-			(uuid "a44a5cc5-992d-4b7d-8de2-2f9527457e06")
+			(uuid "a44a5cc5-992d-4b7d-8de2-2f9527457e07")
 		)
 		(pin "84"
-			(uuid "951ec3d6-187d-4bcd-b331-148baf9d5941")
+			(uuid "951ec3d6-187d-4bcd-b331-148baf9d5942")
 		)
 		(pin "102"
-			(uuid "ebfcb1d7-71dd-459f-95e3-166a246e81b1")
+			(uuid "ebfcb1d7-71dd-459f-95e3-166a246e81b2")
 		)
 		(pin "86"
-			(uuid "174601aa-1c04-44ba-ad1c-b8d504a89cfc")
+			(uuid "174601aa-1c04-44ba-ad1c-b8d504a89cfd")
 		)
 		(pin "108"
-			(uuid "b8b3f934-14f5-4caf-a0d5-a63f9b6f79ca")
+			(uuid "b8b3f934-14f5-4caf-a0d5-a63f9b6f79cb")
 		)
 		(pin "7"
-			(uuid "9c64f235-0c49-4abb-a319-b1c27e8472be")
+			(uuid "9c64f235-0c49-4abb-a319-b1c27e8472bf")
 		)
 		(pin "112"
-			(uuid "6e78cc18-a243-4e36-8a03-abde60743dd7")
+			(uuid "6e78cc18-a243-4e36-8a03-abde60743dd8")
 		)
 		(pin "76"
-			(uuid "f05b218e-3d5d-4a92-ae04-719f4c5af3da")
+			(uuid "f05b218e-3d5d-4a92-ae04-719f4c5af3db")
 		)
 		(pin "88"
-			(uuid "72eeeca5-b63e-46c8-ad5c-fdf87adb7e6a")
+			(uuid "72eeeca5-b63e-46c8-ad5c-fdf87adb7e6b")
 		)
 		(pin "101"
-			(uuid "ffc0517f-7bed-41bf-854c-c6977f020da3")
+			(uuid "ffc0517f-7bed-41bf-854c-c6977f020da4")
 		)
 		(pin "77"
-			(uuid "9b08802c-0896-40cd-aa17-2a2c47609931")
+			(uuid "9b08802c-0896-40cd-aa17-2a2c47609932")
 		)
 		(pin "9"
-			(uuid "b44fe6a6-7eb3-4ebc-8b34-722936d4a318")
+			(uuid "b44fe6a6-7eb3-4ebc-8b34-722936d4a319")
 		)
 		(pin "104"
-			(uuid "74468583-7849-4d8f-8c84-2555cc6e6398")
+			(uuid "74468583-7849-4d8f-8c84-2555cc6e6399")
 		)
 		(pin "105"
-			(uuid "cfcf005f-32ed-45e9-a775-2f9ea5eb2f99")
+			(uuid "cfcf005f-32ed-45e9-a775-2f9ea5eb2f9a")
 		)
 		(pin "107"
-			(uuid "7c7aa98c-9b23-4a70-ba39-4a232c707121")
+			(uuid "7c7aa98c-9b23-4a70-ba39-4a232c707122")
 		)
 		(pin "113"
-			(uuid "e5c67c64-fa00-4a38-a191-3986d4fcf3a8")
+			(uuid "e5c67c64-fa00-4a38-a191-3986d4fcf3a9")
 		)
 		(pin "114"
-			(uuid "1bacb444-3348-4c28-a8fc-e53d8f0f7aa4")
+			(uuid "1bacb444-3348-4c28-a8fc-e53d8f0f7aa5")
 		)
 		(pin "68"
-			(uuid "c0ed4327-0d64-4318-976c-272a214f1e20")
+			(uuid "c0ed4327-0d64-4318-976c-272a214f1e21")
 		)
 		(pin "85"
-			(uuid "c327c13d-b8d0-4840-9584-24ca2ce4a8ff")
+			(uuid "c327c13d-b8d0-4840-9584-24ca2ce4a900")
 		)
 		(pin "71"
-			(uuid "176d2501-d106-43bd-9193-17bf066a7411")
+			(uuid "176d2501-d106-43bd-9193-17bf066a7412")
 		)
 		(pin "72"
-			(uuid "6a46293d-45a8-43e2-b037-633f330e6a21")
+			(uuid "6a46293d-45a8-43e2-b037-633f330e6a22")
 		)
 		(pin "100"
-			(uuid "173ec352-d52c-469b-a6ee-053c8d2b75ea")
+			(uuid "173ec352-d52c-469b-a6ee-053c8d2b75eb")
 		)
 		(pin "110"
-			(uuid "f7733345-c6c8-48d5-bff5-50a27d3c3346")
+			(uuid "f7733345-c6c8-48d5-bff5-50a27d3c3347")
 		)
 		(pin "111"
-			(uuid "2ffb9b64-31aa-4c3c-b066-c09723048a49")
+			(uuid "2ffb9b64-31aa-4c3c-b066-c09723048a4a")
 		)
 		(pin "115"
-			(uuid "187356ee-339b-4a90-807e-4da07bcf4b6e")
+			(uuid "187356ee-339b-4a90-807e-4da07bcf4b6f")
 		)
 		(pin "120"
-			(uuid "7cd5ab4e-dbdb-4abb-bab1-e3666c9e575d")
+			(uuid "7cd5ab4e-dbdb-4abb-bab1-e3666c9e575e")
 		)
 		(pin "121"
-			(uuid "36c38265-6e0d-4b5b-9362-618bdf38afdd")
+			(uuid "36c38265-6e0d-4b5b-9362-618bdf38afde")
 		)
 		(pin "123"
-			(uuid "d4310666-93bf-434a-9e6e-6c503b52906c")
+			(uuid "d4310666-93bf-434a-9e6e-6c503b52906d")
 		)
 		(pin "73"
-			(uuid "909cbcac-030d-4f59-8aa1-517976e41501")
+			(uuid "909cbcac-030d-4f59-8aa1-517976e41502")
 		)
 		(pin "118"
-			(uuid "62de92e9-b86c-4c50-ba22-0240a17d1207")
+			(uuid "62de92e9-b86c-4c50-ba22-0240a17d1208")
 		)
 		(pin "124"
-			(uuid "50a892a9-1e62-4cc2-8c5a-a96ed4203bdb")
+			(uuid "50a892a9-1e62-4cc2-8c5a-a96ed4203bdc")
 		)
 		(pin "75"
-			(uuid "7fa0ff87-ff38-4082-8561-6f81d80cf302")
+			(uuid "7fa0ff87-ff38-4082-8561-6f81d80cf303")
 		)
 		(pin "67"
-			(uuid "a9d94ecb-2608-4d0c-8444-1af2d51537e0")
+			(uuid "a9d94ecb-2608-4d0c-8444-1af2d51537e1")
 		)
 		(pin "82"
-			(uuid "72ab4af9-05de-4c35-979b-24b9adc7c966")
+			(uuid "72ab4af9-05de-4c35-979b-24b9adc7c967")
 		)
 		(pin "83"
-			(uuid "11fae7f1-35c3-4509-b167-be7e9ef8990c")
+			(uuid "11fae7f1-35c3-4509-b167-be7e9ef8990d")
 		)
 		(pin "122"
-			(uuid "ac9b4e02-142d-45f7-836a-d10761d7b225")
+			(uuid "ac9b4e02-142d-45f7-836a-d10761d7b226")
 		)
 		(pin "74"
-			(uuid "52f9cc05-5ebe-4b01-92f5-7e4afff46eb9")
+			(uuid "52f9cc05-5ebe-4b01-92f5-7e4afff46eba")
 		)
 		(pin "125"
-			(uuid "d3c6ea0f-b731-4d77-bbbd-ada0323959a3")
+			(uuid "d3c6ea0f-b731-4d77-bbbd-ada0323959a4")
 		)
 		(pin "126"
-			(uuid "b632eaa0-f2e1-41e9-9d1b-2feeca7b608b")
+			(uuid "b632eaa0-f2e1-41e9-9d1b-2feeca7b608c")
 		)
 		(pin "119"
-			(uuid "ae002045-d0eb-463a-aba2-0f628805cbd8")
+			(uuid "ae002045-d0eb-463a-aba2-0f628805cbd9")
 		)
 		(pin "127"
-			(uuid "9f139a54-7589-4bcd-a004-e82dbb2899c0")
+			(uuid "9f139a54-7589-4bcd-a004-e82dbb2899c1")
 		)
 		(pin "78"
-			(uuid "1d634aca-da35-4295-8ea0-12f7d33d1b38")
+			(uuid "1d634aca-da35-4295-8ea0-12f7d33d1b39")
 		)
 		(pin "128"
-			(uuid "70bc0f93-37cc-4875-8386-fdfb58b9855b")
+			(uuid "70bc0f93-37cc-4875-8386-fdfb58b9855c")
 		)
 		(pin "129"
-			(uuid "ef43d47d-7106-4354-9a81-b33e54650efd")
+			(uuid "ef43d47d-7106-4354-9a81-b33e54650efe")
 		)
 		(pin "130"
-			(uuid "7d984ab9-26b2-4ec9-8b67-79cb12c287bb")
+			(uuid "7d984ab9-26b2-4ec9-8b67-79cb12c287bc")
 		)
 		(pin "131"
-			(uuid "9ad748f5-10f9-407e-ac2a-095d765f9861")
+			(uuid "9ad748f5-10f9-407e-ac2a-095d765f9862")
 		)
 		(pin "69"
-			(uuid "478fcc70-ff89-406d-bfef-fa9304d3a765")
+			(uuid "478fcc70-ff89-406d-bfef-fa9304d3a766")
 		)
 		(pin "109"
-			(uuid "1bdbc60e-db32-406a-96c1-7138d5eb559f")
+			(uuid "1bdbc60e-db32-406a-96c1-7138d5eb55a0")
 		)
 		(pin "80"
-			(uuid "f2e9176f-e40f-4a2c-b18d-e904e0362fd7")
+			(uuid "f2e9176f-e40f-4a2c-b18d-e904e0362fd8")
 		)
 		(pin "133"
-			(uuid "6b1047e6-457b-4917-9350-5c811d3a4eac")
+			(uuid "6b1047e6-457b-4917-9350-5c811d3a4ead")
 		)
 		(pin "79"
-			(uuid "e1aa9af0-ca82-4a3c-ac3f-705aa7077d3f")
+			(uuid "e1aa9af0-ca82-4a3c-ac3f-705aa7077d40")
 		)
 		(pin "117"
-			(uuid "cede7aad-7a13-4388-93a4-902ced7c72ad")
+			(uuid "cede7aad-7a13-4388-93a4-902ced7c72ae")
 		)
 		(pin "132"
-			(uuid "dc2cd8b9-7d0e-4485-9bcd-aa4fefc05d30")
+			(uuid "dc2cd8b9-7d0e-4485-9bcd-aa4fefc05d31")
 		)
 		(pin "106"
-			(uuid "32b7b061-efbe-45cc-9850-d7a44cbcf81f")
+			(uuid "32b7b061-efbe-45cc-9850-d7a44cbcf820")
 		)
 		(pin "116"
-			(uuid "4832f4b8-8f5e-4493-88eb-a38456646d00")
+			(uuid "4832f4b8-8f5e-4493-88eb-a38456646d01")
 		)
 		(pin "134"
-			(uuid "aeb17e6a-b6a8-4b2a-b689-5d57ae6857af")
+			(uuid "aeb17e6a-b6a8-4b2a-b689-5d57ae6857b0")
 		)
 		(pin "135"
-			(uuid "93462daa-ddda-4d24-9aa9-ad092b4622a9")
+			(uuid "93462daa-ddda-4d24-9aa9-ad092b4622aa")
 		)
 		(pin "155"
-			(uuid "0f51a361-08c0-4cac-a771-922ed6b94ff6")
+			(uuid "0f51a361-08c0-4cac-a771-922ed6b94ff7")
 		)
 		(pin "159"
-			(uuid "9e44c5c2-3422-48c1-a0e8-302f3ae0f43b")
+			(uuid "9e44c5c2-3422-48c1-a0e8-302f3ae0f43c")
 		)
 		(pin "91"
-			(uuid "fcd26f7f-899b-47a7-befc-5f0a27220fad")
+			(uuid "fcd26f7f-899b-47a7-befc-5f0a27220fae")
 		)
 		(pin "149"
-			(uuid "ed941000-3b8e-4341-a96b-68a8f0286e20")
+			(uuid "ed941000-3b8e-4341-a96b-68a8f0286e21")
 		)
 		(pin "153"
-			(uuid "9b81f6ff-529d-46fe-9622-c68dd526e13d")
+			(uuid "9b81f6ff-529d-46fe-9622-c68dd526e13e")
 		)
 		(pin "164"
-			(uuid "58583f96-945f-4b2a-b0ec-50e9539d9327")
+			(uuid "58583f96-945f-4b2a-b0ec-50e9539d9328")
 		)
 		(pin "167"
-			(uuid "1dc50bb1-d0bc-4266-b1a9-64b14ac4cd82")
+			(uuid "1dc50bb1-d0bc-4266-b1a9-64b14ac4cd83")
 		)
 		(pin "146"
-			(uuid "6ce11b56-c7aa-4cde-a41f-2cddef29295c")
+			(uuid "6ce11b56-c7aa-4cde-a41f-2cddef29295d")
 		)
 		(pin "166"
-			(uuid "1ecc57cc-80f0-4d51-8fc3-1438daf897c1")
+			(uuid "1ecc57cc-80f0-4d51-8fc3-1438daf897c2")
 		)
 		(pin "148"
-			(uuid "57263510-4267-4111-9653-423afa6bcc17")
+			(uuid "57263510-4267-4111-9653-423afa6bcc18")
 		)
 		(pin "172"
-			(uuid "a885eb35-5026-4ec6-87d9-56004c280b69")
+			(uuid "a885eb35-5026-4ec6-87d9-56004c280b6a")
 		)
 		(pin "168"
-			(uuid "8bb54087-1d34-4154-a2b0-c376a963ad5d")
+			(uuid "8bb54087-1d34-4154-a2b0-c376a963ad5e")
 		)
 		(pin "92"
-			(uuid "074de848-6ff1-48fe-8876-de20ba768d24")
+			(uuid "074de848-6ff1-48fe-8876-de20ba768d25")
 		)
 		(pin "99"
-			(uuid "7eed4645-59d9-413d-9ef0-952dbe0f59dc")
+			(uuid "7eed4645-59d9-413d-9ef0-952dbe0f59dd")
 		)
 		(pin "90"
-			(uuid "dbe04b3f-2ee6-4dbc-a9f5-cb598a9cb48d")
+			(uuid "dbe04b3f-2ee6-4dbc-a9f5-cb598a9cb48e")
 		)
 		(pin "161"
-			(uuid "7622b70a-af3f-48a0-bd65-a69a03381b7b")
+			(uuid "7622b70a-af3f-48a0-bd65-a69a03381b7c")
 		)
 		(pin "143"
-			(uuid "e34a0066-92eb-4edc-b791-8563c28c8e0e")
+			(uuid "e34a0066-92eb-4edc-b791-8563c28c8e0f")
 		)
 		(pin "165"
-			(uuid "aef78066-a1c8-440c-9902-c4adfe366765")
+			(uuid "aef78066-a1c8-440c-9902-c4adfe366766")
 		)
 		(pin "150"
-			(uuid "d15985dc-01c8-4339-bf4f-b61fd5b531bb")
+			(uuid "d15985dc-01c8-4339-bf4f-b61fd5b531bc")
 		)
 		(pin "151"
-			(uuid "e8127a71-2a18-4639-bd61-a9a7862d159e")
+			(uuid "e8127a71-2a18-4639-bd61-a9a7862d159f")
 		)
 		(pin "142"
-			(uuid "d216bc86-ac55-4de6-b972-46b984217c35")
+			(uuid "d216bc86-ac55-4de6-b972-46b984217c36")
 		)
 		(pin "97"
-			(uuid "b6bfcb89-a5f8-41a2-94cb-25f711cdcb50")
+			(uuid "b6bfcb89-a5f8-41a2-94cb-25f711cdcb51")
 		)
 		(pin "156"
-			(uuid "790d9b20-1db0-415b-852f-a5de2bd9151c")
+			(uuid "790d9b20-1db0-415b-852f-a5de2bd9151d")
 		)
 		(pin "173"
-			(uuid "96c74a84-0b2e-4908-af51-5d5f0a5bef9e")
+			(uuid "96c74a84-0b2e-4908-af51-5d5f0a5bef9f")
 		)
 		(pin "170"
-			(uuid "40b9b4ca-345a-4951-a8f0-91ec80bcf798")
+			(uuid "40b9b4ca-345a-4951-a8f0-91ec80bcf799")
 		)
 		(pin "162"
-			(uuid "cab82229-6eba-4f49-9f9b-3a13ab5d7a66")
+			(uuid "cab82229-6eba-4f49-9f9b-3a13ab5d7a67")
 		)
 		(pin "144"
-			(uuid "01984bf2-3079-48df-bbc7-0c559fcf9491")
+			(uuid "01984bf2-3079-48df-bbc7-0c559fcf9492")
 		)
 		(pin "163"
-			(uuid "1177ef53-abd0-4c6b-8b99-fa66c01fe7b5")
+			(uuid "1177ef53-abd0-4c6b-8b99-fa66c01fe7b6")
 		)
 		(pin "141"
-			(uuid "f1c8df5c-be83-43ef-870d-dc64b6d3c0de")
+			(uuid "f1c8df5c-be83-43ef-870d-dc64b6d3c0df")
 		)
 		(pin "175"
-			(uuid "7c08d8b3-53ca-496c-b460-6cf92e771ef3")
+			(uuid "7c08d8b3-53ca-496c-b460-6cf92e771ef4")
 		)
 		(pin "89"
-			(uuid "b8adb801-7323-46f5-afd1-169cef51b74b")
+			(uuid "b8adb801-7323-46f5-afd1-169cef51b74c")
 		)
 		(pin "139"
-			(uuid "3525def4-e93a-4017-9ccc-19f6d91f3e12")
+			(uuid "3525def4-e93a-4017-9ccc-19f6d91f3e13")
 		)
 		(pin "176"
-			(uuid "00713290-0822-423e-af7b-a44c165cee5c")
+			(uuid "00713290-0822-423e-af7b-a44c165cee5d")
 		)
 		(pin "169"
-			(uuid "c8acc12f-e189-4fb4-b464-62849447cb60")
+			(uuid "c8acc12f-e189-4fb4-b464-62849447cb61")
 		)
 		(pin "157"
-			(uuid "bd1c0a5f-c467-404b-92b7-cef6b80b102b")
+			(uuid "bd1c0a5f-c467-404b-92b7-cef6b80b102c")
 		)
 		(pin "95"
-			(uuid "f0d952c3-0275-491b-b85f-7fae20e7b621")
+			(uuid "f0d952c3-0275-491b-b85f-7fae20e7b622")
 		)
 		(pin "171"
-			(uuid "e0809aef-9708-4720-acaa-3d00d3d54dd5")
+			(uuid "e0809aef-9708-4720-acaa-3d00d3d54dd6")
 		)
 		(pin "140"
-			(uuid "9d610444-7358-4a28-a214-2dbfa3799f69")
+			(uuid "9d610444-7358-4a28-a214-2dbfa3799f6a")
 		)
 		(pin "152"
-			(uuid "8c59c56b-5d6f-4a42-b4f9-bd203f8852dc")
+			(uuid "8c59c56b-5d6f-4a42-b4f9-bd203f8852dd")
 		)
 		(pin "147"
-			(uuid "42173f3d-6e58-4ee0-aedf-57d6d14513b9")
+			(uuid "42173f3d-6e58-4ee0-aedf-57d6d14513ba")
 		)
 		(pin "145"
-			(uuid "0698635c-227c-4d08-95f0-508edb72797e")
+			(uuid "0698635c-227c-4d08-95f0-508edb72797f")
 		)
 		(pin "154"
-			(uuid "692e24c1-e40d-4361-aa2d-dff9bf31f574")
+			(uuid "692e24c1-e40d-4361-aa2d-dff9bf31f575")
 		)
 		(pin "160"
-			(uuid "c4d502de-afb6-45f0-8472-16f3e647172f")
+			(uuid "c4d502de-afb6-45f0-8472-16f3e6471730")
 		)
 		(pin "158"
-			(uuid "d6858669-20df-461f-8d5a-1af8c4be31aa")
+			(uuid "d6858669-20df-461f-8d5a-1af8c4be31ab")
 		)
 		(pin "174"
-			(uuid "ac200d69-6a28-4413-af40-c834417767bc")
+			(uuid "ac200d69-6a28-4413-af40-c834417767bd")
 		)
 		(pin "94"
-			(uuid "5193225e-600e-49b6-b705-30b40a23736d")
+			(uuid "5193225e-600e-49b6-b705-30b40a23736e")
 		)
 		(pin "96"
-			(uuid "2e3b98b3-7f2e-403b-8fb1-bf3e5d3c6e26")
+			(uuid "2e3b98b3-7f2e-403b-8fb1-bf3e5d3c6e27")
 		)
 		(pin "98"
-			(uuid "d3a2d18b-5e9b-4ef4-9f14-adb394fec59a")
+			(uuid "d3a2d18b-5e9b-4ef4-9f14-adb394fec59b")
 		)
 		(pin "93"
-			(uuid "d0f4aa85-8e67-486e-9d0f-fb64811b1da7")
+			(uuid "d0f4aa85-8e67-486e-9d0f-fb64811b1da8")
 		)
 		(instances
 			(project "CustomSTM32H735Board"
@@ -27705,7 +28258,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "763a768e-119b-4e82-bef8-8299c2df853c")
-		(property "Reference" "#PWR048"
+		(property "Reference" "#PWR062"
 			(at 449.58 123.19 0)
 			(effects
 				(font
@@ -27755,7 +28308,7 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "#PWR048")
+					(reference "#PWR062")
 					(unit 1)
 				)
 			)
@@ -27770,7 +28323,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7660a642-9403-46b4-a86b-b87dccba5c2e")
-		(property "Reference" "R5"
+		(property "Reference" "R6"
 			(at 169.418 361.696 90)
 			(effects
 				(font
@@ -27822,7 +28375,7 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "R5")
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -27838,7 +28391,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7d2e6147-88bc-403d-af02-62d0f3fefbaa")
-		(property "Reference" "#PWR026"
+		(property "Reference" "#PWR033"
 			(at 189.23 339.09 0)
 			(effects
 				(font
@@ -27889,7 +28442,7 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "#PWR026")
+					(reference "#PWR033")
 					(unit 1)
 				)
 			)
@@ -27905,7 +28458,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7e3750b2-ab84-4170-af7a-16bcbfc276f0")
-		(property "Reference" "J1"
+		(property "Reference" "J2"
 			(at 236.22 250.1899 0)
 			(effects
 				(font
@@ -27963,7 +28516,7 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "J1")
+					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -28045,7 +28598,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "83fa6823-ceab-46d5-b418-55e0495441bb")
-		(property "Reference" "#PWR028"
+		(property "Reference" "#PWR037"
 			(at 214.63 265.43 0)
 			(effects
 				(font
@@ -28095,7 +28648,7 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "#PWR028")
+					(reference "#PWR037")
 					(unit 1)
 				)
 			)
@@ -28111,7 +28664,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "87020419-11f3-4707-b88e-ebad7a0516d3")
-		(property "Reference" "#PWR014"
+		(property "Reference" "#PWR022"
 			(at 146.05 99.06 0)
 			(effects
 				(font
@@ -28161,7 +28714,7 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "#PWR014")
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)
@@ -28176,7 +28729,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8798ba13-7da3-4c8c-9eee-793313a58a8f")
-		(property "Reference" "R4"
+		(property "Reference" "R5"
 			(at 168.148 331.216 90)
 			(effects
 				(font
@@ -28228,7 +28781,7 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "R4")
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -28244,7 +28797,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "87bcdb1c-51d3-4686-b467-71c18a3f255e")
-		(property "Reference" "#PWR018"
+		(property "Reference" "#PWR025"
 			(at 161.29 163.83 0)
 			(effects
 				(font
@@ -28294,7 +28847,7 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "#PWR018")
+					(reference "#PWR025")
 					(unit 1)
 				)
 			)
@@ -28383,7 +28936,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8a06b2a4-50fb-4476-9b8c-6894e77b5399")
-		(property "Reference" "R21"
+		(property "Reference" "R22"
 			(at 430.784 133.096 90)
 			(effects
 				(font
@@ -28435,7 +28988,7 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "R21")
+					(reference "R22")
 					(unit 1)
 				)
 			)
@@ -28450,7 +29003,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8a4826cb-65ba-4811-827f-64970895e7b6")
-		(property "Reference" "C11"
+		(property "Reference" "C13"
 			(at 175.006 102.87 90)
 			(effects
 				(font
@@ -28502,7 +29055,7 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "C11")
+					(reference "C13")
 					(unit 1)
 				)
 			)
@@ -28517,7 +29070,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8d3faec3-126a-4a0e-a6f9-378cb0b5d968")
-		(property "Reference" "#PWR029"
+		(property "Reference" "#PWR038"
 			(at 214.63 283.21 0)
 			(effects
 				(font
@@ -28567,7 +29120,7 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "#PWR029")
+					(reference "#PWR038")
 					(unit 1)
 				)
 			)
@@ -28582,7 +29135,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8d862f35-46fc-4b97-a268-5d0cb89ac932")
-		(property "Reference" "C20"
+		(property "Reference" "C27"
 			(at 474.472 189.484 90)
 			(effects
 				(font
@@ -28634,7 +29187,7 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "C20")
+					(reference "C27")
 					(unit 1)
 				)
 			)
@@ -28648,9 +29201,8 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "8dc1c1a7-632d-47f1-a932-f6b637a4872e")
-		(property "Reference" "#PWR046"
+		(property "Reference" "#PWR060"
 			(at 431.8 227.33 0)
 			(effects
 				(font
@@ -28660,7 +29212,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 434.34 227.3299 90)
+			(at 435.61 227.3299 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28701,7 +29253,76 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "#PWR046")
+					(reference "#PWR060")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 77.47 100.33 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "936fed5d-b011-47d6-b8f1-d79ef4947622")
+		(property "Reference" "R3"
+			(at 76.2 102.616 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 80.772 102.616 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 77.47 102.108 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 77.47 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 77.47 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5c9061ae-44ae-4e4a-9b14-594cca54fcc7")
+		)
+		(pin "2"
+			(uuid "2ace79fb-6a82-40fe-901e-145ecde15b2a")
+		)
+		(instances
+			(project "CustomSTM32H735Board"
+				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -28717,7 +29338,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "93d07255-3da0-45a5-98dc-8567de88744d")
-		(property "Reference" "#PWR05"
+		(property "Reference" "#PWR012"
 			(at 74.93 88.9 0)
 			(effects
 				(font
@@ -28767,7 +29388,7 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "#PWR05")
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -28783,7 +29404,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "94e63920-7918-44ca-b8fe-afcddb4f3ead")
-		(property "Reference" "#PWR023"
+		(property "Reference" "#PWR027"
 			(at 167.64 334.01 0)
 			(effects
 				(font
@@ -28834,7 +29455,7 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "#PWR023")
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)
@@ -28850,7 +29471,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "97c95410-cf9a-416d-acff-f0daea122d8f")
-		(property "Reference" "#PWR02"
+		(property "Reference" "#PWR03"
 			(at 59.69 193.04 0)
 			(effects
 				(font
@@ -28900,7 +29521,7 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "#PWR02")
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -28984,7 +29605,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9e39af95-7ac8-41ca-a8dd-aa0ba0c0877c")
-		(property "Reference" "C18"
+		(property "Reference" "C25"
 			(at 462.28 169.926 90)
 			(effects
 				(font
@@ -29036,7 +29657,7 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "C18")
+					(reference "C25")
 					(unit 1)
 				)
 			)
@@ -29138,6 +29759,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 427.99 237.49 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9faf17c1-78e1-4073-a36b-dc5f23476821")
+		(property "Reference" "#PWR055"
+			(at 427.99 243.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 427.99 242.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 427.99 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 427.99 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 427.99 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f58bad98-90c5-497e-a288-cdaf65479503")
+		)
+		(instances
+			(project "CustomSTM32H735Board"
+				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
+					(reference "#PWR055")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 133.35 88.9 0)
 		(unit 1)
@@ -29216,7 +29903,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a4ba12c5-6667-4e4e-ab52-36cc20d7bd6a")
-		(property "Reference" "#PWR055"
+		(property "Reference" "#PWR08"
 			(at 63.5 203.2 0)
 			(effects
 				(font
@@ -29266,7 +29953,7 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "#PWR055")
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -29282,7 +29969,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a6dee9bb-430b-4fad-ba2b-c2e7b2bbad41")
-		(property "Reference" "C16"
+		(property "Reference" "C20"
 			(at 427.99 198.1199 0)
 			(effects
 				(font
@@ -29336,7 +30023,7 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "C16")
+					(reference "C20")
 					(unit 1)
 				)
 			)
@@ -29352,7 +30039,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a84fc5a8-3ea9-4345-970c-dc2213428910")
-		(property "Reference" "#PWR045"
+		(property "Reference" "#PWR059"
 			(at 438.15 226.06 0)
 			(effects
 				(font
@@ -29402,7 +30089,7 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "#PWR045")
+					(reference "#PWR059")
 					(unit 1)
 				)
 			)
@@ -29418,7 +30105,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ab130fa6-2717-4a95-810b-6e90cdccf093")
-		(property "Reference" "#PWR033"
+		(property "Reference" "#PWR042"
 			(at 233.68 254 0)
 			(effects
 				(font
@@ -29469,7 +30156,7 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "#PWR033")
+					(reference "#PWR042")
 					(unit 1)
 				)
 			)
@@ -29484,7 +30171,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ade1f332-91b8-4b63-ae8b-9698911cb584")
-		(property "Reference" "R16"
+		(property "Reference" "R17"
 			(at 217.424 282.448 90)
 			(effects
 				(font
@@ -29537,7 +30224,7 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "R16")
+					(reference "R17")
 					(unit 1)
 				)
 			)
@@ -29844,7 +30531,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bb26206a-1627-4971-95c7-2e82be5a2cb1")
-		(property "Reference" "#PWR019"
+		(property "Reference" "#PWR026"
 			(at 162.56 140.97 0)
 			(effects
 				(font
@@ -29894,7 +30581,72 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "#PWR019")
+					(reference "#PWR026")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 427.99 252.73 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "be4270a6-39d0-452e-b5f9-47450c0bfc7a")
+		(property "Reference" "#PWR056"
+			(at 427.99 259.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 427.99 256.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 427.99 252.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 427.99 252.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 427.99 252.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b024fd18-e425-4112-9b96-2ed68c6bc3db")
+		)
+		(instances
+			(project "CustomSTM32H735Board"
+				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
+					(reference "#PWR056")
 					(unit 1)
 				)
 			)
@@ -29910,7 +30662,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c01923d0-3dc3-42a5-96cc-ffb5721fdea4")
-		(property "Reference" "#PWR011"
+		(property "Reference" "#PWR019"
 			(at 133.35 229.87 0)
 			(effects
 				(font
@@ -29960,7 +30712,7 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "#PWR011")
+					(reference "#PWR019")
 					(unit 1)
 				)
 			)
@@ -30044,7 +30796,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ca3ee0dc-9702-43c2-9228-52e1a59d836d")
-		(property "Reference" "C?"
+		(property "Reference" "C17"
 			(at 201.93 335.534 90)
 			(effects
 				(font
@@ -30096,7 +30848,7 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "C?")
+					(reference "C17")
 					(unit 1)
 				)
 			)
@@ -30181,7 +30933,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cd51e9d2-825f-4890-8131-69990f5c306b")
-		(property "Reference" "#PWR037"
+		(property "Reference" "#PWR046"
 			(at 224.79 317.5 0)
 			(effects
 				(font
@@ -30232,7 +30984,74 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "#PWR037")
+					(reference "#PWR046")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 60.96 300.99 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ce4bb952-f369-4a74-b628-c2727fd4b76f")
+		(property "Reference" "#PWR06"
+			(at 67.31 300.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 64.77 300.9899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 60.96 300.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 60.96 300.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 60.96 300.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "73e84cff-debb-4810-8256-45ccca012337")
+		)
+		(instances
+			(project "CustomSTM32H735Board"
+				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -30317,7 +31136,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ceb44b13-0f2e-4ab1-b5c0-99360049fddc")
-		(property "Reference" "#PWR032"
+		(property "Reference" "#PWR041"
 			(at 233.68 251.46 0)
 			(effects
 				(font
@@ -30368,7 +31187,7 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "#PWR032")
+					(reference "#PWR041")
 					(unit 1)
 				)
 			)
@@ -30453,7 +31272,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d365ed5d-5471-4494-92a1-0aa44e4913cc")
-		(property "Reference" "#PWR034"
+		(property "Reference" "#PWR043"
 			(at 223.52 267.97 0)
 			(effects
 				(font
@@ -30504,7 +31323,7 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "#PWR034")
+					(reference "#PWR043")
 					(unit 1)
 				)
 			)
@@ -30587,7 +31406,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d709ea60-d478-42a8-a203-5c576829f3ab")
-		(property "Reference" "#PWR056"
+		(property "Reference" "#PWR029"
 			(at 168.91 364.49 0)
 			(effects
 				(font
@@ -30638,7 +31457,140 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "#PWR056")
+					(reference "#PWR029")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 323.85 266.7 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d75d3b57-2118-47e7-9d5a-32245e06c4ff")
+		(property "Reference" "#PWR052"
+			(at 323.85 260.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 323.85 261.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 323.85 266.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 323.85 266.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 323.85 266.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0680165c-1cf3-403d-ba69-7d5ed8c70b7b")
+		)
+		(instances
+			(project "CustomSTM32H735Board"
+				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
+					(reference "#PWR052")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 60.96 293.37 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d92eb5c5-09e0-4b09-bbd5-4f448ead42cf")
+		(property "Reference" "#PWR05"
+			(at 67.31 293.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 64.77 293.3699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 60.96 293.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 60.96 293.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 60.96 293.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "73e84cff-debb-4810-8256-45ccca012337")
+		)
+		(instances
+			(project "CustomSTM32H735Board"
+				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -30654,7 +31606,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d964b05a-9e6a-44cc-b31c-08934c15c877")
-		(property "Reference" "#PWR038"
+		(property "Reference" "#PWR047"
 			(at 224.79 328.93 0)
 			(effects
 				(font
@@ -30705,7 +31657,7 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "#PWR038")
+					(reference "#PWR047")
 					(unit 1)
 				)
 			)
@@ -30721,7 +31673,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "da0aca7c-fc98-4efb-902e-187c69b10742")
-		(property "Reference" "#PWR053"
+		(property "Reference" "#PWR017"
 			(at 128.27 332.74 0)
 			(effects
 				(font
@@ -30771,50 +31723,49 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "#PWR053")
+					(reference "#PWR017")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 133.35 147.32 180)
+		(lib_id "Private:PGB1010603")
+		(at 427.99 250.19 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "da8026c9-9d1b-478f-bafc-2812f3c39154")
-		(property "Reference" "#PWR010"
-			(at 133.35 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 133.35 142.24 0)
+		(uuid "e0563373-62eb-49d7-8e4e-2040dece88a8")
+		(property "Reference" "C23"
+			(at 421.386 265.938 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 133.35 147.32 0)
+		(property "Value" "PGB1010603"
+			(at 430.784 265.938 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 415.29 248.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
-			(at 133.35 147.32 0)
+			(at 427.99 250.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30822,22 +31773,96 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 133.35 147.32 0)
+		(property "Description" "\n150V (Typ) Clamp - Ipp Tvs Diode Surface Mount 0603 (1608 Metric)\n"
+			(at 435.61 250.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MF" "Littelfuse Inc."
+			(at 410.21 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Package" "0603 Littelfuse Inc."
+			(at 412.75 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Price" "None"
+			(at 417.83 255.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/PGB1010603/Littelfuse+Inc./view-part/?ref=snap"
+			(at 445.77 251.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MP" "PGB1010603"
+			(at 417.83 224.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Availability" "In Stock"
+			(at 417.83 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/PGB1010603/Littelfuse+Inc./view-part/?ref=eda"
+			(at 440.69 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
 				(hide yes)
 			)
 		)
 		(pin "1"
-			(uuid "bf300b5b-63bb-423e-a163-ae7a45853687")
+			(uuid "9d22cbe1-aab7-47bf-9471-e59d9ff8033d")
+		)
+		(pin "2"
+			(uuid "2c770dcf-0f71-4de1-9b9e-3764a0953a49")
 		)
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "#PWR010")
+					(reference "C23")
 					(unit 1)
 				)
 			)
@@ -30852,7 +31877,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e2a8f51b-c057-4bc9-a62c-27697d818176")
-		(property "Reference" "C13"
+		(property "Reference" "C14"
 			(at 182.372 314.96 90)
 			(effects
 				(font
@@ -30904,7 +31929,7 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "C13")
+					(reference "C14")
 					(unit 1)
 				)
 			)
@@ -30919,7 +31944,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e360e9a2-6c02-435a-9ec8-53416f4e5094")
-		(property "Reference" "R12"
+		(property "Reference" "R13"
 			(at 212.344 264.668 90)
 			(effects
 				(font
@@ -30972,7 +31997,7 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "R12")
+					(reference "R13")
 					(unit 1)
 				)
 			)
@@ -30988,7 +32013,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e5335e50-c319-4942-ab8f-8f4367e72fa0")
-		(property "Reference" "JP?"
+		(property "Reference" "JP2"
 			(at 162.56 368.2999 90)
 			(effects
 				(font
@@ -31046,7 +32071,7 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "JP?")
+					(reference "JP2")
 					(unit 1)
 				)
 			)
@@ -31061,7 +32086,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e535d116-edad-4b84-abaf-8d08e6b54a65")
-		(property "Reference" "R10"
+		(property "Reference" "R11"
 			(at 183.388 324.866 90)
 			(effects
 				(font
@@ -31113,7 +32138,7 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "R10")
+					(reference "R11")
 					(unit 1)
 				)
 			)
@@ -31129,7 +32154,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e55aa42a-7422-4ef4-b99a-2c074681dd57")
-		(property "Reference" "#PWR052"
+		(property "Reference" "#PWR013"
 			(at 106.68 332.74 0)
 			(effects
 				(font
@@ -31179,7 +32204,212 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "#PWR052")
+					(reference "#PWR013")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Private:PGB1010603")
+		(at 427.99 234.95 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e565366e-456e-46cb-ba65-a6ae3ab687dc")
+		(property "Reference" "C22"
+			(at 421.386 263.144 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PGB1010603"
+			(at 430.53 263.144 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 415.29 233.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 427.99 234.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "\n150V (Typ) Clamp - Ipp Tvs Diode Surface Mount 0603 (1608 Metric)\n"
+			(at 435.61 234.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MF" "Littelfuse Inc."
+			(at 410.21 232.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Package" "0603 Littelfuse Inc."
+			(at 412.75 232.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Price" "None"
+			(at 417.83 240.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/PGB1010603/Littelfuse+Inc./view-part/?ref=snap"
+			(at 445.77 236.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MP" "PGB1010603"
+			(at 417.83 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Availability" "In Stock"
+			(at 417.83 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/PGB1010603/Littelfuse+Inc./view-part/?ref=eda"
+			(at 440.69 232.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4e008396-5436-43f0-8ab6-aa748fa56e10")
+		)
+		(pin "2"
+			(uuid "8d8ed6c8-80df-43d4-9b9b-067b4eabfd6e")
+		)
+		(instances
+			(project "CustomSTM32H735Board"
+				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
+					(reference "C22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 306.07 303.53 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e5d42bf7-c255-4095-bb22-9c00d11f9a83")
+		(property "Reference" "#PWR051"
+			(at 306.07 297.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 306.07 298.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 306.07 303.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 306.07 303.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 306.07 303.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bcb83a12-925f-4151-8648-e140186cfa58")
+		)
+		(instances
+			(project "CustomSTM32H735Board"
+				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
+					(reference "#PWR051")
 					(unit 1)
 				)
 			)
@@ -31194,7 +32424,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e6bfce28-ecfd-4a88-a360-bf76f27c4136")
-		(property "Reference" "R13"
+		(property "Reference" "R14"
 			(at 212.344 282.448 90)
 			(effects
 				(font
@@ -31247,7 +32477,7 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "R13")
+					(reference "R14")
 					(unit 1)
 				)
 			)
@@ -31262,7 +32492,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ea459098-14f4-4509-86f5-a92649b43e78")
-		(property "Reference" "R8"
+		(property "Reference" "R9"
 			(at 178.308 341.376 90)
 			(effects
 				(font
@@ -31314,7 +32544,7 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "R8")
+					(reference "R9")
 					(unit 1)
 				)
 			)
@@ -31330,7 +32560,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ef371556-1c01-487a-9a4a-70a74ad91d82")
-		(property "Reference" "#PWR036"
+		(property "Reference" "#PWR045"
 			(at 224.79 303.53 0)
 			(effects
 				(font
@@ -31381,7 +32611,7 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "#PWR036")
+					(reference "#PWR045")
 					(unit 1)
 				)
 			)
@@ -31397,7 +32627,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f1adfe6e-f6cb-4e12-90d9-32c78ff11423")
-		(property "Reference" "#PWR027"
+		(property "Reference" "#PWR034"
 			(at 190.5 369.57 0)
 			(effects
 				(font
@@ -31448,7 +32678,7 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "#PWR027")
+					(reference "#PWR034")
 					(unit 1)
 				)
 			)
@@ -31463,7 +32693,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f49b0526-bd14-4112-bdce-bb0afa1b8757")
-		(property "Reference" "R15"
+		(property "Reference" "R16"
 			(at 217.424 264.668 90)
 			(effects
 				(font
@@ -31516,7 +32746,7 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "R15")
+					(reference "R16")
 					(unit 1)
 				)
 			)
@@ -31532,7 +32762,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f62cd920-46d8-4902-9cad-c3c89bb4b759")
-		(property "Reference" "#PWR012"
+		(property "Reference" "#PWR020"
 			(at 138.43 163.83 0)
 			(effects
 				(font
@@ -31582,7 +32812,7 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "#PWR012")
+					(reference "#PWR020")
 					(unit 1)
 				)
 			)
@@ -31597,7 +32827,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f90d43db-bf63-4052-809f-aed82293aebc")
-		(property "Reference" "R17"
+		(property "Reference" "R18"
 			(at 218.694 300.228 90)
 			(effects
 				(font
@@ -31650,7 +32880,7 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "R17")
+					(reference "R18")
 					(unit 1)
 				)
 			)
@@ -31658,15 +32888,15 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 425.45 245.11 90)
+		(at 422.91 245.11 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "f98f275e-ac8c-4861-b2fc-d642cbe98209")
-		(property "Reference" "R20"
-			(at 425.45 248.158 90)
+		(property "Reference" "R21"
+			(at 422.91 248.158 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31674,7 +32904,7 @@
 			)
 		)
 		(property "Value" "22R"
-			(at 425.45 250.698 90)
+			(at 422.91 250.698 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31682,7 +32912,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 425.45 246.888 90)
+			(at 422.91 246.888 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31691,7 +32921,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 425.45 245.11 0)
+			(at 422.91 245.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31700,7 +32930,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 425.45 245.11 0)
+			(at 422.91 245.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31717,7 +32947,7 @@
 		(instances
 			(project "CustomSTM32H735Board"
 				(path "/6356911f-5f7b-4945-b585-a86dcd931c12"
-					(reference "R20")
+					(reference "R21")
 					(unit 1)
 				)
 			)
