@@ -8,6 +8,8 @@
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="*PH6*"/>
+			<item value="PH6"/>
 			<item value="PWR"/>
 			<item value="SMPS"/>
 			<item value="LDO"/>
@@ -21,8 +23,6 @@
 			<item value="myTimerCallbackA"/>
 			<item value="myTimerI2CWindowB"/>
 			<item value="myTimerI2CWindow"/>
-			<item value="myTimerI2CWindowA"/>
-			<item value="startTimer"/>
 		</list>
 		<list key="replacehistory">
 			<item value="WFBW"/>
