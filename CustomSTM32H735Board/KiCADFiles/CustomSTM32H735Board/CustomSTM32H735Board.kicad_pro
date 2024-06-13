@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.15,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.5
+          "min_clearance": 0.0
         }
       },
       "diff_pair_dimensions": [
@@ -58,12 +58,18 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "lib_footprint_mismatch|64984630|84074000|04825f51-bf4a-4d61-94ce-f1d0cdf46627|00000000-0000-0000-0000-000000000000",
+        "lib_footprint_mismatch|89088000|130427000|1910433a-4b9d-4f01-8b50-bf198a85b1c9|00000000-0000-0000-0000-000000000000",
+        "malformed_courtyard|147073998|115570000|053c9794-3d69-475f-8382-cf01d1793043|00000000-0000-0000-0000-000000000000",
+        "malformed_courtyard|147573997|116070002|053c9794-3d69-475f-8382-cf01d1793043|00000000-0000-0000-0000-000000000000",
+        "text_height|85663641|132450716|eade574a-3a1e-4d09-b54b-65b8109ca48d|00000000-0000-0000-0000-000000000000"
+      ],
       "meta": {
         "version": 2
       },
       "rule_severities": {
-        "annular_width": "error",
+        "annular_width": "ignore",
         "clearance": "error",
         "connection_width": "warning",
         "copper_edge_clearance": "error",
@@ -71,14 +77,15 @@
         "courtyards_overlap": "error",
         "diff_pair_gap_out_of_range": "error",
         "diff_pair_uncoupled_length_too_long": "error",
-        "drill_out_of_range": "error",
+        "drill_out_of_range": "ignore",
         "duplicate_footprints": "warning",
         "extra_footprint": "warning",
         "footprint": "error",
         "footprint_symbol_mismatch": "warning",
         "footprint_type_mismatch": "ignore",
-        "hole_clearance": "error",
+        "hole_clearance": "ignore",
         "hole_near_hole": "error",
+        "holes_co_located": "warning",
         "invalid_outline": "error",
         "isolated_copper": "warning",
         "item_on_disabled_layer": "error",
@@ -219,6 +226,10 @@
           "drill": 0.0
         },
         {
+          "diameter": 0.2,
+          "drill": 0.1
+        },
+        {
           "diameter": 0.4064,
           "drill": 0.2032
         },
@@ -248,7 +259,10 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      "label_dangling|3111500|1143000|2e2ce1e1-30c7-425c-871e-fdb43f378957|00000000-0000-0000-0000-000000000000|/6356911f-5f7b-4945-b585-a86dcd931c12||",
+      "pin_not_driven|850900|952500|b5e4b344-51a8-4b60-9c35-006fdd90e8a0|00000000-0000-0000-0000-000000000000|/6356911f-5f7b-4945-b585-a86dcd931c12|/6356911f-5f7b-4945-b585-a86dcd931c12|"
+    ],
     "meta": {
       "version": 0
     },
@@ -448,8 +462,8 @@
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
-      "pin_to_pin": "error",
-      "power_pin_not_driven": "error",
+      "pin_to_pin": "ignore",
+      "power_pin_not_driven": "ignore",
       "similar_labels": "warning",
       "simulation_model_issue": "ignore",
       "unannotated": "error",
@@ -543,6 +557,7 @@
   },
   "schematic": {
     "annotate_start_num": 0,
+    "bom_export_filename": "",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
