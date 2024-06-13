@@ -15558,16 +15558,60 @@
 		(uuid "ffda3d6b-4d6e-4a33-89f9-d62ef33c288d")
 	)
 	(no_connect
+		(at 419.1 152.4)
+		(uuid "054720e6-348e-46a8-a3bc-9bb44eb6187c")
+	)
+	(no_connect
 		(at 438.15 242.57)
 		(uuid "054fe92b-42b0-43b5-89cc-5b4d87856e62")
+	)
+	(no_connect
+		(at 317.5 58.42)
+		(uuid "10382ab4-3bd6-4f1c-ad1e-f8bd942c228e")
+	)
+	(no_connect
+		(at 317.5 121.92)
+		(uuid "10cb6f53-fe8f-4a90-ae4d-bb11903d391b")
+	)
+	(no_connect
+		(at 317.5 144.78)
+		(uuid "1f2016c9-0ccb-4153-afab-6ec33b5784df")
+	)
+	(no_connect
+		(at 419.1 139.7)
+		(uuid "1f86dff8-df54-43e3-a910-ea720beb1fe7")
+	)
+	(no_connect
+		(at 317.5 109.22)
+		(uuid "20a65f4e-3790-4de7-88ce-e605c4da8dd2")
 	)
 	(no_connect
 		(at 86.36 284.48)
 		(uuid "2b494e5b-15bb-47b2-a6d7-73fec2a0217c")
 	)
 	(no_connect
+		(at 419.1 162.56)
+		(uuid "2cd0d31b-6534-4411-ab02-bd2222afd370")
+	)
+	(no_connect
+		(at 419.1 170.18)
+		(uuid "2fa8ff6d-d62f-4e22-99a0-dbb2f2e5aeff")
+	)
+	(no_connect
 		(at 80.01 147.32)
 		(uuid "380a08df-4fa1-4adf-bc33-9264a631b1ca")
+	)
+	(no_connect
+		(at 317.5 104.14)
+		(uuid "385b8753-3ab8-4ea2-93fd-57f114105700")
+	)
+	(no_connect
+		(at 317.5 124.46)
+		(uuid "38deb661-6d39-4a8d-a428-faa05542fa75")
+	)
+	(no_connect
+		(at 419.1 180.34)
+		(uuid "3c86e4e4-a714-4055-8e9f-d4d2d275366b")
 	)
 	(no_connect
 		(at 317.5 137.16)
@@ -15578,28 +15622,88 @@
 		(uuid "3eb0c696-ed59-4a04-b035-bf20da181b8b")
 	)
 	(no_connect
+		(at 419.1 142.24)
+		(uuid "3ef34906-1558-47a4-a7b1-f43e265d58e5")
+	)
+	(no_connect
+		(at 317.5 132.08)
+		(uuid "422ac68a-ddd8-430b-9e78-11595831586a")
+	)
+	(no_connect
+		(at 419.1 167.64)
+		(uuid "454bf5e6-1674-4972-8294-8e7c94c8c946")
+	)
+	(no_connect
+		(at 317.5 88.9)
+		(uuid "45ae7252-0747-4855-a549-47387a37266f")
+	)
+	(no_connect
+		(at 317.5 147.32)
+		(uuid "4601e2f1-e46f-480b-a24b-090ff00eb223")
+	)
+	(no_connect
 		(at 125.73 172.72)
 		(uuid "4ff97ca4-4252-4fb7-9528-bc76766346a7")
+	)
+	(no_connect
+		(at 419.1 132.08)
+		(uuid "5472ca35-914e-4953-acc2-cc04ab5016a4")
+	)
+	(no_connect
+		(at 317.5 129.54)
+		(uuid "57982145-80c2-4fd5-abda-3979fd4a3ca5")
 	)
 	(no_connect
 		(at 85.09 120.65)
 		(uuid "5c37614f-641e-4d7b-b984-66a9704c0766")
 	)
 	(no_connect
+		(at 317.5 93.98)
+		(uuid "5c7fb1ea-4d68-4830-96b0-ac14817948fc")
+	)
+	(no_connect
 		(at 438.15 234.95)
 		(uuid "5e2b861b-62e1-4348-9221-df1cf19bcca8")
+	)
+	(no_connect
+		(at 419.1 154.94)
+		(uuid "60bb137e-8f4d-415f-803d-1097b21b8700")
+	)
+	(no_connect
+		(at 281.94 215.9)
+		(uuid "67afe17d-76e2-494c-a678-1ffc4c580506")
+	)
+	(no_connect
+		(at 205.74 83.82)
+		(uuid "6d7adba2-ac11-49bf-ab4b-5cb9368bf436")
 	)
 	(no_connect
 		(at 438.15 237.49)
 		(uuid "744d6e1e-537f-4e1e-9733-389d783a1560")
 	)
 	(no_connect
+		(at 317.5 91.44)
+		(uuid "74914bc8-1c46-49ca-8573-be0a1938956c")
+	)
+	(no_connect
 		(at 80.01 154.94)
 		(uuid "75d4bdb1-e885-48bc-8812-9b3e7d5ee0e8")
 	)
 	(no_connect
+		(at 205.74 81.28)
+		(uuid "77810aa5-c671-4959-afc9-a6bf16a407fb")
+	)
+	(no_connect
+		(at 281.94 218.44)
+		(uuid "78145df5-0506-4b1d-9910-3455b6d77c80")
+	)
+	(no_connect
 		(at 80.01 167.64)
 		(uuid "78e1a40f-d592-4ee6-9208-00b257b25994")
+	)
+	(no_connect
+		(at 419.1 127)
+		(uuid "7a8fbb0b-b33c-4b93-8075-d47f2821b7f0")
 	)
 	(no_connect
 		(at 438.15 240.03)
@@ -15610,8 +15714,28 @@
 		(uuid "875a3170-1ca4-418a-a756-c1297dd70a7b")
 	)
 	(no_connect
+		(at 419.1 175.26)
+		(uuid "89b5fa60-237a-4b6c-8e51-b7495fc3c851")
+	)
+	(no_connect
+		(at 419.1 144.78)
+		(uuid "8c16beee-3d82-4774-bba2-29d5685897ec")
+	)
+	(no_connect
 		(at 85.09 118.11)
 		(uuid "93303284-3d31-46c8-8d59-4df1ee2693b3")
+	)
+	(no_connect
+		(at 205.74 137.16)
+		(uuid "9ebda4e9-bef7-42ae-842c-86db4bd90c70")
+	)
+	(no_connect
+		(at 205.74 114.3)
+		(uuid "a6d4b14d-e676-459e-b742-8fd9b17a816d")
+	)
+	(no_connect
+		(at 419.1 129.54)
+		(uuid "aa50fb41-c86c-4dc2-96a9-9f6ec77bd936")
 	)
 	(no_connect
 		(at 478.79 175.26)
@@ -15622,8 +15746,44 @@
 		(uuid "be6552df-6f91-42ea-993a-07d67cad1585")
 	)
 	(no_connect
+		(at 419.1 172.72)
+		(uuid "c077e978-c61c-42c6-a4cd-a16096df9ef2")
+	)
+	(no_connect
+		(at 317.5 60.96)
+		(uuid "c3409863-cbdd-41e8-bf0b-cc67694c2071")
+	)
+	(no_connect
+		(at 317.5 165.1)
+		(uuid "c75acabe-7d4b-4bbe-91cc-0df3ff9ad373")
+	)
+	(no_connect
+		(at 281.94 226.06)
+		(uuid "c7b24e54-8111-4bb8-ba4e-770890b7f478")
+	)
+	(no_connect
+		(at 419.1 134.62)
+		(uuid "d58c2cc4-170d-4ebe-9c10-8e933ec68ab6")
+	)
+	(no_connect
 		(at 478.79 162.56)
 		(uuid "de7c28f2-f03a-4110-a204-f14ad39061e9")
+	)
+	(no_connect
+		(at 419.1 165.1)
+		(uuid "dfe155b7-ab53-4227-ada3-910ff62adba0")
+	)
+	(no_connect
+		(at 205.74 60.96)
+		(uuid "e44b6fa9-213d-4e59-8dd6-0363e7f86cf6")
+	)
+	(no_connect
+		(at 281.94 200.66)
+		(uuid "e588aa4a-bbe4-46b6-b014-83c248373128")
+	)
+	(no_connect
+		(at 205.74 78.74)
+		(uuid "edc3a513-603a-4584-9ec2-979ec7dedd50")
 	)
 	(no_connect
 		(at 478.79 180.34)
@@ -19509,6 +19669,26 @@
 		)
 		(uuid "5fafdae2-560a-4fef-ba9a-a87f8dba2abe")
 	)
+	(text_box "Pin12: VSSSMPS"
+		(exclude_from_sim no)
+		(at 217.17 85.09 0)
+		(size 18.415 2.54)
+		(stroke
+			(width -0.0001)
+			(type default)
+		)
+		(fill
+			(type color)
+			(color 0 0 0 0)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "6f21999c-963d-4e20-b3bb-a608490174b7")
+	)
 	(text "DAC1:\n2: OUT1	PA4\n3: OUT2	PA5"
 		(exclude_from_sim no)
 		(at 245.11 331.216 0)
@@ -19732,17 +19912,6 @@
 		)
 		(uuid "061acc62-9c7e-4d20-b8c9-cc34f673c570")
 	)
-	(label "VSSSMPS"
-		(at 196.85 91.44 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "07ab6b9f-845f-4309-bb74-66915d1e922b")
-	)
 	(label "PF2"
 		(at 196.85 106.68 0)
 		(fields_autoplaced yes)
@@ -19896,6 +20065,17 @@
 			(justify left bottom)
 		)
 		(uuid "10852d7c-f26f-4781-a890-2c3c5b006c71")
+	)
+	(label "GND"
+		(at 196.85 91.44 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1383dd15-0050-4581-abcf-a36e263c4b67")
 	)
 	(label "PB13"
 		(at 196.85 236.22 0)
@@ -26656,7 +26836,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 193.04 116.84 0)
+			(at 192.278 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
