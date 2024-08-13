@@ -1,0 +1,10 @@
+10:49:41 **** Incremental Build of configuration Debug for project CustomSTM32H735BoardBringUp ****
+make -j16 all 
+arm-none-eabi-size  CustomSTM32H735BoardBringUp.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 325826	    764	 868248	1194838	 123b56	CustomSTM32H735BoardBringUp.elf
+Finished building: default.size.stdout
+ 
+
+10:49:42 Build Finished. 0 errors, 0 warnings. (took 641ms)
+
