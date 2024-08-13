@@ -53,32 +53,42 @@ public:
     {
     }
 
-    virtual void initialize();
+    /**
+     * @fn void TouchGFXHAL::initialize();
+     *
+     * @brief This function is responsible for initializing the entire framework.
+     *
+     *        This function is responsible for initializing the entire framework.
+     */
+    void initialize();
+
+    /* Overwriting default implementation of taskEntry */
+    virtual void taskEntry();
 
     /**
      * @fn virtual void TouchGFXHAL::disableInterrupts();
      *
-     * @brief Disables the DMA, LDC, and GPU2D (if enabled) interrupts.
+     * @brief Disables the DMA and LCD interrupts.
      *
-     *        Disables the DMA, LDC, and GPU2D (if enabled) interrupts.
+     *        Disables the DMA and LCD interrupts.
      */
     virtual void disableInterrupts();
 
     /**
      * @fn virtual void TouchGFXHAL::enableInterrupts();
      *
-     * @brief Enables the DMA, LCD, and GPU2D (if enabled) interrupts.
+     * @brief Enables the DMA and LCD interrupts.
      *
-     *        Enables the DMA, LCD, and GPU2D (if enabled) interrupts.
+     *        Enables the DMA and LCD interrupts.
      */
     virtual void enableInterrupts();
 
     /**
      * @fn virtual void TouchGFXHAL::configureInterrupts();
      *
-     * @brief Sets the DMA, LCD, and GPU2D (if enabled) interrupt priorities.
+     * @brief Sets the DMA and LCD interrupt priorities.
      *
-     *        Sets the DMA, LCD, and GPU2D (if enabled) interrupt priorities.
+     *        Sets the DMA and LCD interrupt priorities.
      */
     virtual void configureInterrupts();
 
@@ -91,10 +101,6 @@ public:
      *        once TouchGFX initialization has completed.
      */
     virtual void enableLCDControllerInterrupt();
-
-    virtual bool beginFrame();
-
-    virtual void endFrame();
 
     /**
      * @fn virtual void TouchGFXHAL::flushFrameBuffer();
@@ -116,27 +122,14 @@ public:
      * @brief This function is called whenever the framework has performed a partial draw.
      *
      *        This function is called whenever the framework has performed a partial draw.
+     *        On the STM32F7, make sure to clean and invalidate the data cache. This is to
+     *        ensure that LTDC sees correct data when transferring to the display.
      *
      * @param rect The area of the screen that has been drawn, expressed in absolute coordinates.
      *
      * @see flushFrameBuffer().
      */
     virtual void flushFrameBuffer(const touchgfx::Rect& rect);
-
-    /**
-     * @fn virtual bool TouchGFXHAL::blockCopy(void* RESTRICT dest, const void* RESTRICT src, uint32_t numBytes);
-     *
-     * @brief This function performs a platform-specific memcpy.
-     *
-     *        This function performs a platform-specific memcpy, if supported by the hardware.
-     *
-     * @param [out] dest Pointer to destination memory.
-     * @param [in] src   Pointer to source memory.
-     * @param numBytes   Number of bytes to copy.
-     *
-     * @return true if the copy succeeded, false if copy was not performed.
-     */
-    virtual bool blockCopy(void* RESTRICT dest, const void* RESTRICT src, uint32_t numBytes);
 
 protected:
     /**
@@ -160,6 +153,9 @@ protected:
      * @param [in,out] adr New frame buffer address.
      */
     virtual void setTFTFrameBuffer(uint16_t* adr);
+
+private:
+    //touchgfx::CortexMMCUInstrumentation instrumentation;
 };
 
 /* USER CODE END TouchGFXHAL.hpp */

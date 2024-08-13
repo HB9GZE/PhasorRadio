@@ -24,17 +24,56 @@
 
 /* USER CODE BEGIN TouchGFXHAL.cpp */
 
+#include <touchgfx/hal/GPIO.hpp>
+#include <touchgfx/hal/OSWrappers.hpp>
+#include "main.h"
+#include "FreeRTOS.h"
+#include "task.h"
+
 using namespace touchgfx;
+
+namespace
+{
+LOCATION_PRAGMA_NOLOAD("TouchGFX_Framebuffer")
+uint32_t animationBuffer[(480 * 272 * 3 + 3) / 4] LOCATION_ATTRIBUTE_NOLOAD("TouchGFX_Framebuffer");
+}
+
 
 void TouchGFXHAL::initialize()
 {
     // Calling parent implementation of initialize().
     //
-    // To overwrite the generated implementation, omit the call to the parent function
-    // and implement the needed functionality here.
+    // To overwrite the generated implementation, omit call to parent function
+    // and implemented needed functionality here.
     // Please note, HAL::initialize() must be called to initialize the framework.
 
     TouchGFXGeneratedHAL::initialize();
+
+    setAnimationStorage((void*)animationBuffer);
+
+//    instrumentation.init();
+//    setMCUInstrumentation(&instrumentation);
+//    enableMCULoadCalculation(true);
+}
+
+void TouchGFXHAL::taskEntry()
+{
+    enableLCDControllerInterrupt();
+    enableInterrupts();
+
+    OSWrappers::waitForVSync();
+    backPorchExited();
+
+    /* Assert display enable LCD_DISP_CTRL pin */
+    HAL_GPIO_WritePin(GPIOD, GPIO_PIN_10, GPIO_PIN_SET); //DISP
+    /* Assert back light LCD_BL_CTRL pin */
+    HAL_GPIO_WritePin(GPIOG, GPIO_PIN_15, GPIO_PIN_SET); //LCD_BK_Light_Ctrl
+
+    for (;;)
+    {
+        OSWrappers::waitForVSync();
+        backPorchExited();
+    }
 }
 
 /**
@@ -46,8 +85,8 @@ uint16_t* TouchGFXHAL::getTFTFrameBuffer() const
 {
     // Calling parent implementation of getTFTFrameBuffer().
     //
-    // To overwrite the generated implementation, omit the call to the parent function
-    // and implement the needed functionality here.
+    // To overwrite the generated implementation, omit call to parent function
+    // and implemented needed functionality here.
 
     return TouchGFXGeneratedHAL::getTFTFrameBuffer();
 }
@@ -61,8 +100,8 @@ void TouchGFXHAL::setTFTFrameBuffer(uint16_t* address)
 {
     // Calling parent implementation of setTFTFrameBuffer(uint16_t* address).
     //
-    // To overwrite the generated implementation, omit the call to the parent function
-    // and implement the needed functionality here.
+    // To overwrite the generated implementation, omit call to parent function
+    // and implemented needed functionality here.
 
     TouchGFXGeneratedHAL::setTFTFrameBuffer(address);
 }
@@ -78,20 +117,18 @@ void TouchGFXHAL::flushFrameBuffer(const touchgfx::Rect& rect)
 {
     // Calling parent implementation of flushFrameBuffer(const touchgfx::Rect& rect).
     //
-    // To overwrite the generated implementation, omit the call to the parent function
-    // and implement the needed functionality here.
+    // To overwrite the generated implementation, omit call to parent function
+    // and implemented needed functionality here.
     // Please note, HAL::flushFrameBuffer(const touchgfx::Rect& rect) must
     // be called to notify the touchgfx framework that flush has been performed.
-    // To calculate the start address of rect,
-    // use advanceFrameBufferToRect(uint8_t* fbPtr, const touchgfx::Rect& rect)
-    // defined in TouchGFXGeneratedHAL.cpp
 
     TouchGFXGeneratedHAL::flushFrameBuffer(rect);
-}
 
-bool TouchGFXHAL::blockCopy(void* RESTRICT dest, const void* RESTRICT src, uint32_t numBytes)
-{
-    return TouchGFXGeneratedHAL::blockCopy(dest, src, numBytes);
+    // If the framebuffer is placed in Write Through cached memory (e.g. SRAM) then we need
+    // to flush the Dcache to make sure framebuffer is correct in RAM. That's done
+    // using SCB_CleanInvalidateDCache().
+
+    SCB_CleanInvalidateDCache();
 }
 
 /**
@@ -102,8 +139,8 @@ void TouchGFXHAL::configureInterrupts()
 {
     // Calling parent implementation of configureInterrupts().
     //
-    // To overwrite the generated implementation, omit the call to the parent function
-    // and implement the needed functionality here.
+    // To overwrite the generated implementation, omit call to parent function
+    // and implemented needed functionality here.
 
     TouchGFXGeneratedHAL::configureInterrupts();
 }
@@ -115,8 +152,8 @@ void TouchGFXHAL::enableInterrupts()
 {
     // Calling parent implementation of enableInterrupts().
     //
-    // To overwrite the generated implementation, omit the call to the parent function
-    // and implement the needed functionality here.
+    // To overwrite the generated implementation, omit call to parent function
+    // and implemented needed functionality here.
 
     TouchGFXGeneratedHAL::enableInterrupts();
 }
@@ -128,8 +165,8 @@ void TouchGFXHAL::disableInterrupts()
 {
     // Calling parent implementation of disableInterrupts().
     //
-    // To overwrite the generated implementation, omit the call to the parent function
-    // and implement the needed functionality here.
+    // To overwrite the generated implementation, omit call to parent function
+    // and implemented needed functionality here.
 
     TouchGFXGeneratedHAL::disableInterrupts();
 }
@@ -142,20 +179,26 @@ void TouchGFXHAL::enableLCDControllerInterrupt()
 {
     // Calling parent implementation of enableLCDControllerInterrupt().
     //
-    // To overwrite the generated implementation, omit the call to the parent function
-    // and implement the needed functionality here.
+    // To overwrite the generated implementation, omit call to parent function
+    // and implemented needed functionality here.
 
     TouchGFXGeneratedHAL::enableLCDControllerInterrupt();
 }
 
-bool TouchGFXHAL::beginFrame()
+extern "C"
 {
-    return TouchGFXGeneratedHAL::beginFrame();
-}
-
-void TouchGFXHAL::endFrame()
-{
-    TouchGFXGeneratedHAL::endFrame();
+    portBASE_TYPE IdleTaskHook(void* p)
+    {
+        if ((int)p) //idle task sched out
+        {
+            touchgfx::HAL::getInstance()->setMCUActive(true);
+        }
+        else //idle task sched in
+        {
+            touchgfx::HAL::getInstance()->setMCUActive(false);
+        }
+        return pdTRUE;
+    }
 }
 
 /* USER CODE END TouchGFXHAL.cpp */

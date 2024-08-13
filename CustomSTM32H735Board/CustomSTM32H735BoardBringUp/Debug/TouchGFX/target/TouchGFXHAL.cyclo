@@ -1,5 +1,6 @@
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/HAL.hpp:101:13:touchgfx::HAL::~HAL()	1
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/HAL.hpp:101:13:virtual touchgfx::HAL::~HAL()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/HAL.hpp:110:17:static touchgfx::HAL* touchgfx::HAL::getInstance()	1
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/HAL.hpp:124:18:virtual void touchgfx::HAL::setDisplayOrientation(touchgfx::DisplayOrientation)	1
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/HAL.hpp:156:18:virtual void touchgfx::HAL::setFrameBufferSize(uint16_t, uint16_t)	2
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/HAL.hpp:320:28:virtual touchgfx::BlitOperations touchgfx::HAL::getBlitCaps()	2
@@ -15,17 +16,16 @@
 ../TouchGFX/target/generated/TouchGFXGeneratedHAL.hpp:106:18:virtual void TouchGFXGeneratedHAL::flushFrameBuffer()	1
 ../TouchGFX/target/generated/TouchGFXGeneratedHAL.hpp:30:7:TouchGFXGeneratedHAL::~TouchGFXGeneratedHAL()	1
 ../TouchGFX/target/generated/TouchGFXGeneratedHAL.hpp:30:7:virtual TouchGFXGeneratedHAL::~TouchGFXGeneratedHAL()	1
-../TouchGFX/target/TouchGFXHAL.hpp:108:18:virtual void TouchGFXHAL::flushFrameBuffer()	1
-../TouchGFX/target/TouchGFXHAL.cpp:29:6:virtual void TouchGFXHAL::initialize()	1
-../TouchGFX/target/TouchGFXHAL.cpp:45:11:virtual uint16_t* TouchGFXHAL::getTFTFrameBuffer() const	1
-../TouchGFX/target/TouchGFXHAL.cpp:60:6:virtual void TouchGFXHAL::setTFTFrameBuffer(uint16_t*)	1
-../TouchGFX/target/TouchGFXHAL.cpp:77:6:virtual void TouchGFXHAL::flushFrameBuffer(const touchgfx::Rect&)	1
-../TouchGFX/target/TouchGFXHAL.cpp:92:6:virtual bool TouchGFXHAL::blockCopy(void*, const void*, uint32_t)	1
-../TouchGFX/target/TouchGFXHAL.cpp:101:6:virtual void TouchGFXHAL::configureInterrupts()	1
-../TouchGFX/target/TouchGFXHAL.cpp:114:6:virtual void TouchGFXHAL::enableInterrupts()	1
-../TouchGFX/target/TouchGFXHAL.cpp:127:6:virtual void TouchGFXHAL::disableInterrupts()	1
-../TouchGFX/target/TouchGFXHAL.cpp:141:6:virtual void TouchGFXHAL::enableLCDControllerInterrupt()	1
-../TouchGFX/target/TouchGFXHAL.cpp:151:6:virtual bool TouchGFXHAL::beginFrame()	1
-../TouchGFX/target/TouchGFXHAL.cpp:156:6:virtual void TouchGFXHAL::endFrame()	1
+../TouchGFX/target/TouchGFXHAL.hpp:114:18:virtual void TouchGFXHAL::flushFrameBuffer()	1
+../TouchGFX/target/TouchGFXHAL.cpp:42:6:virtual void TouchGFXHAL::initialize()	1
+../TouchGFX/target/TouchGFXHAL.cpp:59:6:virtual void TouchGFXHAL::taskEntry()	1
+../TouchGFX/target/TouchGFXHAL.cpp:84:11:virtual uint16_t* TouchGFXHAL::getTFTFrameBuffer() const	1
+../TouchGFX/target/TouchGFXHAL.cpp:99:6:virtual void TouchGFXHAL::setTFTFrameBuffer(uint16_t*)	1
+../TouchGFX/target/TouchGFXHAL.cpp:116:6:virtual void TouchGFXHAL::flushFrameBuffer(const touchgfx::Rect&)	3
+../TouchGFX/target/TouchGFXHAL.cpp:138:6:virtual void TouchGFXHAL::configureInterrupts()	1
+../TouchGFX/target/TouchGFXHAL.cpp:151:6:virtual void TouchGFXHAL::enableInterrupts()	1
+../TouchGFX/target/TouchGFXHAL.cpp:164:6:virtual void TouchGFXHAL::disableInterrupts()	1
+../TouchGFX/target/TouchGFXHAL.cpp:178:6:virtual void TouchGFXHAL::enableLCDControllerInterrupt()	1
+../TouchGFX/target/TouchGFXHAL.cpp:190:19:long int IdleTaskHook(void*)	2
 ../TouchGFX/target/TouchGFXHAL.hpp:36:7:TouchGFXHAL::~TouchGFXHAL()	1
 ../TouchGFX/target/TouchGFXHAL.hpp:36:7:virtual TouchGFXHAL::~TouchGFXHAL()	1

@@ -1,2 +1,0 @@
-C:/ProjectsOnC/PhasorRadio/CustomSTM32H735Board/CustomSTM32H735TestCode/CustomBoardSTM32H735Test/TouchGFX/generated/images/src/BitmapDatabase.cpp:17:37:const touchgfx::Bitmap::BitmapData* BitmapDatabase::getInstance()	0	static
-C:/ProjectsOnC/PhasorRadio/CustomSTM32H735Board/CustomSTM32H735TestCode/CustomBoardSTM32H735Test/TouchGFX/generated/images/src/BitmapDatabase.cpp:22:10:uint16_t BitmapDatabase::getInstanceSize()	0	static
