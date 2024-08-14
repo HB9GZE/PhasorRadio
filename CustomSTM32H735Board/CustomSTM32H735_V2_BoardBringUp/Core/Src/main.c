@@ -54,6 +54,8 @@ DAC_HandleTypeDef hdac1;
 DMA2D_HandleTypeDef hdma2d;
 
 I2C_HandleTypeDef hi2c2;
+I2C_HandleTypeDef hi2c3;
+I2C_HandleTypeDef hi2c4;
 
 LTDC_HandleTypeDef hltdc;
 
@@ -63,7 +65,6 @@ OSPI_HandleTypeDef hospi2;
 OPAMP_HandleTypeDef hopamp1;
 
 TIM_HandleTypeDef htim2;
-TIM_HandleTypeDef htim24;
 
 UART_HandleTypeDef huart4;
 
@@ -109,8 +110,9 @@ static void MX_DAC1_Init(void);
 static void MX_I2C2_Init(void);
 static void MX_OPAMP1_Init(void);
 static void MX_TIM2_Init(void);
-static void MX_TIM24_Init(void);
 static void MX_UART4_Init(void);
+static void MX_I2C3_Init(void);
+static void MX_I2C4_Init(void);
 void StartDefaultTask(void *argument);
 extern void TouchGFX_Task(void *argument);
 extern void videoTaskFunc(void *argument);
@@ -180,8 +182,9 @@ int main(void)
   MX_I2C2_Init();
   MX_OPAMP1_Init();
   MX_TIM2_Init();
-  MX_TIM24_Init();
   MX_UART4_Init();
+  MX_I2C3_Init();
+  MX_I2C4_Init();
   MX_TouchGFX_Init();
   /* Call PreOsInit function */
   MX_TouchGFX_PreOSInit();
@@ -439,7 +442,7 @@ static void MX_ADC2_Init(void)
 
   /** Configure Regular Channel
   */
-  sConfig.Channel = ADC_CHANNEL_0;
+  sConfig.Channel = ADC_CHANNEL_1;
   sConfig.Rank = ADC_REGULAR_RANK_1;
   sConfig.SamplingTime = ADC_SAMPLETIME_1CYCLE_5;
   sConfig.SingleDiff = ADC_SINGLE_ENDED;
@@ -676,6 +679,102 @@ static void MX_I2C2_Init(void)
   /* USER CODE BEGIN I2C2_Init 2 */
 
   /* USER CODE END I2C2_Init 2 */
+
+}
+
+/**
+  * @brief I2C3 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_I2C3_Init(void)
+{
+
+  /* USER CODE BEGIN I2C3_Init 0 */
+
+  /* USER CODE END I2C3_Init 0 */
+
+  /* USER CODE BEGIN I2C3_Init 1 */
+
+  /* USER CODE END I2C3_Init 1 */
+  hi2c3.Instance = I2C3;
+  hi2c3.Init.Timing = 0x60404E72;
+  hi2c3.Init.OwnAddress1 = 0;
+  hi2c3.Init.AddressingMode = I2C_ADDRESSINGMODE_7BIT;
+  hi2c3.Init.DualAddressMode = I2C_DUALADDRESS_DISABLE;
+  hi2c3.Init.OwnAddress2 = 0;
+  hi2c3.Init.OwnAddress2Masks = I2C_OA2_NOMASK;
+  hi2c3.Init.GeneralCallMode = I2C_GENERALCALL_DISABLE;
+  hi2c3.Init.NoStretchMode = I2C_NOSTRETCH_DISABLE;
+  if (HAL_I2C_Init(&hi2c3) != HAL_OK)
+  {
+    Error_Handler();
+  }
+
+  /** Configure Analogue filter
+  */
+  if (HAL_I2CEx_ConfigAnalogFilter(&hi2c3, I2C_ANALOGFILTER_ENABLE) != HAL_OK)
+  {
+    Error_Handler();
+  }
+
+  /** Configure Digital filter
+  */
+  if (HAL_I2CEx_ConfigDigitalFilter(&hi2c3, 0) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN I2C3_Init 2 */
+
+  /* USER CODE END I2C3_Init 2 */
+
+}
+
+/**
+  * @brief I2C4 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_I2C4_Init(void)
+{
+
+  /* USER CODE BEGIN I2C4_Init 0 */
+
+  /* USER CODE END I2C4_Init 0 */
+
+  /* USER CODE BEGIN I2C4_Init 1 */
+
+  /* USER CODE END I2C4_Init 1 */
+  hi2c4.Instance = I2C4;
+  hi2c4.Init.Timing = 0x60404E72;
+  hi2c4.Init.OwnAddress1 = 0;
+  hi2c4.Init.AddressingMode = I2C_ADDRESSINGMODE_7BIT;
+  hi2c4.Init.DualAddressMode = I2C_DUALADDRESS_DISABLE;
+  hi2c4.Init.OwnAddress2 = 0;
+  hi2c4.Init.OwnAddress2Masks = I2C_OA2_NOMASK;
+  hi2c4.Init.GeneralCallMode = I2C_GENERALCALL_DISABLE;
+  hi2c4.Init.NoStretchMode = I2C_NOSTRETCH_DISABLE;
+  if (HAL_I2C_Init(&hi2c4) != HAL_OK)
+  {
+    Error_Handler();
+  }
+
+  /** Configure Analogue filter
+  */
+  if (HAL_I2CEx_ConfigAnalogFilter(&hi2c4, I2C_ANALOGFILTER_ENABLE) != HAL_OK)
+  {
+    Error_Handler();
+  }
+
+  /** Configure Digital filter
+  */
+  if (HAL_I2CEx_ConfigDigitalFilter(&hi2c4, 0) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN I2C4_Init 2 */
+
+  /* USER CODE END I2C4_Init 2 */
 
 }
 
@@ -936,55 +1035,6 @@ static void MX_TIM2_Init(void)
 }
 
 /**
-  * @brief TIM24 Initialization Function
-  * @param None
-  * @retval None
-  */
-static void MX_TIM24_Init(void)
-{
-
-  /* USER CODE BEGIN TIM24_Init 0 */
-
-  /* USER CODE END TIM24_Init 0 */
-
-  TIM_Encoder_InitTypeDef sConfig = {0};
-  TIM_MasterConfigTypeDef sMasterConfig = {0};
-
-  /* USER CODE BEGIN TIM24_Init 1 */
-
-  /* USER CODE END TIM24_Init 1 */
-  htim24.Instance = TIM24;
-  htim24.Init.Prescaler = 0;
-  htim24.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim24.Init.Period = 4294967295;
-  htim24.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
-  htim24.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
-  sConfig.EncoderMode = TIM_ENCODERMODE_TI1;
-  sConfig.IC1Polarity = TIM_ICPOLARITY_RISING;
-  sConfig.IC1Selection = TIM_ICSELECTION_DIRECTTI;
-  sConfig.IC1Prescaler = TIM_ICPSC_DIV1;
-  sConfig.IC1Filter = 0;
-  sConfig.IC2Polarity = TIM_ICPOLARITY_RISING;
-  sConfig.IC2Selection = TIM_ICSELECTION_DIRECTTI;
-  sConfig.IC2Prescaler = TIM_ICPSC_DIV1;
-  sConfig.IC2Filter = 0;
-  if (HAL_TIM_Encoder_Init(&htim24, &sConfig) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  sMasterConfig.MasterOutputTrigger = TIM_TRGO_RESET;
-  sMasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;
-  if (HAL_TIMEx_MasterConfigSynchronization(&htim24, &sMasterConfig) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  /* USER CODE BEGIN TIM24_Init 2 */
-
-  /* USER CODE END TIM24_Init 2 */
-
-}
-
-/**
   * @brief UART4 Initialization Function
   * @param None
   * @retval None
@@ -1054,19 +1104,49 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOF_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(RENDER_TIME_GPIO_Port, RENDER_TIME_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIO_PE4_GPIO_Port, GPIO_PE4_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOD, GPIOPD13_Pin|LSBUSB_Pin|LCD_DISP_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOA, LSBUSB_Pin|VSYNC_FREQ_Pin, GPIO_PIN_RESET);
+
+  /*Configure GPIO pin Output Level */
+  HAL_GPIO_WritePin(GPIOG, LCD_BL_CTRL_Pin|RXTX_Pin|RENDER_TIME_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOB, MCU_ACTIVE_Pin|FRAME_RATE_Pin|S1_Pin|S0_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOH, NRXTX_Pin|RXTX_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(LCD_DISP_GPIO_Port, LCD_DISP_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(VSYNC_FREQ_GPIO_Port, VSYNC_FREQ_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOH, NRXTX_Pin|LCD_RST_Pin, GPIO_PIN_RESET);
+
+  /*Configure GPIO pin : GPIO_PE4_Pin */
+  GPIO_InitStruct.Pin = GPIO_PE4_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(GPIO_PE4_GPIO_Port, &GPIO_InitStruct);
+
+  /*Configure GPIO pin : LSBUSB_Pin */
+  GPIO_InitStruct.Pin = LSBUSB_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(LSBUSB_GPIO_Port, &GPIO_InitStruct);
+
+  /*Configure GPIO pins : LCD_BL_CTRL_Pin RXTX_Pin */
+  GPIO_InitStruct.Pin = LCD_BL_CTRL_Pin|RXTX_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(GPIOG, &GPIO_InitStruct);
+
+  /*Configure GPIO pin : CTP_INT_Pin */
+  GPIO_InitStruct.Pin = CTP_INT_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  HAL_GPIO_Init(CTP_INT_GPIO_Port, &GPIO_InitStruct);
 
   /*Configure GPIO pin : RENDER_TIME_Pin */
   GPIO_InitStruct.Pin = RENDER_TIME_Pin;
@@ -1075,19 +1155,19 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
   HAL_GPIO_Init(RENDER_TIME_GPIO_Port, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : GPIOPD13_Pin LSBUSB_Pin LCD_DISP_Pin */
-  GPIO_InitStruct.Pin = GPIOPD13_Pin|LSBUSB_Pin|LCD_DISP_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(GPIOD, &GPIO_InitStruct);
-
   /*Configure GPIO pins : MCU_ACTIVE_Pin FRAME_RATE_Pin */
   GPIO_InitStruct.Pin = MCU_ACTIVE_Pin|FRAME_RATE_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
+
+  /*Configure GPIO pin : LCD_DISP_Pin */
+  GPIO_InitStruct.Pin = LCD_DISP_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(LCD_DISP_GPIO_Port, &GPIO_InitStruct);
 
   /*Configure GPIO pins : S1_Pin S0_Pin */
   GPIO_InitStruct.Pin = S1_Pin|S0_Pin;
@@ -1096,8 +1176,8 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : NRXTX_Pin RXTX_Pin */
-  GPIO_InitStruct.Pin = NRXTX_Pin|RXTX_Pin;
+  /*Configure GPIO pins : NRXTX_Pin LCD_RST_Pin */
+  GPIO_InitStruct.Pin = NRXTX_Pin|LCD_RST_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;

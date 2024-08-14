@@ -19,8 +19,19 @@
 #include <TouchGFXGeneratedHAL.hpp>
 #include <touchgfx/hal/OSWrappers.hpp>
 #include <gui/common/FrontendHeap.hpp>
-#include <touchgfx/hal/PaintImpl.hpp>
-#include <touchgfx/hal/PaintRGB888Impl.hpp>
+#include <touchgfx/hal/GPIO.hpp>
+
+#include <touchgfx/widgets/canvas/CWRVectorRenderer.hpp>
+
+namespace touchgfx
+{
+VectorRenderer* VectorRenderer::getInstance()
+{
+    static CWRVectorRendererRGB888 renderer;
+
+    return &renderer;
+}
+} // namespace touchgfx
 
 #include "stm32h7xx.h"
 #include "stm32h7xx_hal_ltdc.h"
@@ -45,16 +56,19 @@ void TouchGFXGeneratedHAL::initialize()
 
 void TouchGFXGeneratedHAL::configureInterrupts()
 {
+    NVIC_SetPriority(DMA2D_IRQn, 9);
     NVIC_SetPriority(LTDC_IRQn, 9);
 }
 
 void TouchGFXGeneratedHAL::enableInterrupts()
 {
+    NVIC_EnableIRQ(DMA2D_IRQn);
     NVIC_EnableIRQ(LTDC_IRQn);
 }
 
 void TouchGFXGeneratedHAL::disableInterrupts()
 {
+    NVIC_DisableIRQ(DMA2D_IRQn);
     NVIC_DisableIRQ(LTDC_IRQn);
 }
 
@@ -128,4 +142,37 @@ void TouchGFXGeneratedHAL::FlushCache()
     }
 }
 
+extern "C"
+{
+    void HAL_LTDC_LineEventCallback(LTDC_HandleTypeDef* hltdc)
+    {
+        if (!HAL::getInstance())
+        {
+            return;
+        }
+
+        if (LTDC->LIPCR == lcd_int_active_line)
+        {
+            //entering active area
+            HAL_LTDC_ProgramLineEvent(hltdc, lcd_int_porch_line);
+            HAL::getInstance()->vSync();
+            OSWrappers::signalVSync();
+
+            // Swap frame buffers immediately instead of waiting for the task to be scheduled in.
+            // Note: task will also swap when it wakes up, but that operation is guarded and will not have
+            // any effect if already swapped.
+            HAL::getInstance()->swapFrameBuffers();
+            GPIO::set(GPIO::VSYNC_FREQ);
+        }
+        else
+        {
+            //exiting active area
+            HAL_LTDC_ProgramLineEvent(hltdc, lcd_int_active_line);
+
+            // Signal to the framework that display update has finished.
+            HAL::getInstance()->frontPorchEntered();
+            GPIO::clear(GPIO::VSYNC_FREQ);
+        }
+    }
+}
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

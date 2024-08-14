@@ -57,12 +57,18 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define GPIO_PE4_Pin GPIO_PIN_4
+#define GPIO_PE4_GPIO_Port GPIOE
+#define LSBUSB_Pin GPIO_PIN_12
+#define LSBUSB_GPIO_Port GPIOA
+#define LCD_BL_CTRL_Pin GPIO_PIN_15
+#define LCD_BL_CTRL_GPIO_Port GPIOG
+#define RXTX_Pin GPIO_PIN_5
+#define RXTX_GPIO_Port GPIOG
+#define CTP_INT_Pin GPIO_PIN_2
+#define CTP_INT_GPIO_Port GPIOG
 #define RENDER_TIME_Pin GPIO_PIN_3
 #define RENDER_TIME_GPIO_Port GPIOG
-#define GPIOPD13_Pin GPIO_PIN_13
-#define GPIOPD13_GPIO_Port GPIOD
-#define LSBUSB_Pin GPIO_PIN_12
-#define LSBUSB_GPIO_Port GPIOD
 #define MCU_ACTIVE_Pin GPIO_PIN_15
 #define MCU_ACTIVE_GPIO_Port GPIOB
 #define FRAME_RATE_Pin GPIO_PIN_14
@@ -77,8 +83,8 @@ void Error_Handler(void);
 #define NRXTX_GPIO_Port GPIOH
 #define VSYNC_FREQ_Pin GPIO_PIN_0
 #define VSYNC_FREQ_GPIO_Port GPIOA
-#define RXTX_Pin GPIO_PIN_6
-#define RXTX_GPIO_Port GPIOH
+#define LCD_RST_Pin GPIO_PIN_6
+#define LCD_RST_GPIO_Port GPIOH
 
 /* USER CODE BEGIN Private defines */
 

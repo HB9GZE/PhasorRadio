@@ -1,110 +1,60 @@
-08:38:31 **** Incremental Build of configuration Debug for project CustomSTM32H735MinimumTGFX ****
+07:51:51 **** Build of configuration Debug for project CustomSTM32H735_V2_BoardBringUp ****
 make -j16 all 
-arm-none-eabi-g++ -o "CustomSTM32H735MinimumTGFX.elf" @"objects.list"  -l:libtouchgfx-float-abi-hard.a -mcpu=cortex-m7 -T"C:\ProjectsOnC\PhasorRadio\CustomSTM32H735Board\CustomSTM32H735MinimumTGFX\STM32H735IGTX_FLASH.ld" -Wl,-Map="CustomSTM32H735MinimumTGFX.map" -Wl,--gc-sections -static -L"C:\ProjectsOnC\PhasorRadio\CustomSTM32H735Board\CustomSTM32H735MinimumTGFX\Middlewares\ST\touchgfx\lib\core\cortex_m7\gcc" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
-Finished building target: CustomSTM32H735MinimumTGFX.elf
- 
-arm-none-eabi-size  CustomSTM32H735MinimumTGFX.elf 
-arm-none-eabi-objdump -h -S CustomSTM32H735MinimumTGFX.elf  > "CustomSTM32H735MinimumTGFX.list"
-   text	   data	    bss	    dec	    hex	filename
- 132801	 392412	  28808	 554021	  87425	CustomSTM32H735MinimumTGFX.elf
-Finished building: default.size.stdout
- 
-Finished building: CustomSTM32H735MinimumTGFX.list
- 
-08:38:35 **** Incremental Build of configuration Debug for project CustomSTM32H735MinimumTGFX ****
-make -j16 all 
-arm-none-eabi-size  CustomSTM32H735MinimumTGFX.elf 
-   text	   data	    bss	    dec	    hex	filename
- 132801	 392412	  28808	 554021	  87425	CustomSTM32H735MinimumTGFX.elf
-Finished building: default.size.stdout
- 
-08:39:30 **** Incremental Build of configuration Debug for project CustomSTM32H735MinimumTGFX ****
-make -j16 all 
-arm-none-eabi-size  CustomSTM32H735MinimumTGFX.elf 
-   text	   data	    bss	    dec	    hex	filename
- 132801	 392412	  28808	 554021	  87425	CustomSTM32H735MinimumTGFX.elf
-Finished building: default.size.stdout
- 
-08:39:49 **** Incremental Build of configuration Debug for project CustomSTM32H735MinimumTGFX ****
-make -j16 all 
-arm-none-eabi-size  CustomSTM32H735MinimumTGFX.elf 
-   text	   data	    bss	    dec	    hex	filename
- 132801	 392412	  28808	 554021	  87425	CustomSTM32H735MinimumTGFX.elf
-Finished building: default.size.stdout
- 
-08:40:44 **** Incremental Build of configuration Debug for project CustomSTM32H735MinimumTGFX ****
-make -j16 all 
-arm-none-eabi-size  CustomSTM32H735MinimumTGFX.elf 
-   text	   data	    bss	    dec	    hex	filename
- 132801	 392412	  28808	 554021	  87425	CustomSTM32H735MinimumTGFX.elf
-Finished building: default.size.stdout
- 
-08:43:50 **** Incremental Build of configuration Debug for project CustomSTM32H735MinimumTGFX ****
-make -j16 all 
-arm-none-eabi-size  CustomSTM32H735MinimumTGFX.elf 
-   text	   data	    bss	    dec	    hex	filename
- 132801	 392412	  28808	 554021	  87425	CustomSTM32H735MinimumTGFX.elf
-Finished building: default.size.stdout
- 
-08:44:14 **** Incremental Build of configuration Debug for project CustomSTM32H735MinimumTGFX ****
-make -j16 all 
-arm-none-eabi-size  CustomSTM32H735MinimumTGFX.elf 
-   text	   data	    bss	    dec	    hex	filename
- 132801	 392412	  28808	 554021	  87425	CustomSTM32H735MinimumTGFX.elf
-Finished building: default.size.stdout
- 
-08:51:37 **** Incremental Build of configuration Debug for project CustomSTM32H735MinimumTGFX ****
-make -j16 all 
-arm-none-eabi-size  CustomSTM32H735MinimumTGFX.elf 
-   text	   data	    bss	    dec	    hex	filename
- 132801	 392412	  28808	 554021	  87425	CustomSTM32H735MinimumTGFX.elf
-Finished building: default.size.stdout
- 
-08:52:02 **** Incremental Build of configuration Debug for project CustomSTM32H735MinimumTGFX ****
-make -j16 all 
-arm-none-eabi-size  CustomSTM32H735MinimumTGFX.elf 
-   text	   data	    bss	    dec	    hex	filename
- 132801	 392412	  28808	 554021	  87425	CustomSTM32H735MinimumTGFX.elf
-Finished building: default.size.stdout
- 
-08:52:12 **** Incremental Build of configuration Debug for project CustomSTM32H735MinimumTGFX ****
-make -j16 all 
-arm-none-eabi-size  CustomSTM32H735MinimumTGFX.elf 
-   text	   data	    bss	    dec	    hex	filename
- 132801	 392412	  28808	 554021	  87425	CustomSTM32H735MinimumTGFX.elf
-Finished building: default.size.stdout
- 
-08:57:17 **** Incremental Build of configuration Debug for project CustomSTM32H735MinimumTGFX ****
-make -j16 all 
-arm-none-eabi-size  CustomSTM32H735MinimumTGFX.elf 
-   text	   data	    bss	    dec	    hex	filename
- 132801	 392412	  28808	 554021	  87425	CustomSTM32H735MinimumTGFX.elf
-Finished building: default.size.stdout
- 
-08:58:21 **** Incremental Build of configuration Debug for project CustomSTM32H735MinimumTGFX ****
-make -j16 all 
-arm-none-eabi-size  CustomSTM32H735MinimumTGFX.elf 
-   text	   data	    bss	    dec	    hex	filename
- 132801	 392412	  28808	 554021	  87425	CustomSTM32H735MinimumTGFX.elf
-Finished building: default.size.stdout
- 
-08:58:41 **** Incremental Build of configuration Debug for project CustomSTM32H735MinimumTGFX ****
-make -j16 all 
-arm-none-eabi-size  CustomSTM32H735MinimumTGFX.elf 
-   text	   data	    bss	    dec	    hex	filename
- 132801	 392412	  28808	 554021	  87425	CustomSTM32H735MinimumTGFX.elf
-Finished building: default.size.stdout
- 
-09:01:50 **** Incremental Build of configuration Debug for project CustomSTM32H735MinimumTGFX ****
-make -j16 all 
-arm-none-eabi-g++ "../TouchGFX/target/generated/STM32DMA.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H735xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../LIBJPEG/App -I../LIBJPEG/Target -I../TouchGFX/App -I../TouchGFX/target/generated -I../TouchGFX/target -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Middlewares/Third_Party/LibJPEG/include -I../Middlewares/ST/touchgfx/framework/include -I../TouchGFX/generated/fonts/include -I../TouchGFX/generated/gui_generated/include -I../TouchGFX/generated/images/include -I../TouchGFX/generated/texts/include -I../TouchGFX/generated/videos/include -I../TouchGFX/gui/include -I"C:/ProjectsOnC/PhasorRadio/CustomSTM32H735Board/BSP_Files/BSP/Components/ft5336" -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"TouchGFX/target/generated/STM32DMA.d" -MT"TouchGFX/target/generated/STM32DMA.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "TouchGFX/target/generated/STM32DMA.o"
-arm-none-eabi-g++ "../TouchGFX/target/generated/TouchGFXConfiguration.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H735xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../LIBJPEG/App -I../LIBJPEG/Target -I../TouchGFX/App -I../TouchGFX/target/generated -I../TouchGFX/target -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Middlewares/Third_Party/LibJPEG/include -I../Middlewares/ST/touchgfx/framework/include -I../TouchGFX/generated/fonts/include -I../TouchGFX/generated/gui_generated/include -I../TouchGFX/generated/images/include -I../TouchGFX/generated/texts/include -I../TouchGFX/generated/videos/include -I../TouchGFX/gui/include -I"C:/ProjectsOnC/PhasorRadio/CustomSTM32H735Board/BSP_Files/BSP/Components/ft5336" -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"TouchGFX/target/generated/TouchGFXConfiguration.d" -MT"TouchGFX/target/generated/TouchGFXConfiguration.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "TouchGFX/target/generated/TouchGFXConfiguration.o"
-arm-none-eabi-g++ "../TouchGFX/target/generated/TouchGFXGeneratedHAL.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H735xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../LIBJPEG/App -I../LIBJPEG/Target -I../TouchGFX/App -I../TouchGFX/target/generated -I../TouchGFX/target -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Middlewares/Third_Party/LibJPEG/include -I../Middlewares/ST/touchgfx/framework/include -I../TouchGFX/generated/fonts/include -I../TouchGFX/generated/gui_generated/include -I../TouchGFX/generated/images/include -I../TouchGFX/generated/texts/include -I../TouchGFX/generated/videos/include -I../TouchGFX/gui/include -I"C:/ProjectsOnC/PhasorRadio/CustomSTM32H735Board/BSP_Files/BSP/Components/ft5336" -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"TouchGFX/target/generated/TouchGFXGeneratedHAL.d" -MT"TouchGFX/target/generated/TouchGFXGeneratedHAL.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "TouchGFX/target/generated/TouchGFXGeneratedHAL.o"
-arm-none-eabi-g++ "../TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H735xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../LIBJPEG/App -I../LIBJPEG/Target -I../TouchGFX/App -I../TouchGFX/target/generated -I../TouchGFX/target -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Middlewares/Third_Party/LibJPEG/include -I../Middlewares/ST/touchgfx/framework/include -I../TouchGFX/generated/fonts/include -I../TouchGFX/generated/gui_generated/include -I../TouchGFX/generated/images/include -I../TouchGFX/generated/texts/include -I../TouchGFX/generated/videos/include -I../TouchGFX/gui/include -I"C:/ProjectsOnC/PhasorRadio/CustomSTM32H735Board/BSP_Files/BSP/Components/ft5336" -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.d" -MT"TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.o"
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H735xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../LIBJPEG/App -I../LIBJPEG/Target -I../TouchGFX/App -I../TouchGFX/target/generated -I../TouchGFX/target -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Middlewares/Third_Party/LibJPEG/include -I../Middlewares/ST/touchgfx/framework/include -I../TouchGFX/generated/fonts/include -I../TouchGFX/generated/gui_generated/include -I../TouchGFX/generated/images/include -I../TouchGFX/generated/texts/include -I../TouchGFX/generated/videos/include -I../TouchGFX/gui/include -I"C:/ProjectsOnC/PhasorRadio/CustomSTM32H735Board/BSP_Files/BSP/Components/ft5336" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-g++ -o "CustomSTM32H735MinimumTGFX.elf" @"objects.list"  -l:libtouchgfx-float-abi-hard.a -mcpu=cortex-m7 -T"C:\ProjectsOnC\PhasorRadio\CustomSTM32H735Board\CustomSTM32H735MinimumTGFX\STM32H735IGTX_FLASH.ld" -Wl,-Map="CustomSTM32H735MinimumTGFX.map" -Wl,--gc-sections -static -L"C:\ProjectsOnC\PhasorRadio\CustomSTM32H735Board\CustomSTM32H735MinimumTGFX\Middlewares\ST\touchgfx\lib\core\cortex_m7\gcc" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
-C:/ST/STM32CubeIDE_1.15.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: CustomSTM32H735MinimumTGFX.elf section `TouchGFX_Framebuffer' will not fit in region `RAM_D1'
-C:/ST/STM32CubeIDE_1.15.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: region `RAM_D1' overflowed by 93128 bytes
-collect2.exe: error: ld returned 1 exit status
-make: *** [makefile:125: CustomSTM32H735MinimumTGFX.elf] Error 1
+arm-none-eabi-g++ "../TouchGFX/target/generated/OSWrappers.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H735xx -c -I../Core/Inc -I../LIBJPEG/App -I../LIBJPEG/Target -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Middlewares/Third_Party/LibJPEG/include -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../TouchGFX/App -I../TouchGFX/target/generated -I../TouchGFX/target -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"TouchGFX/target/generated/OSWrappers.d" -MT"TouchGFX/target/generated/OSWrappers.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "TouchGFX/target/generated/OSWrappers.o"
+arm-none-eabi-g++ "../TouchGFX/target/generated/STM32DMA.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H735xx -c -I../Core/Inc -I../LIBJPEG/App -I../LIBJPEG/Target -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Middlewares/Third_Party/LibJPEG/include -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../TouchGFX/App -I../TouchGFX/target/generated -I../TouchGFX/target -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"TouchGFX/target/generated/STM32DMA.d" -MT"TouchGFX/target/generated/STM32DMA.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "TouchGFX/target/generated/STM32DMA.o"
+arm-none-eabi-g++ "../TouchGFX/target/generated/TouchGFXConfiguration.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H735xx -c -I../Core/Inc -I../LIBJPEG/App -I../LIBJPEG/Target -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Middlewares/Third_Party/LibJPEG/include -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../TouchGFX/App -I../TouchGFX/target/generated -I../TouchGFX/target -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"TouchGFX/target/generated/TouchGFXConfiguration.d" -MT"TouchGFX/target/generated/TouchGFXConfiguration.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "TouchGFX/target/generated/TouchGFXConfiguration.o"
+arm-none-eabi-g++ "../TouchGFX/target/generated/TouchGFXGeneratedHAL.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H735xx -c -I../Core/Inc -I../LIBJPEG/App -I../LIBJPEG/Target -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Middlewares/Third_Party/LibJPEG/include -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../TouchGFX/App -I../TouchGFX/target/generated -I../TouchGFX/target -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"TouchGFX/target/generated/TouchGFXGeneratedHAL.d" -MT"TouchGFX/target/generated/TouchGFXGeneratedHAL.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "TouchGFX/target/generated/TouchGFXGeneratedHAL.o"
+arm-none-eabi-g++ "../TouchGFX/target/STM32TouchController.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H735xx -c -I../Core/Inc -I../LIBJPEG/App -I../LIBJPEG/Target -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Middlewares/Third_Party/LibJPEG/include -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../TouchGFX/App -I../TouchGFX/target/generated -I../TouchGFX/target -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"TouchGFX/target/STM32TouchController.d" -MT"TouchGFX/target/STM32TouchController.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "TouchGFX/target/STM32TouchController.o"
+arm-none-eabi-g++ "../TouchGFX/target/TouchGFXGPIO.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H735xx -c -I../Core/Inc -I../LIBJPEG/App -I../LIBJPEG/Target -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Middlewares/Third_Party/LibJPEG/include -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../TouchGFX/App -I../TouchGFX/target/generated -I../TouchGFX/target -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"TouchGFX/target/TouchGFXGPIO.d" -MT"TouchGFX/target/TouchGFXGPIO.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "TouchGFX/target/TouchGFXGPIO.o"
+arm-none-eabi-g++ "../TouchGFX/target/TouchGFXHAL.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H735xx -c -I../Core/Inc -I../LIBJPEG/App -I../LIBJPEG/Target -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Middlewares/Third_Party/LibJPEG/include -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../TouchGFX/App -I../TouchGFX/target/generated -I../TouchGFX/target -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"TouchGFX/target/TouchGFXHAL.d" -MT"TouchGFX/target/TouchGFXHAL.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "TouchGFX/target/TouchGFXHAL.o"
+arm-none-eabi-gcc "../TouchGFX/App/app_touchgfx.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H735xx -c -I../Core/Inc -I../LIBJPEG/App -I../LIBJPEG/Target -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Middlewares/Third_Party/LibJPEG/include -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../TouchGFX/App -I../TouchGFX/target/generated -I../TouchGFX/target -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"TouchGFX/App/app_touchgfx.d" -MT"TouchGFX/App/app_touchgfx.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "TouchGFX/App/app_touchgfx.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/LibJPEG/source/jaricom.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H735xx -c -I../Core/Inc -I../LIBJPEG/App -I../LIBJPEG/Target -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Middlewares/Third_Party/LibJPEG/include -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../TouchGFX/App -I../TouchGFX/target/generated -I../TouchGFX/target -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/LibJPEG/source/jaricom.d" -MT"Middlewares/Third_Party/LibJPEG/source/jaricom.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Middlewares/Third_Party/LibJPEG/source/jaricom.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/LibJPEG/source/jcapimin.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H735xx -c -I../Core/Inc -I../LIBJPEG/App -I../LIBJPEG/Target -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Middlewares/Third_Party/LibJPEG/include -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../TouchGFX/App -I../TouchGFX/target/generated -I../TouchGFX/target -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/LibJPEG/source/jcapimin.d" -MT"Middlewares/Third_Party/LibJPEG/source/jcapimin.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Middlewares/Third_Party/LibJPEG/source/jcapimin.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/LibJPEG/source/jcapistd.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H735xx -c -I../Core/Inc -I../LIBJPEG/App -I../LIBJPEG/Target -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Middlewares/Third_Party/LibJPEG/include -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../TouchGFX/App -I../TouchGFX/target/generated -I../TouchGFX/target -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/LibJPEG/source/jcapistd.d" -MT"Middlewares/Third_Party/LibJPEG/source/jcapistd.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Middlewares/Third_Party/LibJPEG/source/jcapistd.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/LibJPEG/source/jcarith.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H735xx -c -I../Core/Inc -I../LIBJPEG/App -I../LIBJPEG/Target -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Middlewares/Third_Party/LibJPEG/include -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../TouchGFX/App -I../TouchGFX/target/generated -I../TouchGFX/target -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/LibJPEG/source/jcarith.d" -MT"Middlewares/Third_Party/LibJPEG/source/jcarith.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Middlewares/Third_Party/LibJPEG/source/jcarith.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/LibJPEG/source/jccoefct.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H735xx -c -I../Core/Inc -I../LIBJPEG/App -I../LIBJPEG/Target -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Middlewares/Third_Party/LibJPEG/include -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../TouchGFX/App -I../TouchGFX/target/generated -I../TouchGFX/target -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/LibJPEG/source/jccoefct.d" -MT"Middlewares/Third_Party/LibJPEG/source/jccoefct.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Middlewares/Third_Party/LibJPEG/source/jccoefct.o"
+../TouchGFX/target/generated/OSWrappers.cpp:19:10: fatal error: touchgfx/hal/HAL.hpp: No such file or directory
+   19 | #include <touchgfx/hal/HAL.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+../TouchGFX/target/generated/TouchGFXConfiguration.cpp:19:10: fatal error: texts/TypedTextDatabase.hpp: No such file or directory
+   19 | #include <texts/TypedTextDatabase.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../TouchGFX/target/generated/TouchGFXGeneratedHAL.cpp:19:
+../TouchGFX/target/generated/TouchGFXGeneratedHAL.hpp:21:10: fatal error: touchgfx/hal/HAL.hpp: No such file or directory
+   21 | #include <touchgfx/hal/HAL.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+compilation terminated.
+arm-none-eabi-gcc "../Middlewares/Third_Party/LibJPEG/source/jccolor.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H735xx -c -I../Core/Inc -I../LIBJPEG/App -I../LIBJPEG/Target -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Middlewares/Third_Party/LibJPEG/include -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../TouchGFX/App -I../TouchGFX/target/generated -I../TouchGFX/target -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/LibJPEG/source/jccolor.d" -MT"Middlewares/Third_Party/LibJPEG/source/jccolor.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Middlewares/Third_Party/LibJPEG/source/jccolor.o"
+In file included from ../TouchGFX/target/STM32TouchController.cpp:25:
+../TouchGFX/target/STM32TouchController.hpp:28:10: fatal error: platform/driver/touch/TouchController.hpp: No such file or directory
+   28 | #include <platform/driver/touch/TouchController.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+arm-none-eabi-gcc "../Middlewares/Third_Party/LibJPEG/source/jcdctmgr.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H735xx -c -I../Core/Inc -I../LIBJPEG/App -I../LIBJPEG/Target -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Middlewares/Third_Party/LibJPEG/include -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../TouchGFX/App -I../TouchGFX/target/generated -I../TouchGFX/target -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/LibJPEG/source/jcdctmgr.d" -MT"Middlewares/Third_Party/LibJPEG/source/jcdctmgr.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Middlewares/Third_Party/LibJPEG/source/jcdctmgr.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/LibJPEG/source/jchuff.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H735xx -c -I../Core/Inc -I../LIBJPEG/App -I../LIBJPEG/Target -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Middlewares/Third_Party/LibJPEG/include -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../TouchGFX/App -I../TouchGFX/target/generated -I../TouchGFX/target -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/LibJPEG/source/jchuff.d" -MT"Middlewares/Third_Party/LibJPEG/source/jchuff.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Middlewares/Third_Party/LibJPEG/source/jchuff.o"
+../TouchGFX/target/TouchGFXGPIO.cpp:23:10: fatal error: touchgfx/hal/GPIO.hpp: No such file or directory
+   23 | #include <touchgfx/hal/GPIO.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [TouchGFX/target/generated/subdir.mk:28: TouchGFX/target/generated/OSWrappers.o] Error 1
+make: *** Waiting for unfinished jobs....
+In file included from ../TouchGFX/target/TouchGFXHAL.hpp:27,
+                 from ../TouchGFX/target/TouchGFXHAL.cpp:23:
+../TouchGFX/target/generated/TouchGFXGeneratedHAL.hpp:21:10: fatal error: touchgfx/hal/HAL.hpp: No such file or directory
+   21 | #include <touchgfx/hal/HAL.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [TouchGFX/target/generated/subdir.mk:28: TouchGFX/target/generated/TouchGFXGeneratedHAL.o] Error 1
+make: *** [TouchGFX/target/subdir.mk:25: TouchGFX/target/STM32TouchController.o] Error 1
+make: *** [TouchGFX/target/generated/subdir.mk:28: TouchGFX/target/generated/TouchGFXConfiguration.o] Error 1
+make: *** [TouchGFX/target/subdir.mk:25: TouchGFX/target/TouchGFXGPIO.o] Error 1
+make: *** [TouchGFX/target/subdir.mk:25: TouchGFX/target/TouchGFXHAL.o] Error 1
+In file included from ../TouchGFX/target/generated/STM32DMA.cpp:21:
+../TouchGFX/target/generated/STM32DMA.hpp:21:10: fatal error: touchgfx/Bitmap.hpp: No such file or directory
+   21 | #include <touchgfx/Bitmap.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [TouchGFX/target/generated/subdir.mk:28: TouchGFX/target/generated/STM32DMA.o] Error 1
 "make -j16 all" terminated with exit code 2. Build might be incomplete.
