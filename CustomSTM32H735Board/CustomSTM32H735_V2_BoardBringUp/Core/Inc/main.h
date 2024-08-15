@@ -61,6 +61,8 @@ void Error_Handler(void);
 #define GPIO_PE4_GPIO_Port GPIOE
 #define LSBUSB_Pin GPIO_PIN_12
 #define LSBUSB_GPIO_Port GPIOA
+#define GPIO_PC13_Pin GPIO_PIN_13
+#define GPIO_PC13_GPIO_Port GPIOC
 #define LCD_BL_CTRL_Pin GPIO_PIN_15
 #define LCD_BL_CTRL_GPIO_Port GPIOG
 #define RXTX_Pin GPIO_PIN_5
