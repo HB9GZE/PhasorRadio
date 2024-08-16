@@ -1,4 +1,4 @@
-23703450390157552
+23705174123895412
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -85658,6 +85658,13 @@ IS66WVH16M8DBLL-100B1LI
 0
 24
 24
+Private
+TO-220-3_Horizontal_TabDown_GND_Pad
+TO-220-3, Horizontal, RM 2.54mm, see https://www.vishay.com/docs/66542/to-220-1.pdf
+TO-220-3 Horizontal RM 2.54mm
+0
+4
+4
 Private
 TRANS_MRFE6S9060NR1
 
