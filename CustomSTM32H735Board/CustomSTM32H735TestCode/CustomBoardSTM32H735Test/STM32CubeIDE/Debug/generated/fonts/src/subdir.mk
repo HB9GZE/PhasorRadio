@@ -4,23 +4,6 @@
 ################################################################################
 
 # Add inputs and outputs from these tool invocations to the build variables 
-CPP_SRCS += \
-../generated/fonts/src/ApplicationFontProvider.cpp \
-../generated/fonts/src/CachedFont.cpp \
-../generated/fonts/src/FontCache.cpp \
-../generated/fonts/src/Font_verdana_10_4bpp_0.cpp \
-../generated/fonts/src/Font_verdana_20_4bpp_0.cpp \
-../generated/fonts/src/Font_verdana_40_4bpp_0.cpp \
-../generated/fonts/src/GeneratedFont.cpp \
-../generated/fonts/src/Kerning_verdana_10_4bpp.cpp \
-../generated/fonts/src/Kerning_verdana_20_4bpp.cpp \
-../generated/fonts/src/Kerning_verdana_40_4bpp.cpp \
-../generated/fonts/src/Table_verdana_10_4bpp.cpp \
-../generated/fonts/src/Table_verdana_20_4bpp.cpp \
-../generated/fonts/src/Table_verdana_40_4bpp.cpp \
-../generated/fonts/src/UnmappedDataFont.cpp \
-../generated/fonts/src/VectorFontRendererBuffers.cpp 
-
 OBJS += \
 ./generated/fonts/src/ApplicationFontProvider.o \
 ./generated/fonts/src/CachedFont.o \
@@ -58,7 +41,7 @@ CPP_DEPS += \
 
 # Each subdirectory must supply rules for building sources it contributes
 generated/fonts/src/%.o generated/fonts/src/%.su generated/fonts/src/%.cyclo: ../generated/fonts/src/%.cpp generated/fonts/src/subdir.mk
-	arm-none-eabi-g++ "$<" -mcpu=cortex-m7 -std=gnu++14 -g3 -DUSE_HAL_DRIVER -DUSE_BPP=24 -DDEBUG -DSTM32H735xx -c -I../../Core/Inc -I../../TouchGFX/App -I../../TouchGFX/target/generated -I../../TouchGFX/target -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Middlewares/Third_Party/FreeRTOS/Source/include -I../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -I../../Drivers/BSP/Components/Common -I../../Drivers/BSP/STM32H735G-DK -I../../Middlewares/ST/touchgfx/framework/include -I../../TouchGFX/generated/fonts/include -I../../TouchGFX/generated/gui_generated/include -I../../TouchGFX/generated/images/include -I../../TouchGFX/generated/texts/include -I../../TouchGFX/gui/include -I../../TouchGFX/generated/videos/include -I../../LIBJPEG/App -I../../LIBJPEG/Target -I../../Middlewares/Third_Party/LibJPEG/include -Os -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -femit-class-debug-always -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "$@"
+	arm-none-eabi-g++ "$<" -mcpu=cortex-m7 -std=gnu++14 -g3 -DUSE_HAL_DRIVER -DUSE_BPP=24 -DDEBUG -DSTM32H735xx -c -I../../Core/Inc -I../../TouchGFX/App -I../../TouchGFX/target/generated -I../../TouchGFX/target -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Middlewares/Third_Party/FreeRTOS/Source/include -I../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -I../../Drivers/BSP/Components/Common -I../../Drivers/BSP/STM32H735G-DK -I../../Middlewares/ST/touchgfx/framework/include -I../../TouchGFX/generated/fonts/include -I../../TouchGFX/generated/gui_generated/include -I../../TouchGFX/generated/images/include -I../../TouchGFX/generated/texts/include -I../../TouchGFX/gui/include -I../../TouchGFX/generated/videos/include -I../../LIBJPEG/App -I../../LIBJPEG/Target -I../../Middlewares/Third_Party/LibJPEG/include -I../generated/fonts/include -I../generated/gui_generated/include -I../generated/images/include -I../generated/texts/include -I../generated/videos/include -I../gui/include -Os -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -femit-class-debug-always -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "$@"
 
 clean: clean-generated-2f-fonts-2f-src
 

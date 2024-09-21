@@ -71,6 +71,12 @@
 									<listOptionValue builtIn="false" value="../../LIBJPEG/App"/>
 									<listOptionValue builtIn="false" value="../../LIBJPEG/Target"/>
 									<listOptionValue builtIn="false" value="../../Middlewares/Third_Party/LibJPEG/include"/>
+									<listOptionValue builtIn="false" value="../generated/fonts/include"/>
+									<listOptionValue builtIn="false" value="../generated/gui_generated/include"/>
+									<listOptionValue builtIn="false" value="../generated/images/include"/>
+									<listOptionValue builtIn="false" value="../generated/texts/include"/>
+									<listOptionValue builtIn="false" value="../generated/videos/include"/>
+									<listOptionValue builtIn="false" value="../gui/include"/>
 								</option>
 								<inputType id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c.1702615917" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c"/>
 							</tool>
@@ -107,6 +113,12 @@
 									<listOptionValue builtIn="false" value="../../LIBJPEG/App"/>
 									<listOptionValue builtIn="false" value="../../LIBJPEG/Target"/>
 									<listOptionValue builtIn="false" value="../../Middlewares/Third_Party/LibJPEG/include"/>
+									<listOptionValue builtIn="false" value="../generated/fonts/include"/>
+									<listOptionValue builtIn="false" value="../generated/gui_generated/include"/>
+									<listOptionValue builtIn="false" value="../generated/images/include"/>
+									<listOptionValue builtIn="false" value="../generated/texts/include"/>
+									<listOptionValue builtIn="false" value="../generated/videos/include"/>
+									<listOptionValue builtIn="false" value="../gui/include"/>
 								</option>
 								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.compiler.option.otherflags.9853485403" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.compiler.option.otherflags" useByScannerDiscovery="true" valueType="stringList">
 									<listOptionValue builtIn="false" value="-femit-class-debug-always"/>
@@ -209,6 +221,12 @@
 									<listOptionValue builtIn="false" value="../../LIBJPEG/App"/>
 									<listOptionValue builtIn="false" value="../../LIBJPEG/Target"/>
 									<listOptionValue builtIn="false" value="../../Middlewares/Third_Party/LibJPEG/include"/>
+									<listOptionValue builtIn="false" value="../generated/fonts/include"/>
+									<listOptionValue builtIn="false" value="../generated/gui_generated/include"/>
+									<listOptionValue builtIn="false" value="../generated/images/include"/>
+									<listOptionValue builtIn="false" value="../generated/texts/include"/>
+									<listOptionValue builtIn="false" value="../generated/videos/include"/>
+									<listOptionValue builtIn="false" value="../gui/include"/>
 								</option>
 								<inputType id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c.738452034" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c"/>
 							</tool>
@@ -244,6 +262,12 @@
 									<listOptionValue builtIn="false" value="../../LIBJPEG/App"/>
 									<listOptionValue builtIn="false" value="../../LIBJPEG/Target"/>
 									<listOptionValue builtIn="false" value="../../Middlewares/Third_Party/LibJPEG/include"/>
+									<listOptionValue builtIn="false" value="../generated/fonts/include"/>
+									<listOptionValue builtIn="false" value="../generated/gui_generated/include"/>
+									<listOptionValue builtIn="false" value="../generated/images/include"/>
+									<listOptionValue builtIn="false" value="../generated/texts/include"/>
+									<listOptionValue builtIn="false" value="../generated/videos/include"/>
+									<listOptionValue builtIn="false" value="../gui/include"/>
 								</option>
 								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.compiler.option.otherflags.2675847854" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.compiler.option.otherflags" useByScannerDiscovery="true" valueType="stringList">
 									<listOptionValue builtIn="false" value="-femit-class-debug-always"/>
