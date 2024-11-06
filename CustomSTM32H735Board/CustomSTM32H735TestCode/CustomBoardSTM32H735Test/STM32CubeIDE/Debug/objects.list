@@ -15,6 +15,7 @@
 "./Application/User/TouchGFX/target/TouchGFXHAL.o"
 "./Application/User/TouchGFX/target/generated/OSWrappers.o"
 "./Application/User/TouchGFX/target/generated/STM32DMA.o"
+"./Application/User/TouchGFX/target/generated/SoftwareMJPEGDecoder.o"
 "./Application/User/TouchGFX/target/generated/TouchGFXConfiguration.o"
 "./Application/User/TouchGFX/target/generated/TouchGFXGeneratedHAL.o"
 "./Application/User/generated/ApplicationFontProvider.o"

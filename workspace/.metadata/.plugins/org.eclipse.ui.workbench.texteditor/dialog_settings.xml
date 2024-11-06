@@ -1,18 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="ospi_ram_init"/>
+		<item key="selection" value="sendDatatoSI5351"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="sendDatatoSI5351"/>
+			<item value="VFOhasChangedforSI5351"/>
+			<item value="readyToSendI2C"/>
+			<item value="hi2c"/>
+			<item value="GPIOE, GPIO_PIN_3"/>
+			<item value="GPIOG, GPIO_PIN_5"/>
+			<item value="PTT"/>
+			<item value="(GPIOA"/>
+			<item value="GIOIA"/>
+			<item value="(GPIOG, GPIO_PIN_5"/>
+			<item value="(GPIOG, GPIO_PIN_4"/>
+			<item value="(GPIOE, GPIO_PIN_14"/>
+			<item value="HAL_PWR"/>
 			<item value="ospi_ram_init"/>
 			<item value="ospi_nor_int"/>
-			<item value="Instance"/>
 		</list>
 		<list key="replacehistory">
+			<item value="GPIOG, GPIO_PIN_5"/>
+			<item value=""/>
+			<item value="GPIOA"/>
+			<item value="(GIOIA, GPIO_PIN_12"/>
+			<item value="(GPIOB, GPIO_PIN_13"/>
+			<item value="(GPIOB, GPIO_PIN_12"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">

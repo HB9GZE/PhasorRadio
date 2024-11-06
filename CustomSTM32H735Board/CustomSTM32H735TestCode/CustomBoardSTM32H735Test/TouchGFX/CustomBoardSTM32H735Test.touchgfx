@@ -85,8 +85,7 @@
     "OptionalComponents": [],
     "AdditionalFeatures": [
       "CWRVector",
-      "VectorFonts",
-      "Video"
+      "VectorFonts"
     ]
   },
   "Version": "4.24.0",

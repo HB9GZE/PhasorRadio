@@ -81,22 +81,6 @@ TouchGFX/build/STM32H735G-DK/TouchGFX/target/generated/TouchGFXGeneratedHAL.o: \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/PainterRGB888.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterRGB888.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/PainterRGB888LinearGradient.hpp \
- TouchGFX/target/generated/DedicatedBufferVideoController.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/hal/VideoController.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/VideoWidget.hpp \
- TouchGFX/target/generated/MJPEGDecoder.hpp \
- Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h \
- Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h \
- Core/Inc/FreeRTOSConfig.h \
- Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h \
- Middlewares/Third_Party/FreeRTOS/Source/include/portable.h \
- Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h \
- gcc/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h \
- Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h \
- Middlewares/Third_Party/FreeRTOS/Source/include/task.h \
- Middlewares/Third_Party/FreeRTOS/Source/include/list.h \
- Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h \
- TouchGFX/target/generated/SoftwareMJPEGDecoder.hpp \
  Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h \
  Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h735xx.h \
  Drivers/CMSIS/Include/core_cm7.h Drivers/CMSIS/Include/cmsis_version.h \
@@ -293,38 +277,6 @@ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/PainterRGB888.
 Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterRGB888.hpp:
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/PainterRGB888LinearGradient.hpp:
-
-TouchGFX/target/generated/DedicatedBufferVideoController.hpp:
-
-Middlewares/ST/touchgfx/framework/include/touchgfx/hal/VideoController.hpp:
-
-Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/VideoWidget.hpp:
-
-TouchGFX/target/generated/MJPEGDecoder.hpp:
-
-Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h:
-
-Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h:
-
-Core/Inc/FreeRTOSConfig.h:
-
-Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h:
-
-Middlewares/Third_Party/FreeRTOS/Source/include/portable.h:
-
-Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h:
-
-gcc/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h:
-
-Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h:
-
-Middlewares/Third_Party/FreeRTOS/Source/include/task.h:
-
-Middlewares/Third_Party/FreeRTOS/Source/include/list.h:
-
-Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h:
-
-TouchGFX/target/generated/SoftwareMJPEGDecoder.hpp:
 
 Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:
 

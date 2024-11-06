@@ -81,12 +81,6 @@ build/MINGW32_NT-6.2/generated/simulator/src/mainBase.o: \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp \
  ../Middlewares/ST/touchgfx/framework/include/platform/driver/lcd/LCD24bpp.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/lcd/LCD24DebugPrinter.hpp \
- generated/simulator/include/simulator/video/DirectFrameBufferVideoController.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/VideoWidget.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/VideoController.hpp \
- generated/simulator/include/simulator/video/MJPEGDecoder.hpp \
- generated/simulator/include/simulator/video/SoftwareMJPEGDecoder.hpp \
- generated/videos/include/videos/VideoDatabase.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CWRVectorRenderer.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterColor.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterLinearGradient.hpp \
@@ -275,18 +269,6 @@ gui/include/gui/model/ModelListener.hpp:
 ../Middlewares/ST/touchgfx/framework/include/platform/driver/lcd/LCD24bpp.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/lcd/LCD24DebugPrinter.hpp:
-
-generated/simulator/include/simulator/video/DirectFrameBufferVideoController.hpp:
-
-../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/VideoWidget.hpp:
-
-../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/VideoController.hpp:
-
-generated/simulator/include/simulator/video/MJPEGDecoder.hpp:
-
-generated/simulator/include/simulator/video/SoftwareMJPEGDecoder.hpp:
-
-generated/videos/include/videos/VideoDatabase.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CWRVectorRenderer.hpp:
 

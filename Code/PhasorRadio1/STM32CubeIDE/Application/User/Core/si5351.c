@@ -2,7 +2,7 @@
 #include "stm32h7xx_hal.h"
 #include <si5351.h>
 #define SI5351_ADDRESS 0x60
-#define I2C_HANDLE hi2c4
+#define I2C_HANDLE hi2c3
 extern I2C_HandleTypeDef I2C_HANDLE;
 uint16_t i2cStatusSingle, i2cStatusBulk;
 uint8_t i2cDataBulk[8];
@@ -462,5 +462,5 @@ void si5351_writeBulk(uint8_t baseaddr, int32_t P1, int32_t P2, int32_t P3,
 	i2cDataBulk[6] = ((P2 >> 8) & 0xFF);
 	i2cDataBulk[7] = (P2 & 0xFF);
 
-	HAL_I2C_Mem_Write(&hi2c4, (SI5351_ADDRESS << 1), baseaddr, I2C_MEMADD_SIZE_8BIT, i2cDataBulk, 8, 0x25U);
+	HAL_I2C_Mem_Write(&hi2c3, (SI5351_ADDRESS << 1), baseaddr, I2C_MEMADD_SIZE_8BIT, i2cDataBulk, 8, 0x25U);
 }

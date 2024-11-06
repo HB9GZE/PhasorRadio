@@ -813,3 +813,844 @@ Remote communication error.  Target disconnected.: No error.
 java.lang.Exception: Remote communication error.  Target disconnected.: No error.
 	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1024)
 	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:853)
+!SESSION 2024-11-04 13:54:06.450 -----------------------------------------------
+eclipse.buildId=Version 1.16.0
+java.version=17.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Framework arguments:  C:\ProjectsOnC\PhasorRadio\CustomSTM32H735Board\CustomSTM32H735TestCode\CustomBoardSTM32H735Test\STM32CubeIDE\.project
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 C:\ProjectsOnC\PhasorRadio\CustomSTM32H735Board\CustomSTM32H735TestCode\CustomBoardSTM32H735Test\STM32CubeIDE\.project
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-11-04 13:54:28.838
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-11-04 13:54:28.844
+!MESSAGE Log4j2 initialized with config file C:\ProjectsOnC\PhasorRadio\workspace\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-11-04 13:54:41.375
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.core.resources 4 368 2024-11-04 13:55:35.898
+!MESSAGE Resource '/STM32H735G-DK' does not exist.
+!STACK 0
+java.lang.Exception: Resource '/STM32H735G-DK' does not exist.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:367)
+	at org.eclipse.core.internal.resources.Project.open(Project.java:1060)
+	at org.eclipse.core.internal.resources.Project.open(Project.java:1183)
+	at com.st.stm32cube.ide.mcu.ide.ui.project.internal.MCUProjectImporter$ProjectOperation.execute(MCUProjectImporter.java:189)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2453)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2478)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-11-04 13:55:44.413
+!MESSAGE Indexed 'STM32H735G-DK' (175 sources, 420 headers) in 7.61 sec: 38,461 declarations; 163,273 references; 11 unresolved inclusions; 215 syntax errors; 3,417 unresolved names (1.7%)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-11-04 13:57:01.438
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-11-04 13:58:02.497
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+!SESSION 2024-11-04 13:59:55.657 -----------------------------------------------
+eclipse.buildId=Version 1.16.0
+java.version=17.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Framework arguments:  C:\ProjectsOnC\PhasorRadio\CustomSTM32H735Board\CustomSTM32H735TestCode\CustomBoardSTM32H735Test\STM32CubeIDE\.cproject
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 C:\ProjectsOnC\PhasorRadio\CustomSTM32H735Board\CustomSTM32H735TestCode\CustomBoardSTM32H735Test\STM32CubeIDE\.cproject
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-11-04 14:00:01.607
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-11-04 14:00:01.608
+!MESSAGE Log4j2 initialized with config file C:\ProjectsOnC\PhasorRadio\workspace\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-11-04 14:00:04.104
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.ui 4 4 2024-11-04 14:00:05.197
+!MESSAGE To avoid deadlock while executing Display.syncExec() with argument: com.st.stm32cube.ide.mcu.ide.ui.project.internal.MCUProjectImporter$3@142f12e5, thread Worker-9: Executing the early startup extensions will interrupt UI thread.
+!SUBENTRY 1 org.eclipse.ui 4 4 2024-11-04 14:00:05.197
+!MESSAGE Worker-9: Executing the early startup extensions thread is an instance of Worker or owns an ILock
+!STACK 0
+java.lang.IllegalStateException: Call stack for thread Worker-9: Executing the early startup extensions
+	at java.management@17.0.11/sun.management.ThreadImpl.dumpThreads0(Native Method)
+	at java.management@17.0.11/sun.management.ThreadImpl.getThreadInfo(ThreadImpl.java:492)
+	at org.eclipse.ui.internal.UILockListener.reportInterruption(UILockListener.java:214)
+	at org.eclipse.ui.internal.UILockListener.interruptUI(UILockListener.java:180)
+	at org.eclipse.ui.internal.PendingSyncExec.waitUntilExecuted(PendingSyncExec.java:92)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:142)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4802)
+	at com.st.stm32cube.ide.mcu.ide.ui.project.internal.MCUProjectImporter.importProjectImpl(MCUProjectImporter.java:376)
+	at com.st.stm32cube.ide.mcu.ide.ui.project.internal.MCUProjectImporterStartup.handleArguments(MCUProjectImporterStartup.java:141)
+	at com.st.stm32cube.ide.mcu.ide.ui.project.internal.MCUProjectImporterStartup.earlyStartup(MCUProjectImporterStartup.java:57)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:79)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:55)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.ui.internal.Workbench$39.run(Workbench.java:2762)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.ui 4 4 2024-11-04 14:00:05.197
+!MESSAGE UI thread waiting on a job or lock.
+!STACK 0
+java.lang.IllegalStateException: Call stack for thread main
+	at java.base@17.0.11/java.lang.Object.wait(Native Method)
+	at org.eclipse.core.internal.jobs.Semaphore.acquire(Semaphore.java:45)
+	at org.eclipse.core.internal.jobs.OrderedLock.doAcquire(OrderedLock.java:191)
+	at org.eclipse.core.internal.jobs.OrderedLock.acquire(OrderedLock.java:125)
+	at org.eclipse.core.internal.jobs.OrderedLock.acquire(OrderedLock.java:100)
+	at org.eclipse.core.internal.jobs.OrderedLock.acquire(OrderedLock.java:87)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.getProjectDescription(XmlProjectDescriptionStorage.java:232)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescriptionInternal(CProjectDescriptionManager.java:426)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:408)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:402)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:395)
+	at org.eclipse.cdt.make.ui.MakeContentProvider.getSourceEntries(MakeContentProvider.java:411)
+	at org.eclipse.cdt.make.ui.MakeContentProvider.getChildren(MakeContentProvider.java:106)
+	at org.eclipse.cdt.make.ui.MakeContentProvider.hasChildren(MakeContentProvider.java:174)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.isExpandable(AbstractTreeViewer.java:2238)
+	at org.eclipse.jface.viewers.TreeViewer.isExpandable(TreeViewer.java:557)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.isExpandable(AbstractTreeViewer.java:2268)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.updatePlus(AbstractTreeViewer.java:2996)
+	at org.eclipse.jface.viewers.TreeViewer.updatePlus(TreeViewer.java:805)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.createTreeItem(AbstractTreeViewer.java:878)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.updateChildren(AbstractTreeViewer.java:2912)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.internalRefreshStruct(AbstractTreeViewer.java:1995)
+	at org.eclipse.jface.viewers.TreeViewer.internalRefreshStruct(TreeViewer.java:688)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.internalRefresh(AbstractTreeViewer.java:1964)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.internalRefresh(AbstractTreeViewer.java:1921)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.internalRefresh(AbstractTreeViewer.java:1907)
+	at org.eclipse.jface.viewers.StructuredViewer.lambda$2(StructuredViewer.java:1468)
+	at org.eclipse.jface.viewers.StructuredViewer$$Lambda$723/0x000000010081a020.run(Unknown Source)
+	at org.eclipse.jface.viewers.StructuredViewer.preservingSelection(StructuredViewer.java:1397)
+	at org.eclipse.jface.viewers.TreeViewer.preservingSelection(TreeViewer.java:366)
+	at org.eclipse.jface.viewers.StructuredViewer.preservingSelection(StructuredViewer.java:1358)
+	at org.eclipse.jface.viewers.StructuredViewer.refresh(StructuredViewer.java:1468)
+	at org.eclipse.jface.viewers.ColumnViewer.refresh(ColumnViewer.java:526)
+	at org.eclipse.jface.viewers.StructuredViewer.refresh(StructuredViewer.java:1422)
+	at org.eclipse.cdt.make.ui.MakeContentProvider.lambda$0(MakeContentProvider.java:242)
+	at org.eclipse.cdt.make.ui.MakeContentProvider$$Lambda$1167/0x00000001009942d8.run(Unknown Source)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4046)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3662)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.block(ModalContext.java:166)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:368)
+	at org.eclipse.jface.dialogs.ProgressMonitorDialog.run(ProgressMonitorDialog.java:470)
+	at org.eclipse.ui.internal.progress.ProgressMonitorJobsDialog.run(ProgressMonitorJobsDialog.java:230)
+	at org.eclipse.ui.internal.progress.ProgressManager.lambda$26(ProgressManager.java:836)
+	at org.eclipse.ui.internal.progress.ProgressManager$$Lambda$1147/0x0000000100a1caa8.run(Unknown Source)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+	at org.eclipse.ui.internal.progress.ProgressManager.busyCursorWhile(ProgressManager.java:869)
+	at org.eclipse.ui.internal.progress.ProgressManager.busyCursorWhile(ProgressManager.java:845)
+	at com.st.stm32cube.ide.mcu.ide.ui.project.internal.MCUProjectImporter$3.run(MCUProjectImporter.java:383)
+	at org.eclipse.ui.internal.PendingSyncExec.run(PendingSyncExec.java:68)
+	at org.eclipse.ui.internal.UILockListener.doPendingWork(UILockListener.java:172)
+	at org.eclipse.ui.internal.UISynchronizer$$Lambda$1144/0x0000000100a1c268.run(Unknown Source)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4046)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3662)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:648)
+	at org.eclipse.ui.internal.Workbench$$Lambda$242/0x00000001002a5788.run(Unknown Source)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:555)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base@17.0.11/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@17.0.11/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base@17.0.11/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@17.0.11/java.lang.reflect.Method.invoke(Method.java:568)
+	at app//org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at app//org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at app//org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-11-04 14:00:16.936
+!MESSAGE Indexed 'STM32H735G-DK' (175 sources, 423 headers) in 11.5 sec: 38,961 declarations; 167,190 references; 3 unresolved inclusions; 76 syntax errors; 548 unresolved names (0.27%)
+!SESSION 2024-11-04 14:07:42.425 -----------------------------------------------
+eclipse.buildId=Version 1.16.0
+java.version=17.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Framework arguments:  C:\ProjectsOnC\PhasorRadio\CustomSTM32H735Board\CustomBoardSTM32H735TestHW\STM32CubeIDE\.project
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 C:\ProjectsOnC\PhasorRadio\CustomSTM32H735Board\CustomBoardSTM32H735TestHW\STM32CubeIDE\.project
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-11-04 14:07:47.460
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-11-04 14:07:47.461
+!MESSAGE Log4j2 initialized with config file C:\ProjectsOnC\PhasorRadio\workspace\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-11-04 14:07:50.555
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.core.resources 4 368 2024-11-04 14:08:18.255
+!MESSAGE Resource '/STM32H735G-DK' does not exist.
+!STACK 0
+java.lang.Exception: Resource '/STM32H735G-DK' does not exist.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:367)
+	at org.eclipse.core.internal.resources.Project.open(Project.java:1060)
+	at org.eclipse.core.internal.resources.Project.open(Project.java:1183)
+	at com.st.stm32cube.ide.mcu.ide.ui.project.internal.MCUProjectImporter$ProjectOperation.execute(MCUProjectImporter.java:189)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2453)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2478)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-11-04 14:08:30.045
+!MESSAGE Indexed 'STM32H735G-DK' (140 sources, 383 headers) in 11.5 sec: 36,995 declarations; 156,768 references; 7 unresolved inclusions; 214 syntax errors; 3,414 unresolved names (1.7%)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-11-04 14:09:17.219
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-11-04 14:10:21.713
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-11-04 14:11:50.287
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-11-04 14:13:32.511
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-11-04 14:16:38.052
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-11-04 14:16:51.752
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-11-04 14:17:10.625
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-11-04 14:17:29.606
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-11-04 14:18:38.758
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-11-04 14:18:46.159
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-11-04 14:20:44.003
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+!SESSION 2024-11-04 14:21:02.104 -----------------------------------------------
+eclipse.buildId=Version 1.16.0
+java.version=17.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Framework arguments:  C:\ProjectsOnC\PhasorRadio\CustomSTM32H735Board\CustomBoardSTM32H735TestHW\STM32CubeIDE\.cproject
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 C:\ProjectsOnC\PhasorRadio\CustomSTM32H735Board\CustomBoardSTM32H735TestHW\STM32CubeIDE\.cproject
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-11-04 14:21:06.530
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-11-04 14:21:06.530
+!MESSAGE Log4j2 initialized with config file C:\ProjectsOnC\PhasorRadio\workspace\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-11-04 14:21:10.798
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-11-04 14:21:20.542
+!MESSAGE Indexed 'STM32H735G-DK' (140 sources, 384 headers) in 9.55 sec: 37,403 declarations; 160,593 references; 0 unresolved inclusions; 75 syntax errors; 545 unresolved names (0.27%)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-11-04 14:21:37.638
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-11-04 14:22:25.545
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-11-04 14:23:23.051
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-11-04 14:25:05.241
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-11-04 14:26:58.071
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-11-04 14:50:50.803
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+
+!ENTRY org.eclipse.equinox.p2.touchpoint.natives 2 0 2024-11-04 14:57:18.258
+!MESSAGE Could not remove temporary backup directory (it is safe to manually delete it and its contents): C:\Users\stefa\AppData\Local\Temp\STM32CubeIDE_d3ff9a27-1e34-48f6-88c8-94ffc3b1edd4
+
+!ENTRY org.eclipse.equinox.preferences 4 4 2024-11-04 14:57:18.289
+!MESSAGE Exception saving preferences to: C:/ST/STM32CubeIDE_1.15.0/STM32CubeIDE/p2/org.eclipse.equinox.p2.engine/profileRegistry/STM32CubeIDE.profile/.data/.settings/org.eclipse.equinox.p2.metadata.repository.prefs.
+!STACK 0
+java.nio.file.AccessDeniedException: C:\ST\STM32CubeIDE_1.15.0\STM32CubeIDE\p2\org.eclipse.equinox.p2.engine\profileRegistry\STM32CubeIDE.profile\.data\.settings\org.eclipse.equinox.p2.metadata.repository.prefs
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:89)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileCopy.move(WindowsFileCopy.java:392)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.move(WindowsFileSystemProvider.java:293)
+	at java.base/java.nio.file.Files.move(Files.java:1432)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.write(EclipsePreferences.java:289)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.save(EclipsePreferences.java:1039)
+	at org.eclipse.equinox.internal.p2.engine.ProfilePreferences.doSave(ProfilePreferences.java:141)
+	at org.eclipse.equinox.internal.p2.engine.ProfilePreferences$SaveJob.run(ProfilePreferences.java:54)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.engine 2 0 2024-11-04 14:57:18.291
+!MESSAGE Exception saving profile preferences
+!STACK 0
+org.osgi.service.prefs.BackingStoreException: Exception saving preferences to: C:/ST/STM32CubeIDE_1.15.0/STM32CubeIDE/p2/org.eclipse.equinox.p2.engine/profileRegistry/STM32CubeIDE.profile/.data/.settings/org.eclipse.equinox.p2.metadata.repository.prefs.
+	at org.eclipse.core.internal.preferences.EclipsePreferences.write(EclipsePreferences.java:297)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.save(EclipsePreferences.java:1039)
+	at org.eclipse.equinox.internal.p2.engine.ProfilePreferences.doSave(ProfilePreferences.java:141)
+	at org.eclipse.equinox.internal.p2.engine.ProfilePreferences$SaveJob.run(ProfilePreferences.java:54)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.nio.file.AccessDeniedException: C:\ST\STM32CubeIDE_1.15.0\STM32CubeIDE\p2\org.eclipse.equinox.p2.engine\profileRegistry\STM32CubeIDE.profile\.data\.settings\org.eclipse.equinox.p2.metadata.repository.prefs
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:89)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileCopy.move(WindowsFileCopy.java:392)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.move(WindowsFileSystemProvider.java:293)
+	at java.base/java.nio.file.Files.move(Files.java:1432)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.write(EclipsePreferences.java:289)
+	... 4 more
+!SESSION 2024-11-04 14:57:23.918 -----------------------------------------------
+eclipse.buildId=Version 1.16.0
+java.version=17.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Framework arguments:  C:\ProjectsOnC\PhasorRadio\CustomSTM32H735Board\CustomBoardSTM32H735TestHW\STM32CubeIDE\.cproject
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data file:/C:/ProjectsOnC/PhasorRadio/workspace/ C:\ProjectsOnC\PhasorRadio\CustomSTM32H735Board\CustomBoardSTM32H735TestHW\STM32CubeIDE\.cproject
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-11-04 14:57:28.406
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-11-04 14:57:28.406
+!MESSAGE Log4j2 initialized with config file C:\ProjectsOnC\PhasorRadio\workspace\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-11-04 14:57:32.168
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-11-04 14:57:42.980
+!MESSAGE Indexed 'STM32H735G-DK' (140 sources, 384 headers) in 10.6 sec: 37,403 declarations; 160,593 references; 0 unresolved inclusions; 75 syntax errors; 545 unresolved names (0.27%)
+!SESSION 2024-11-04 15:16:01.209 -----------------------------------------------
+eclipse.buildId=Version 1.16.1
+java.version=17.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Framework arguments:  C:\ProjectsOnC\PhasorRadio\CustomSTM32H735Board\CustomBoardSTM32H735TestHW\STM32CubeIDE\.project
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 C:\ProjectsOnC\PhasorRadio\CustomSTM32H735Board\CustomBoardSTM32H735TestHW\STM32CubeIDE\.project
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-11-04 15:16:06.350
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-11-04 15:16:06.350
+!MESSAGE Log4j2 initialized with config file C:\ProjectsOnC\PhasorRadio\workspace\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-11-04 15:16:10.306
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-11-04 15:16:20.492
+!MESSAGE Indexed 'STM32H735G-DK' (140 sources, 385 headers) in 10 sec: 37,421 declarations; 160,634 references; 0 unresolved inclusions; 75 syntax errors; 547 unresolved names (0.28%)
+!SESSION 2024-11-04 15:24:10.339 -----------------------------------------------
+eclipse.buildId=Version 1.16.1
+java.version=17.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Framework arguments:  C:\ProjectsOnC\PhasorRadio\CustomSTM32H735Board\CustomBoardSTM32H735TestHW\STM32CubeIDE\.cproject
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 C:\ProjectsOnC\PhasorRadio\CustomSTM32H735Board\CustomBoardSTM32H735TestHW\STM32CubeIDE\.cproject
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-11-04 15:24:14.977
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-11-04 15:24:14.977
+!MESSAGE Log4j2 initialized with config file C:\ProjectsOnC\PhasorRadio\workspace\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-11-04 15:24:18.944
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-11-04 15:24:31.348
+!MESSAGE Indexed 'STM32H735G-DK' (141 sources, 385 headers) in 12.2 sec: 37,424 declarations; 160,651 references; 0 unresolved inclusions; 75 syntax errors; 545 unresolved names (0.27%)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-11-04 15:24:33.121
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-11-04 15:25:13.863
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+!SESSION 2024-11-04 15:27:37.798 -----------------------------------------------
+eclipse.buildId=Version 1.16.1
+java.version=17.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Framework arguments:  C:\ProjectsOnC\PhasorRadio\CustomSTM32H735Board\CustomBoardSTM32H735TestHW\STM32CubeIDE\.project
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 C:\ProjectsOnC\PhasorRadio\CustomSTM32H735Board\CustomBoardSTM32H735TestHW\STM32CubeIDE\.project
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-11-04 15:27:43.906
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-11-04 15:27:43.907
+!MESSAGE Log4j2 initialized with config file C:\ProjectsOnC\PhasorRadio\workspace\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-11-04 15:27:48.141
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-11-04 15:27:53.121
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-11-04 15:28:01.657
+!MESSAGE Indexed 'STM32H735G-DK' (141 sources, 385 headers) in 9.64 sec: 37,476 declarations; 160,783 references; 0 unresolved inclusions; 75 syntax errors; 545 unresolved names (0.27%)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-11-04 15:28:59.470
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-11-04 15:29:12.662
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+!SESSION 2024-11-04 15:30:29.292 -----------------------------------------------
+eclipse.buildId=Version 1.16.1
+java.version=17.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Framework arguments:  C:\ProjectsOnC\PhasorRadio\CustomSTM32H735Board\CustomBoardSTM32H735TestHW\STM32CubeIDE\.project
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 C:\ProjectsOnC\PhasorRadio\CustomSTM32H735Board\CustomBoardSTM32H735TestHW\STM32CubeIDE\.project
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-11-04 15:30:33.570
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-11-04 15:30:33.585
+!MESSAGE Log4j2 initialized with config file C:\ProjectsOnC\PhasorRadio\workspace\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-11-04 15:30:37.372
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-11-04 15:30:47.361
+!MESSAGE Indexed 'STM32H735G-DK' (140 sources, 385 headers) in 9.79 sec: 37,473 declarations; 160,768 references; 0 unresolved inclusions; 75 syntax errors; 545 unresolved names (0.27%)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2024-11-04 15:30:47.837
+!MESSAGE Ignored L/STM32H735G-DK/Application/User/generated/image_HB9GZE.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2024-11-04 15:31:03.845
+!MESSAGE Ignored L/STM32H735G-DK/Application/User/generated/image_HB9GZE.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-11-04 15:31:05.594
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2024-11-04 15:34:54.484
+!MESSAGE Ignored L/STM32H735G-DK/Application/User/generated/image_HB9GZE.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2024-11-04 15:34:59.866
+!MESSAGE Ignored L/STM32H735G-DK/Application/User/generated/image_HB9GZE.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-11-04 15:35:01.191
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2024-11-04 15:37:36.031
+!MESSAGE Ignored L/STM32H735G-DK/Application/User/generated/image_HB9GZE.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2024-11-04 15:37:47.013
+!MESSAGE Ignored L/STM32H735G-DK/Application/User/generated/image_HB9GZE.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-11-04 15:37:48.403
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2024-11-04 15:38:22.930
+!MESSAGE Ignored L/STM32H735G-DK/Application/User/generated/image_HB9GZE.cpp from Makefile generation (invalid resource)
+!SESSION 2024-11-04 15:39:04.197 -----------------------------------------------
+eclipse.buildId=Version 1.16.1
+java.version=17.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Framework arguments:  C:\ProjectsOnC\PhasorRadio\CustomSTM32H735Board\CustomBoardSTM32H735TestHW\STM32CubeIDE\.cproject
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 C:\ProjectsOnC\PhasorRadio\CustomSTM32H735Board\CustomBoardSTM32H735TestHW\STM32CubeIDE\.cproject
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-11-04 15:39:09.116
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-11-04 15:39:09.116
+!MESSAGE Log4j2 initialized with config file C:\ProjectsOnC\PhasorRadio\workspace\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-11-04 15:39:12.801
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-11-04 15:39:22.707
+!MESSAGE Indexed 'STM32H735G-DK' (141 sources, 386 headers) in 9.72 sec: 37,494 declarations; 160,826 references; 0 unresolved inclusions; 75 syntax errors; 545 unresolved names (0.27%)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2024-11-04 15:39:24.995
+!MESSAGE Ignored L/STM32H735G-DK/Application/User/generated/image_HB9GZE.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2024-11-04 15:39:30.011
+!MESSAGE Ignored L/STM32H735G-DK/Application/User/generated/image_HB9GZE.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-11-04 15:39:31.612
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none.oss 2 2 2024-11-04 15:43:25.579
+!MESSAGE Ignored L/STM32H735G-DK/Application/User/generated/image_HB9GZE.cpp from Makefile generation (invalid resource)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-11-04 15:43:27.184
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-11-04 15:44:15.870
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-11-04 15:53:43.269
+!MESSAGE Indexed 'STM32H735G-DK' (141 sources, 390 headers) in 4.79 sec: 37,683 declarations; 161,040 references; 0 unresolved inclusions; 75 syntax errors; 545 unresolved names (0.27%)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-11-04 15:54:26.757
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-11-04 15:55:33.059
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-11-04 15:56:47.706
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-11-04 15:57:10.933
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-11-04 15:59:02.882
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-11-04 16:20:37.170
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-11-04 16:24:25.130
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-11-04 16:28:14.156
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-11-04 16:28:52.402
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-11-04 16:33:56.372
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-11-04 16:38:33.113
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-11-04 16:46:47.376
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-11-04 16:47:49.867
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-11-04 16:54:51.805
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-11-04 17:02:56.191
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2024-11-04 17:02:56.750
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 17 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2024-11-04 17:02:56.750
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2024-11-04 17:02:56.751
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 17 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2024-11-04 17:02:56.751
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2024-11-04 17:02:56.752
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 17 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2024-11-04 17:02:56.753
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-11-04 17:03:50.437
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-11-04 17:05:21.711
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+!SESSION 2024-11-04 17:05:45.967 -----------------------------------------------
+eclipse.buildId=Version 1.16.1
+java.version=17.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Framework arguments:  C:\ProjectsOnC\PhasorRadio\CustomSTM32H735Board\CustomBoardSTM32H735TestHW\STM32CubeIDE\.cproject
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 C:\ProjectsOnC\PhasorRadio\CustomSTM32H735Board\CustomBoardSTM32H735TestHW\STM32CubeIDE\.cproject
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-11-04 17:06:11.450
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-11-04 17:06:11.455
+!MESSAGE Log4j2 initialized with config file C:\ProjectsOnC\PhasorRadio\workspace\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-11-04 17:06:15.494
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-11-04 17:06:24.685
+!MESSAGE Indexed 'STM32H735G-DK' (142 sources, 390 headers) in 8.98 sec: 37,687 declarations; 161,067 references; 0 unresolved inclusions; 75 syntax errors; 545 unresolved names (0.27%)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-11-05 08:12:35.727
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-11-05 08:31:12.783
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+!SESSION 2024-11-05 10:55:57.181 -----------------------------------------------
+eclipse.buildId=Version 1.16.1
+java.version=17.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Framework arguments:  C:\ProjectsOnC\PhasorRadio\Code\PhasorRadio1\STM32CubeIDE\.cproject
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 C:\ProjectsOnC\PhasorRadio\Code\PhasorRadio1\STM32CubeIDE\.cproject
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-11-05 10:56:09.585
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-11-05 10:56:09.585
+!MESSAGE Log4j2 initialized with config file C:\ProjectsOnC\PhasorRadio\workspace\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-11-05 10:56:13.347
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.core.resources 4 368 2024-11-05 10:56:36.234
+!MESSAGE Resource '/STM32H735G-DK' does not exist.
+!STACK 0
+java.lang.Exception: Resource '/STM32H735G-DK' does not exist.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:367)
+	at org.eclipse.core.internal.resources.Project.open(Project.java:1060)
+	at org.eclipse.core.internal.resources.Project.open(Project.java:1183)
+	at com.st.stm32cube.ide.mcu.ide.ui.project.internal.MCUProjectImporter$ProjectOperation.execute(MCUProjectImporter.java:189)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2453)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2478)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-11-05 10:56:52.630
+!MESSAGE Indexed 'STM32H735G-DK' (102 sources, 379 headers) in 13.9 sec: 37,648 declarations; 164,712 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.00099%)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2024-11-05 10:57:29.005
+!MESSAGE Error in final launch sequence:
+
+Failed to execute MI command:
+target remote localhost:2331
+
+Error message from debugger back end:
+localhost:2331: Connection timed out.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Failed to execute MI command:
+target remote localhost:2331
+
+Error message from debugger back end:
+localhost:2331: Connection timed out.
+	at org.eclipse.cdt.dsf.concurrent.Query.get(Query.java:112)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:252)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:334)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.Exception: localhost:2331: Connection timed out.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1024)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:853)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2024-11-05 10:57:29.005
+!MESSAGE Failed to execute MI command:
+target remote localhost:2331
+
+Error message from debugger back end:
+localhost:2331: Connection timed out.
+!STACK 0
+java.lang.Exception: localhost:2331: Connection timed out.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1024)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:853)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-11-05 10:57:40.907
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-11-05 11:01:11.312
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+
+!ENTRY org.eclipse.core.resources 4 368 2024-11-05 15:05:26.203
+!MESSAGE Resource '/STM32H735G-DK' does not exist.
+!STACK 0
+java.lang.Exception: Resource '/STM32H735G-DK' does not exist.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:367)
+	at org.eclipse.core.internal.resources.Project.open(Project.java:1060)
+	at org.eclipse.core.internal.resources.Project.open(Project.java:1183)
+	at com.st.stm32cube.ide.mcu.ide.ui.project.internal.MCUProjectImporter$ProjectOperation.execute(MCUProjectImporter.java:189)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2453)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2478)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-11-05 15:05:31.670
+!MESSAGE Indexed 'STM32H735G-DK' (142 sources, 390 headers) in 5.12 sec: 37,687 declarations; 161,067 references; 0 unresolved inclusions; 75 syntax errors; 545 unresolved names (0.27%)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-11-05 15:05:55.337
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-11-05 15:06:44.405
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-11-05 15:08:36.894
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+!SESSION 2024-11-05 15:10:24.946 -----------------------------------------------
+eclipse.buildId=Version 1.16.1
+java.version=17.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Framework arguments:  C:\ProjectsOnC\PhasorRadio\CustomSTM32H735Board\CustomBoardSTM32H735TestHW\STM32CubeIDE\.project
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 C:\ProjectsOnC\PhasorRadio\CustomSTM32H735Board\CustomBoardSTM32H735TestHW\STM32CubeIDE\.project
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-11-05 15:10:29.719
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-11-05 15:10:29.719
+!MESSAGE Log4j2 initialized with config file C:\ProjectsOnC\PhasorRadio\workspace\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-11-05 15:10:33.509
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-11-05 15:10:43.548
+!MESSAGE Indexed 'STM32H735G-DK' (142 sources, 390 headers) in 9.8 sec: 37,687 declarations; 161,067 references; 0 unresolved inclusions; 75 syntax errors; 545 unresolved names (0.27%)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-11-05 15:10:54.773
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+!SESSION 2024-11-05 15:12:18.473 -----------------------------------------------
+eclipse.buildId=Version 1.16.1
+java.version=17.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Framework arguments:  C:\ProjectsOnC\PhasorRadio\Code\PhasorRadio1\STM32CubeIDE\.cproject
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 C:\ProjectsOnC\PhasorRadio\Code\PhasorRadio1\STM32CubeIDE\.cproject
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-11-05 15:12:22.855
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-11-05 15:12:22.855
+!MESSAGE Log4j2 initialized with config file C:\ProjectsOnC\PhasorRadio\workspace\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-11-05 15:12:26.588
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.core.resources 4 368 2024-11-05 15:12:29.847
+!MESSAGE Resource '/STM32H735G-DK' does not exist.
+!STACK 0
+java.lang.Exception: Resource '/STM32H735G-DK' does not exist.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:367)
+	at org.eclipse.core.internal.resources.Project.open(Project.java:1060)
+	at org.eclipse.core.internal.resources.Project.open(Project.java:1183)
+	at com.st.stm32cube.ide.mcu.ide.ui.project.internal.MCUProjectImporter$ProjectOperation.execute(MCUProjectImporter.java:189)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2453)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2478)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-11-05 15:12:39.807
+!MESSAGE Indexed 'STM32H735G-DK' (102 sources, 379 headers) in 9.31 sec: 37,648 declarations; 164,712 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.00099%)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-11-05 15:12:42.204
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-11-05 15:14:20.385
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-11-05 15:14:26.830
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-11-05 18:42:25.891
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-11-05 18:43:00.655
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-11-05 18:44:07.818
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-11-05 18:44:11.356
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-11-05 18:45:02.849
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-11-05 19:01:51.880
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 4 0 2024-11-05 19:15:20.215
+!MESSAGE SWV Client received I/O Exception: Connection reset... trying to reconnect
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 4 0 2024-11-05 19:15:20.215
+!MESSAGE SWVClient - Failed to connect to Host: localhost Port: 2332
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 4 0 2024-11-05 19:15:20.215
+!MESSAGE Failed to reconnect and read data
+!STACK 0
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:593)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at java.base/java.net.Socket.connect(Socket.java:583)
+	at java.base/java.net.Socket.<init>(Socket.java:507)
+	at java.base/java.net.Socket.<init>(Socket.java:287)
+	at com.st.stm32cube.ide.mcu.debug.swv.core.SWVClient.connect(SWVClient.java:168)
+	at com.st.stm32cube.ide.mcu.debug.swv.core.SWVClient.getNextByte(SWVClient.java:283)
+	at com.st.stm32cube.ide.mcu.debug.swv.core.SWVClient.run(SWVClient.java:313)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-11-06 10:13:22.470
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-11-06 10:33:41.026
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-11-06 11:29:42.079
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-11-06 11:35:47.050
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-11-06 13:34:57.511
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-11-06 13:40:33.267
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-11-06 13:45:39.574
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-11-06 13:56:38.258
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-11-06 13:57:01.144
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-11-06 13:59:50.046
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-11-06 14:02:46.306
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-11-06 14:06:50.749
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-11-06 14:07:45.406
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-11-06 16:05:11.782
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-11-06 16:10:01.107
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
