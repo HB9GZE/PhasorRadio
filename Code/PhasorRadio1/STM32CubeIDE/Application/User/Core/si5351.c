@@ -125,7 +125,7 @@ void si5351_Init(int32_t correction)
 	si5351_write(SI5351_REGISTER_23_CLK7_CONTROL, 0x80);
 
 	// Set the load capacitance for the XTAL
-	si5351CrystalLoad_t crystalLoad = SI5351_CRYSTAL_LOAD_6PF;
+	si5351CrystalLoad_t crystalLoad = SI5351_CRYSTAL_LOAD_8PF;
 	si5351_write(SI5351_REGISTER_183_CRYSTAL_INTERNAL_LOAD_CAPACITANCE,
 			crystalLoad);
 }
