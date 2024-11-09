@@ -63,7 +63,6 @@
 ADC_HandleTypeDef hadc1;
 ADC_HandleTypeDef hadc2;
 DMA_HandleTypeDef hdma_adc1;
-DMA_HandleTypeDef hdma_adc2;
 
 CRC_HandleTypeDef hcrc;
 
@@ -200,8 +199,8 @@ static void MX_LTDC_Init(void);
 static void MX_ADC1_Init(void);
 static void MX_CRC_Init(void);
 static void MX_TIM1_Init(void);
-static void MX_ADC2_Init(void);
 static void MX_I2C3_Init(void);
+static void MX_ADC2_Init(void);
 void StartDefaultTask(void *argument);
 extern void TouchGFX_Task(void *argument);
 void StartTaskToGui(void *argument);
@@ -444,18 +443,19 @@ int main(void)
   MX_ADC1_Init();
   MX_CRC_Init();
   MX_TIM1_Init();
-  MX_ADC2_Init();
   MX_I2C3_Init();
+  MX_ADC2_Init();
   MX_TouchGFX_Init();
   /* Call PreOsInit function */
   MX_TouchGFX_PreOSInit();
   /* USER CODE BEGIN 2 */
 	HAL_TIM_Encoder_Start_IT(&htim23, TIM_CHANNEL_ALL);
 	HAL_ADCEx_Calibration_Start(&hadc1, ADC_CALIB_OFFSET, ADC_SINGLE_ENDED);
-	HAL_ADCEx_Calibration_Start(&hadc2, ADC_CALIB_OFFSET, ADC_SINGLE_ENDED);
+	//HAL_ADCEx_Calibration_Start(&hadc2, ADC_CALIB_OFFSET, ADC_SINGLE_ENDED);
 
 	HAL_TIM_Base_Start(&htim1);
 	HAL_ADCEx_MultiModeStart_DMA(&hadc1, adcDualInputBuffer, INPUT_SAMPLES);
+
 
 	for (uint16_t i = 0; i < INPUT_SAMPLES; i++)
 	{
@@ -494,8 +494,8 @@ int main(void)
 	 * However since _SetupPLL() always resets the PLL this would only cause
 	 * sending extra I2C commands.
 	 */
-	si5351_SetupOutput(0, SI5351_PLL_A, SI5351_DRIVE_STRENGTH_6MA, &outConf, 0);
-	si5351_SetupOutput(2, SI5351_PLL_A, SI5351_DRIVE_STRENGTH_6MA, &outConf, phaseOffset);
+	si5351_SetupOutput(0, SI5351_PLL_A, SI5351_DRIVE_STRENGTH_2MA, &outConf, 0);
+	si5351_SetupOutput(2, SI5351_PLL_A, SI5351_DRIVE_STRENGTH_2MA, &outConf, phaseOffset);
 	si5351_SetupPLL(SI5351_PLL_A, &pllConf);
 	si5351_EnableOutputs((1 << 0) | (1 << 2));
 
@@ -682,7 +682,7 @@ static void MX_ADC1_Init(void)
   hadc1.Init.ClockPrescaler = ADC_CLOCK_ASYNC_DIV1;
   hadc1.Init.Resolution = ADC_RESOLUTION_14B;
   hadc1.Init.ScanConvMode = ADC_SCAN_DISABLE;
-  hadc1.Init.EOCSelection = ADC_EOC_SINGLE_CONV;
+  hadc1.Init.EOCSelection = ADC_EOC_SEQ_CONV;
   hadc1.Init.LowPowerAutoWait = DISABLE;
   hadc1.Init.ContinuousConvMode = DISABLE;
   hadc1.Init.NbrOfConversion = 1;
@@ -703,7 +703,7 @@ static void MX_ADC1_Init(void)
   */
   multimode.Mode = ADC_DUALMODE_REGSIMULT;
   multimode.DualModeData = ADC_DUALMODEDATAFORMAT_32_10_BITS;
-  multimode.TwoSamplingDelay = ADC_TWOSAMPLINGDELAY_1CYCLE;
+  multimode.TwoSamplingDelay = ADC_TWOSAMPLINGDELAY_4CYCLES;
   if (HAL_ADCEx_MultiModeConfigChannel(&hadc1, &multimode) != HAL_OK)
   {
     Error_Handler();
@@ -711,9 +711,9 @@ static void MX_ADC1_Init(void)
 
   /** Configure Regular Channel
   */
-  sConfig.Channel = ADC_CHANNEL_0;
+  sConfig.Channel = ADC_CHANNEL_1;
   sConfig.Rank = ADC_REGULAR_RANK_1;
-  sConfig.SamplingTime = ADC_SAMPLETIME_16CYCLES_5;
+  sConfig.SamplingTime = ADC_SAMPLETIME_1CYCLE_5;
   sConfig.SingleDiff = ADC_SINGLE_ENDED;
   sConfig.OffsetNumber = ADC_OFFSET_NONE;
   sConfig.Offset = 0;
@@ -769,9 +769,9 @@ static void MX_ADC2_Init(void)
 
   /** Configure Regular Channel
   */
-  sConfig.Channel = ADC_CHANNEL_1;
+  sConfig.Channel = ADC_CHANNEL_0;
   sConfig.Rank = ADC_REGULAR_RANK_1;
-  sConfig.SamplingTime = ADC_SAMPLETIME_8CYCLES_5;
+  sConfig.SamplingTime = ADC_SAMPLETIME_1CYCLE_5;
   sConfig.SingleDiff = ADC_SINGLE_ENDED;
   sConfig.OffsetNumber = ADC_OFFSET_NONE;
   sConfig.Offset = 0;
@@ -1259,9 +1259,6 @@ static void MX_DMA_Init(void)
   /* DMA1_Stream0_IRQn interrupt configuration */
   HAL_NVIC_SetPriority(DMA1_Stream0_IRQn, 5, 0);
   HAL_NVIC_EnableIRQ(DMA1_Stream0_IRQn);
-  /* DMA1_Stream1_IRQn interrupt configuration */
-  HAL_NVIC_SetPriority(DMA1_Stream1_IRQn, 5, 0);
-  HAL_NVIC_EnableIRQ(DMA1_Stream1_IRQn);
 
 }
 
