@@ -80,17 +80,13 @@ void HAL_MspInit(void)
   */
   __HAL_RCC_VREF_CLK_ENABLE();
 
-  /** Configure the internal voltage reference buffer voltage scale
+  /** Disable the Internal Voltage Reference buffer
   */
-  HAL_SYSCFG_VREFBUF_VoltageScalingConfig(SYSCFG_VREFBUF_VOLTAGE_SCALE0);
-
-  /** Enable the Internal Voltage Reference buffer
-  */
-  HAL_SYSCFG_EnableVREFBUF();
+  HAL_SYSCFG_DisableVREFBUF();
 
   /** Configure the internal voltage reference buffer high impedance mode
   */
-  HAL_SYSCFG_VREFBUF_HighImpedanceConfig(SYSCFG_VREFBUF_HIGH_IMPEDANCE_DISABLE);
+  HAL_SYSCFG_VREFBUF_HighImpedanceConfig(SYSCFG_VREFBUF_HIGH_IMPEDANCE_ENABLE);
 
   /* USER CODE BEGIN MspInit 1 */
 
@@ -131,9 +127,9 @@ void HAL_ADC_MspInit(ADC_HandleTypeDef* hadc)
 
     __HAL_RCC_GPIOA_CLK_ENABLE();
     /**ADC1 GPIO Configuration
-    PA1_C     ------> ADC1_INP1
+    PA0_C     ------> ADC1_INP0
     */
-    HAL_SYSCFG_AnalogSwitchConfig(SYSCFG_SWITCH_PA1, SYSCFG_SWITCH_PA1_OPEN);
+    HAL_SYSCFG_AnalogSwitchConfig(SYSCFG_SWITCH_PA0, SYSCFG_SWITCH_PA0_OPEN);
 
     /* ADC1 DMA Init */
     /* ADC1 Init */
@@ -184,9 +180,9 @@ void HAL_ADC_MspInit(ADC_HandleTypeDef* hadc)
 
     __HAL_RCC_GPIOA_CLK_ENABLE();
     /**ADC2 GPIO Configuration
-    PA0_C     ------> ADC2_INP0
+    PA1_C     ------> ADC2_INP1
     */
-    HAL_SYSCFG_AnalogSwitchConfig(SYSCFG_SWITCH_PA0, SYSCFG_SWITCH_PA0_OPEN);
+    HAL_SYSCFG_AnalogSwitchConfig(SYSCFG_SWITCH_PA1, SYSCFG_SWITCH_PA1_OPEN);
 
     /* ADC2 interrupt Init */
     HAL_NVIC_SetPriority(ADC_IRQn, 5, 0);
