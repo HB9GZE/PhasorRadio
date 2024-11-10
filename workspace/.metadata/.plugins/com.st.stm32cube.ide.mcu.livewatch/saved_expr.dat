@@ -1,6 +1,2 @@
-counter
-dataFromMemory
-infoOfMemory
-ospiTestStop
-ospiTestStart
-ospi_counter
+stateLSBUSB
+lastStateLSBUSB
