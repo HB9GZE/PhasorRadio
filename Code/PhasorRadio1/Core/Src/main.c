@@ -1483,6 +1483,7 @@ void StartTaskFromGui(void *argument)
 			VFOhasChangedforDisplay = TRUE;
 			VFOhasChangedforSI5351 = TRUE;
 			oldStateBand = stateBand;
+			sendDatatoSI5351();
 		}
 
 		if ((oldStateBand != stateBand) && (stateBand == 40))
@@ -1493,6 +1494,7 @@ void StartTaskFromGui(void *argument)
 			VFOhasChangedforDisplay = TRUE;
 			VFOhasChangedforSI5351 = TRUE;
 			oldStateBand = stateBand;
+			sendDatatoSI5351();
 		}
 
 		if ((oldStateBand != stateBand) && (stateBand == 80))
@@ -1503,6 +1505,7 @@ void StartTaskFromGui(void *argument)
 			VFOhasChangedforDisplay = TRUE;
 			VFOhasChangedforSI5351 = TRUE;
 			oldStateBand = stateBand;
+			sendDatatoSI5351();
 		}
 		if (oldStateStepSize != stateStepSize)
 		{
@@ -1511,6 +1514,7 @@ void StartTaskFromGui(void *argument)
 			VFOhasChangedforDisplay = TRUE;
 			VFOhasChangedforSI5351 = TRUE;
 			oldStateStepSize = stateStepSize;
+			sendDatatoSI5351();
 		}
 		osDelay(100);
 	}
@@ -1620,7 +1624,7 @@ void StartTaskFFT(void *argument)
 			graphHasBeenDisplayed = FALSE;
 		}
 
-		osDelay(20);
+		osDelay(50);
 	}
 	/* USER CODE END StartTaskFFT */
 }
