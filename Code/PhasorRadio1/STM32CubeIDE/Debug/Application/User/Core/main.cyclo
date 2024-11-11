@@ -23,7 +23,7 @@ C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/Core/Src/main.c:1355:5:_write	2
 C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/Core/Src/main.c:1374:6:StartDefaultTask	1
 C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/Core/Src/main.c:1392:6:StartTaskToGui	11
 C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/Core/Src/main.c:1450:6:StartTaskFromGui	11
-C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/Core/Src/main.c:1527:6:StartTaskFFT	21
-C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/Core/Src/main.c:1630:6:MPU_Config	1
-C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/Core/Src/main.c:1707:6:HAL_TIM_PeriodElapsedCallback	2
-C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/Core/Src/main.c:1728:6:Error_Handler	1
+C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/Core/Src/main.c:1531:6:StartTaskFFT	21
+C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/Core/Src/main.c:1634:6:MPU_Config	1
+C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/Core/Src/main.c:1711:6:HAL_TIM_PeriodElapsedCallback	2
+C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/Core/Src/main.c:1732:6:Error_Handler	1

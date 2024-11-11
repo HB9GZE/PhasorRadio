@@ -2819,3 +2819,31 @@ java.lang.IllegalStateException: Disconnected before saving. https://bugs.eclips
 
 !ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2024-11-10 11:10:18.974
 !MESSAGE Existing sessions are:
+!SESSION 2024-11-11 08:56:21.027 -----------------------------------------------
+eclipse.buildId=Version 1.16.1
+java.version=17.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Framework arguments:  C:\ProjectsOnC\PhasorRadio\Code\PhasorRadio1\STM32CubeIDE\.cproject
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 C:\ProjectsOnC\PhasorRadio\Code\PhasorRadio1\STM32CubeIDE\.cproject
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-11-11 09:01:42.615
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-11-11 09:01:42.621
+!MESSAGE Log4j2 initialized with config file C:\ProjectsOnC\PhasorRadio\workspace\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-11-11 09:01:48.890
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-11-11 09:02:00.763
+!MESSAGE Indexed 'STM32H735G-DK' (103 sources, 379 headers) in 11.7 sec: 37,627 declarations; 164,923 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.00099%)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-11-11 09:02:40.809
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-11-11 09:03:21.493
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-11-11 09:42:55.880
+!MESSAGE SWV configuration; base: 1440000000; minDiv: 48; maxDiv: 2147483647; maxSWO: 30000000; limit: 2147483647 => SWO: 27692307; CPU: 275000000; div: 10
