@@ -79,6 +79,7 @@
         "footprint_type_mismatch": "ignore",
         "hole_clearance": "error",
         "hole_near_hole": "error",
+        "holes_co_located": "warning",
         "invalid_outline": "error",
         "isolated_copper": "warning",
         "item_on_disabled_layer": "error",
@@ -230,7 +231,12 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      "lib_symbol_issues|1485900|444500|d9696e67-6b9d-4605-8691-6297fb7a71b3|00000000-0000-0000-0000-000000000000|||",
+      "lib_symbol_issues|1485900|939800|554a08f9-8f99-4594-a706-8f7304070740|00000000-0000-0000-0000-000000000000|||",
+      "power_pin_not_driven|1485900|215900|1977db35-7273-4bcf-b123-31a3dc98bd44|00000000-0000-0000-0000-000000000000|/203fb86c-1d2d-4466-b8e3-062b53e074f0|/203fb86c-1d2d-4466-b8e3-062b53e074f0|",
+      "power_pin_not_driven|990600|647700|612ca009-7ba4-4ecd-99be-9ef99f936d42|00000000-0000-0000-0000-000000000000|/203fb86c-1d2d-4466-b8e3-062b53e074f0|/203fb86c-1d2d-4466-b8e3-062b53e074f0|"
+    ],
     "meta": {
       "version": 0
     },
@@ -491,6 +497,7 @@
   },
   "schematic": {
     "annotate_start_num": 0,
+    "bom_export_filename": "",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
