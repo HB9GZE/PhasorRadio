@@ -53,6 +53,9 @@
 #define BAND_40M 40
 #define BAND_20M 20
 #define ADC_SCALING 0.0001
+#define AUDIO_FILTER_TAP_NUM 73
+#define	AUDIO_FILTER_ADCDATA_BLOCKSIZE 10
+
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -63,9 +66,14 @@
 /* Private variables ---------------------------------------------------------*/
 ADC_HandleTypeDef hadc1;
 ADC_HandleTypeDef hadc2;
+ADC_HandleTypeDef hadc3;
 DMA_HandleTypeDef hdma_adc1;
+DMA_HandleTypeDef hdma_adc3;
 
 CRC_HandleTypeDef hcrc;
+
+DAC_HandleTypeDef hdac1;
+DMA_HandleTypeDef hdma_dac1_ch1;
 
 DMA2D_HandleTypeDef hdma2d;
 
@@ -77,7 +85,10 @@ LTDC_HandleTypeDef hltdc;
 OSPI_HandleTypeDef hospi1;
 OSPI_HandleTypeDef hospi2;
 
+OPAMP_HandleTypeDef hopamp1;
+
 TIM_HandleTypeDef htim1;
+TIM_HandleTypeDef htim8;
 TIM_HandleTypeDef htim23;
 
 /* Definitions for defaultTask */
@@ -100,6 +111,10 @@ const osThreadAttr_t myTaskFromGui_attributes =
 osThreadId_t myTaskFFTHandle;
 const osThreadAttr_t myTaskFFT_attributes =
 { .name = "myTaskFFT", .stack_size = 4096 * 4, .priority = (osPriority_t) osPriorityNormal, };
+/* Definitions for myTaskFrameRate */
+osThreadId_t myTaskFrameRateHandle;
+const osThreadAttr_t myTaskFrameRate_attributes =
+{ .name = "myTaskFrameRate", .stack_size = 1024 * 4, .priority = (osPriority_t) osPriorityNormal, };
 /* Definitions for sMeterQueue */
 osMessageQueueId_t sMeterQueueHandle;
 const osMessageQueueAttr_t sMeterQueue_attributes =
@@ -121,15 +136,12 @@ si5351PLLConfig_t pllConf;
 si5351OutputConfig_t outConf;
 
 //VFO settings
-float vfo_80m = 3573.0;
-float vfo_40m = 7074.0;
-float vfo_20m = 14074.0;
-//float vfo_80m_dec = 0; //_dec for handling the fine tuning (with 1/10th decimal fraction)
-//float vfo_40m_dec = 0; //_dec for handling the fine tuning (with 1/10th decimal fraction)
-//float vfo_20m_dec = 0; //_dec for handling the fine tuning (with 1/10th decimal fraction)
-uint32_t vfo_80m_5351 = 3573000;
-uint32_t vfo_40m_5351 = 7074000;
-uint32_t vfo_20m_5351 = 14074000;
+float vfo_80m = 7146.0; //3573 * 4
+float vfo_40m = 28296.0; //7074 * 4
+float vfo_20m = 28148.0; //14074 * 4
+uint32_t vfo_80m_5351 = 7146000;
+uint32_t vfo_40m_5351 = 28296000;
+uint32_t vfo_20m_5351 = 28148000;
 uint8_t VFOhasChangedforDisplay;
 uint8_t VFOhasChangedforSI5351 = TRUE;
 uint8_t vfoDataHasChanged = TRUE;
@@ -146,25 +158,58 @@ uint16_t stateStepSize = 1000;
 uint16_t oldStateStepSize = 1000;
 uint8_t rotaryEncoderCounter;
 int8_t rotaryEncoderValue;
-uint8_t readyToSendI2C;
-uint8_t startTimerA;
+uint8_t newDataToBeSendToSI5351 = TRUE;
 
 //FFT
 uint32_t adcDualInputBuffer[INPUT_SAMPLES];
 uint16_t fftComplexIntBuffer[2 * INPUT_SAMPLES];
 float32_t fftComplexFloatBuffer[2 * INPUT_SAMPLES], fftOutputComplexMagnitudeBuffer[INPUT_SAMPLES], fftAdjustedMagnitudeBuffer[INPUT_SAMPLES];
-
 float32_t hanningWIN[INPUT_SAMPLES];
 uint16_t sMeterAverageValue[10];
 uint16_t sMeterValue;
 uint16_t oldSMeterValue;
-uint8_t adcBusy;
+uint8_t newADCDataAvailable;
 int dynamicGraphValue[341];
 typedef struct
 {
 	int dynGraphData[341];
 } QueueElement;
 QueueElement data;
+
+/*
+ FIR filter designed with
+ http://t-filter.appspot.com
+ sampling frequency: 10000 Hz
+ * 0 Hz - 100 Hz
+ gain = 0
+ desired attenuation = -40 dB
+ actual attenuation = -41.1368078119893 dB
+ * 300 Hz - 2700 Hz
+ gain = 1
+ desired ripple = 1 dB
+ actual ripple = 0.6596799066074697 dB
+ * 3000 Hz - 5000 Hz
+ gain = 0
+ desired attenuation = -40 dB
+ actual attenuation = -41.1368078119893 dB
+ */
+float audioFIRfilterTaps[AUDIO_FILTER_TAP_NUM] =
+{ 0.01152326293750213, 0.012154895789079734, 0.006226696811174554, 0.0031360229190002384, 0.004533074687298142, 0.004267958631943703, 0.004987435595038369,
+		0.0066418229411827215, 0.0027163108110072436, 0.00027090315437662164, 0.005902207325118628, 0.004735983505267677, -0.005197795293248476,
+		-0.0023608515736345953, 0.005625500529680012, -0.005691754190516723, -0.01513510180914045, -0.0017393843732896829, -0.0016332656883314323,
+		-0.02389136688141353, -0.019740746069879963, -0.0007470228959563541, -0.0212745486475054, -0.04158683314879713, -0.01331902676731243,
+		-0.008231996733598158, -0.05270738350221322, -0.04414103179669497, 0.0028877689913779955, -0.03728161208835806, -0.08667998568743926,
+		-0.01037576001167545, 0.020023411669254126, -0.12428389117184645, -0.10897358554195391, 0.2681713680270627, 0.5273396714099711, 0.2681713680270627,
+		-0.10897358554195391, -0.12428389117184645, 0.020023411669254126, -0.01037576001167545, -0.08667998568743926, -0.03728161208835806,
+		0.0028877689913779955, -0.04414103179669497, -0.05270738350221322, -0.008231996733598158, -0.01331902676731243, -0.04158683314879713,
+		-0.0212745486475054, -0.0007470228959563541, -0.019740746069879963, -0.02389136688141353, -0.0016332656883314323, -0.0017393843732896829,
+		-0.01513510180914045, -0.005691754190516723, 0.005625500529680012, -0.0023608515736345953, -0.005197795293248476, 0.004735983505267677,
+		0.005902207325118628, 0.00027090315437662164, 0.0027163108110072436, 0.0066418229411827215, 0.004987435595038369, 0.004267958631943703,
+		0.004533074687298142, 0.0031360229190002384, 0.006226696811174554, 0.012154895789079734, 0.01152326293750213 };
+
+float audioFirSourceArray[AUDIO_FILTER_ADCDATA_BLOCKSIZE];
+float audioFirDestinationArray[AUDIO_FILTER_ADCDATA_BLOCKSIZE];
+float audioFirStateBuffer[AUDIO_FILTER_TAP_NUM + AUDIO_FILTER_ADCDATA_BLOCKSIZE - 1];
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -173,6 +218,7 @@ void PeriphCommonClock_Config(void);
 static void MPU_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_DMA_Init(void);
+static void MX_BDMA_Init(void);
 static void MX_DMA2D_Init(void);
 static void MX_OCTOSPI1_Init(void);
 static void MX_OCTOSPI2_Init(void);
@@ -184,18 +230,20 @@ static void MX_CRC_Init(void);
 static void MX_TIM1_Init(void);
 static void MX_I2C3_Init(void);
 static void MX_ADC2_Init(void);
+static void MX_ADC3_Init(void);
+static void MX_DAC1_Init(void);
+static void MX_OPAMP1_Init(void);
+static void MX_TIM8_Init(void);
 void StartDefaultTask(void *argument);
 extern void TouchGFX_Task(void *argument);
 void StartTaskToGui(void *argument);
 void StartTaskFromGui(void *argument);
 void StartTaskFFT(void *argument);
+void StartTaskFRSync(void *argument);
 
 /* USER CODE BEGIN PFP */
-void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin);
 void HAL_TIM_IC_CaptureCallback(TIM_HandleTypeDef *htim);
 void sendDatatoSI5351(void);
-void HAL_TIM_TriggerCallback(TIM_HandleTypeDef *htim);
-void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim);
 void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef *hadc);
 /* USER CODE END PFP */
 
@@ -209,15 +257,15 @@ void stepSizeChanged()
 		{
 		case BAND_80M:
 			vfo_80m_5351 = (vfo_80m_5351 / 1000) * 1000;
-			vfo_80m = (float) (vfo_80m_5351) / 1000.0;
+			vfo_80m = (float) (vfo_80m_5351/2) / 1000.0;
 			break;
 		case BAND_40M:
 			vfo_40m_5351 = (vfo_40m_5351 / 1000) * 1000;
-			vfo_40m = (float) (vfo_40m_5351) / 1000.0;
+			vfo_40m = (float) (vfo_40m_5351/4) / 1000.0;
 			break;
 		case BAND_20M:
 			vfo_20m_5351 = (vfo_20m_5351 / 1000) * 1000;
-			vfo_20m = (float) (vfo_20m_5351) / 1000.0;
+			vfo_20m = (float) (vfo_20m_5351/2) / 1000.0;
 			break;
 		}
 	}
@@ -227,15 +275,15 @@ void stepSizeChanged()
 		{
 		case BAND_80M:
 			vfo_80m_5351 = (vfo_80m_5351 / 100) * 100;
-			vfo_80m = (float) (vfo_80m_5351) / 1000.0;
+			vfo_80m = (float) (vfo_80m_5351/2) / 1000.0;
 			break;
 		case BAND_40M:
 			vfo_40m_5351 = (vfo_40m_5351 / 100) * 100;
-			vfo_40m = (float) (vfo_40m_5351) / 1000.0;
+			vfo_40m = (float) (vfo_40m_5351/4) / 1000.0;
 			break;
 		case BAND_20M:
 			vfo_20m_5351 = (vfo_20m_5351 / 100) * 100;
-			vfo_20m = (float) (vfo_20m_5351) / 1000.0;
+			vfo_20m = (float) (vfo_20m_5351/4) / 1000.0;
 			break;
 		}
 	}
@@ -245,19 +293,20 @@ void stepSizeChanged()
 		{
 		case BAND_80M:
 			vfo_80m_5351 = (vfo_80m_5351 / 10) * 10;
-			vfo_80m = (float) (vfo_80m_5351) / 1000.0;
+			vfo_80m = (float) (vfo_80m_5351/2) / 1000.0;
 			break;
 		case BAND_40M:
 			vfo_40m_5351 = (vfo_40m_5351 / 10) * 10;
-			vfo_40m = (float) (vfo_40m_5351) / 1000.0;
+			vfo_40m = (float) (vfo_40m_5351/4) / 1000.0;
 			break;
 		case BAND_20M:
 			vfo_20m_5351 = (vfo_20m_5351 / 10) * 10;
-			vfo_20m = (float) (vfo_20m_5351) / 1000.0;
+			vfo_20m = (float) (vfo_20m_5351/2) / 1000.0;
 			break;
 		}
 	}
 }
+
 void HAL_TIM_IC_CaptureCallback(TIM_HandleTypeDef *htim)
 {
 	if (htim == &htim23)
@@ -283,7 +332,8 @@ void HAL_TIM_IC_CaptureCallback(TIM_HandleTypeDef *htim)
 				}
 				VFOhasChangedforSI5351 = TRUE;
 				VFOhasChangedforDisplay = TRUE;
-				sendDatatoSI5351();
+				newDataToBeSendToSI5351 = TRUE;
+				//sendDatatoSI5351();
 			}
 			else
 			{
@@ -301,7 +351,8 @@ void HAL_TIM_IC_CaptureCallback(TIM_HandleTypeDef *htim)
 				}
 				VFOhasChangedforSI5351 = TRUE;
 				VFOhasChangedforDisplay = TRUE;
-				sendDatatoSI5351();
+				newDataToBeSendToSI5351 = TRUE;
+				//sendDatatoSI5351();
 			}
 
 			switch (stateBand)
@@ -324,7 +375,6 @@ void HAL_TIM_IC_CaptureCallback(TIM_HandleTypeDef *htim)
 
 void sendDatatoSI5351(void)
 {
-	//if ((VFOhasChangedforSI5351 == TRUE) && (readyToSendI2C == TRUE))
 	if (VFOhasChangedforSI5351 == TRUE)
 	{
 		switch (stateBand)
@@ -342,7 +392,7 @@ void sendDatatoSI5351(void)
 		phaseOffset = (uint8_t) outConf.div;
 
 		si5351_SetupOutput(0, SI5351_PLL_A, SI5351_DRIVE_STRENGTH_8MA, &outConf, 0);
-		si5351_SetupOutput(2, SI5351_PLL_A, SI5351_DRIVE_STRENGTH_8MA, &outConf, phaseOffset);
+		//si5351_SetupOutput(2, SI5351_PLL_A, SI5351_DRIVE_STRENGTH_8MA, &outConf, phaseOffset);
 		si5351_SetupPLL(SI5351_PLL_A, &pllConf);
 		VFOhasChangedforSI5351 = FALSE;
 	}
@@ -350,28 +400,41 @@ void sendDatatoSI5351(void)
 
 void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef *hadc)
 {
-	uint16_t j = 0;
-	for (uint16_t i = 0; i < 2 * INPUT_SAMPLES; i++)
+	if (hadc == &hadc1)
 	{
-		if (i % 2 == 0)
+		uint16_t j = 0;
+		for (uint16_t i = 0; i < 2 * INPUT_SAMPLES; i++)
 		{
-			fftComplexIntBuffer[i] = (uint16_t) (adcDualInputBuffer[j] & 0x0000FFFF); //real vector, I
+			if (i % 2 == 0)
+			{
+				fftComplexIntBuffer[i] = (uint16_t) (adcDualInputBuffer[j] & 0x0000FFFF); //real vector, I
+			}
+			else
+			{
+				fftComplexIntBuffer[i] = (uint16_t) (adcDualInputBuffer[j] >> 16); //imaginary vector, Q
+				j++;
+			}
 		}
-		else
-		{
-			fftComplexIntBuffer[i] = (uint16_t) (adcDualInputBuffer[j] >> 16); //imaginary vector, Q
-			j++;
-		}
+		newADCDataAvailable = TRUE;
 	}
-	adcBusy = FALSE;
+	if (hadc == &hadc3)
+	{
+
+	}
 }
 
-/* USER CODE END 0 */
 
-/**
- * @brief  The application entry point.
- * @retval int
- */
+
+void HAL_ADC_ConvHalfCpltCallback(ADC_HandleTypeDef *hadc)
+{
+	if (hadc == &hadc3)
+	{
+
+	}
+}
+
+
+
 int main(void)
 {
 
@@ -412,6 +475,7 @@ int main(void)
 	/* Initialize all configured peripherals */
 	MX_GPIO_Init();
 	MX_DMA_Init();
+	MX_BDMA_Init();
 	MX_DMA2D_Init();
 	MX_OCTOSPI1_Init();
 	MX_OCTOSPI2_Init();
@@ -423,16 +487,22 @@ int main(void)
 	MX_TIM1_Init();
 	MX_I2C3_Init();
 	MX_ADC2_Init();
+	MX_ADC3_Init();
+	MX_DAC1_Init();
+	MX_OPAMP1_Init();
+	MX_TIM8_Init();
 	MX_TouchGFX_Init();
 	/* Call PreOsInit function */
 	MX_TouchGFX_PreOSInit();
 	/* USER CODE BEGIN 2 */
 	HAL_TIM_Encoder_Start_IT(&htim23, TIM_CHANNEL_ALL);
 	HAL_TIM_Base_Start(&htim1);
+
 	HAL_ADCEx_Calibration_Start(&hadc1, ADC_CALIB_OFFSET, ADC_SINGLE_ENDED);
 	HAL_ADCEx_Calibration_Start(&hadc2, ADC_CALIB_OFFSET, ADC_SINGLE_ENDED);
 	HAL_ADC_Start(&hadc2);
 	HAL_ADCEx_MultiModeStart_DMA(&hadc1, adcDualInputBuffer, INPUT_SAMPLES);
+	newADCDataAvailable = TRUE;
 
 	for (uint16_t i = 0; i < INPUT_SAMPLES; i++)
 	{
@@ -440,7 +510,7 @@ int main(void)
 	}
 
 	oldStateBand = stateBand = 40;
-	vfo_40m_5351 = 7074000;
+	vfo_40m_5351 = 28296000;
 	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_12, GPIO_PIN_SET); //set input bandpass to 40m
 	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_13, GPIO_PIN_RESET); //set input bandpass to 40m
 	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_12, GPIO_PIN_RESET); //LSB
@@ -475,6 +545,9 @@ int main(void)
 	si5351_SetupPLL(SI5351_PLL_A, &pllConf);
 	si5351_EnableOutputs((1 << 0) | (1 << 2));
 	sendDatatoSI5351();
+	arm_fir_instance_f32 audioFIRfilterInstance;
+	arm_fir_init_f32(&audioFIRfilterInstance, AUDIO_FILTER_TAP_NUM, audioFIRfilterTaps, audioFirStateBuffer, AUDIO_FILTER_ADCDATA_BLOCKSIZE);
+	//arm_fir_f32(&audioFIRfilterInstance, audioFirSourceArray, audioFirDestinationArray, AUDIO_FILTER_ADCDATA_BLOCKSIZE);
 
 	/* USER CODE END 2 */
 
@@ -522,6 +595,9 @@ int main(void)
 
 	/* creation of myTaskFFT */
 	myTaskFFTHandle = osThreadNew(StartTaskFFT, NULL, &myTaskFFT_attributes);
+
+	/* creation of myTaskFrameRate */
+	myTaskFrameRateHandle = osThreadNew(StartTaskFRSync, NULL, &myTaskFrameRate_attributes);
 
 	/* USER CODE BEGIN RTOS_THREADS */
 	/* add threads, ... */
@@ -771,6 +847,70 @@ static void MX_ADC2_Init(void)
 }
 
 /**
+ * @brief ADC3 Initialization Function
+ * @param None
+ * @retval None
+ */
+static void MX_ADC3_Init(void)
+{
+
+	/* USER CODE BEGIN ADC3_Init 0 */
+
+	/* USER CODE END ADC3_Init 0 */
+
+	ADC_ChannelConfTypeDef sConfig =
+	{ 0 };
+
+	/* USER CODE BEGIN ADC3_Init 1 */
+
+	/* USER CODE END ADC3_Init 1 */
+
+	/** Common config
+	 */
+	hadc3.Instance = ADC3;
+	hadc3.Init.ClockPrescaler = ADC_CLOCK_ASYNC_DIV1;
+	hadc3.Init.Resolution = ADC_RESOLUTION_12B;
+	hadc3.Init.DataAlign = ADC3_DATAALIGN_RIGHT;
+	hadc3.Init.ScanConvMode = ADC_SCAN_DISABLE;
+	hadc3.Init.EOCSelection = ADC_EOC_SINGLE_CONV;
+	hadc3.Init.LowPowerAutoWait = DISABLE;
+	hadc3.Init.ContinuousConvMode = ENABLE;
+	hadc3.Init.NbrOfConversion = 1;
+	hadc3.Init.DiscontinuousConvMode = DISABLE;
+	hadc3.Init.ExternalTrigConv = ADC_EXTERNALTRIG_T8_TRGO;
+	hadc3.Init.ExternalTrigConvEdge = ADC_EXTERNALTRIGCONVEDGE_RISING;
+	hadc3.Init.DMAContinuousRequests = ENABLE;
+	hadc3.Init.SamplingMode = ADC_SAMPLING_MODE_NORMAL;
+	hadc3.Init.ConversionDataManagement = ADC_CONVERSIONDATA_DR;
+	hadc3.Init.Overrun = ADC_OVR_DATA_PRESERVED;
+	hadc3.Init.LeftBitShift = ADC_LEFTBITSHIFT_NONE;
+	hadc3.Init.OversamplingMode = DISABLE;
+	hadc3.Init.Oversampling.Ratio = ADC3_OVERSAMPLING_RATIO_2;
+	if (HAL_ADC_Init(&hadc3) != HAL_OK)
+	{
+		Error_Handler();
+	}
+
+	/** Configure Regular Channel
+	 */
+	sConfig.Channel = ADC_CHANNEL_0;
+	sConfig.Rank = ADC_REGULAR_RANK_1;
+	sConfig.SamplingTime = ADC3_SAMPLETIME_2CYCLES_5;
+	sConfig.SingleDiff = ADC_SINGLE_ENDED;
+	sConfig.OffsetNumber = ADC_OFFSET_NONE;
+	sConfig.Offset = 0;
+	sConfig.OffsetSign = ADC3_OFFSET_SIGN_NEGATIVE;
+	if (HAL_ADC_ConfigChannel(&hadc3, &sConfig) != HAL_OK)
+	{
+		Error_Handler();
+	}
+	/* USER CODE BEGIN ADC3_Init 2 */
+
+	/* USER CODE END ADC3_Init 2 */
+
+}
+
+/**
  * @brief CRC Initialization Function
  * @param None
  * @retval None
@@ -798,6 +938,59 @@ static void MX_CRC_Init(void)
 	/* USER CODE BEGIN CRC_Init 2 */
 
 	/* USER CODE END CRC_Init 2 */
+
+}
+
+/**
+ * @brief DAC1 Initialization Function
+ * @param None
+ * @retval None
+ */
+static void MX_DAC1_Init(void)
+{
+
+	/* USER CODE BEGIN DAC1_Init 0 */
+
+	/* USER CODE END DAC1_Init 0 */
+
+	DAC_ChannelConfTypeDef sConfig =
+	{ 0 };
+
+	/* USER CODE BEGIN DAC1_Init 1 */
+
+	/* USER CODE END DAC1_Init 1 */
+
+	/** DAC Initialization
+	 */
+	hdac1.Instance = DAC1;
+	if (HAL_DAC_Init(&hdac1) != HAL_OK)
+	{
+		Error_Handler();
+	}
+
+	/** DAC channel OUT1 config
+	 */
+	sConfig.DAC_SampleAndHold = DAC_SAMPLEANDHOLD_DISABLE;
+	sConfig.DAC_Trigger = DAC_TRIGGER_NONE;
+	sConfig.DAC_OutputBuffer = DAC_OUTPUTBUFFER_DISABLE;
+	sConfig.DAC_ConnectOnChipPeripheral = DAC_CHIPCONNECT_ENABLE;
+	sConfig.DAC_UserTrimming = DAC_TRIMMING_FACTORY;
+	if (HAL_DAC_ConfigChannel(&hdac1, &sConfig, DAC_CHANNEL_1) != HAL_OK)
+	{
+		Error_Handler();
+	}
+
+	/** DAC channel OUT2 config
+	 */
+	sConfig.DAC_OutputBuffer = DAC_OUTPUTBUFFER_ENABLE;
+	sConfig.DAC_ConnectOnChipPeripheral = DAC_CHIPCONNECT_DISABLE;
+	if (HAL_DAC_ConfigChannel(&hdac1, &sConfig, DAC_CHANNEL_2) != HAL_OK)
+	{
+		Error_Handler();
+	}
+	/* USER CODE BEGIN DAC1_Init 2 */
+
+	/* USER CODE END DAC1_Init 2 */
 
 }
 
@@ -1139,6 +1332,36 @@ static void MX_OCTOSPI2_Init(void)
 }
 
 /**
+ * @brief OPAMP1 Initialization Function
+ * @param None
+ * @retval None
+ */
+static void MX_OPAMP1_Init(void)
+{
+
+	/* USER CODE BEGIN OPAMP1_Init 0 */
+
+	/* USER CODE END OPAMP1_Init 0 */
+
+	/* USER CODE BEGIN OPAMP1_Init 1 */
+
+	/* USER CODE END OPAMP1_Init 1 */
+	hopamp1.Instance = OPAMP1;
+	hopamp1.Init.Mode = OPAMP_FOLLOWER_MODE;
+	hopamp1.Init.NonInvertingInput = OPAMP_NONINVERTINGINPUT_DAC_CH;
+	hopamp1.Init.PowerMode = OPAMP_POWERMODE_NORMAL;
+	hopamp1.Init.UserTrimming = OPAMP_TRIMMING_FACTORY;
+	if (HAL_OPAMP_Init(&hopamp1) != HAL_OK)
+	{
+		Error_Handler();
+	}
+	/* USER CODE BEGIN OPAMP1_Init 2 */
+
+	/* USER CODE END OPAMP1_Init 2 */
+
+}
+
+/**
  * @brief TIM1 Initialization Function
  * @param None
  * @retval None
@@ -1184,6 +1407,55 @@ static void MX_TIM1_Init(void)
 	/* USER CODE BEGIN TIM1_Init 2 */
 
 	/* USER CODE END TIM1_Init 2 */
+
+}
+
+/**
+ * @brief TIM8 Initialization Function
+ * @param None
+ * @retval None
+ */
+static void MX_TIM8_Init(void)
+{
+
+	/* USER CODE BEGIN TIM8_Init 0 */
+
+	/* USER CODE END TIM8_Init 0 */
+
+	TIM_ClockConfigTypeDef sClockSourceConfig =
+	{ 0 };
+	TIM_MasterConfigTypeDef sMasterConfig =
+	{ 0 };
+
+	/* USER CODE BEGIN TIM8_Init 1 */
+
+	/* USER CODE END TIM8_Init 1 */
+	htim8.Instance = TIM8;
+	htim8.Init.Prescaler = 275 - 1;
+	htim8.Init.CounterMode = TIM_COUNTERMODE_UP;
+	htim8.Init.Period = 100 - 1;
+	htim8.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
+	htim8.Init.RepetitionCounter = 0;
+	htim8.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_ENABLE;
+	if (HAL_TIM_Base_Init(&htim8) != HAL_OK)
+	{
+		Error_Handler();
+	}
+	sClockSourceConfig.ClockSource = TIM_CLOCKSOURCE_INTERNAL;
+	if (HAL_TIM_ConfigClockSource(&htim8, &sClockSourceConfig) != HAL_OK)
+	{
+		Error_Handler();
+	}
+	sMasterConfig.MasterOutputTrigger = TIM_TRGO_UPDATE;
+	sMasterConfig.MasterOutputTrigger2 = TIM_TRGO2_RESET;
+	sMasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;
+	if (HAL_TIMEx_MasterConfigSynchronization(&htim8, &sMasterConfig) != HAL_OK)
+	{
+		Error_Handler();
+	}
+	/* USER CODE BEGIN TIM8_Init 2 */
+
+	/* USER CODE END TIM8_Init 2 */
 
 }
 
@@ -1241,6 +1513,22 @@ static void MX_TIM23_Init(void)
 /**
  * Enable DMA controller clock
  */
+static void MX_BDMA_Init(void)
+{
+
+	/* DMA controller clock enable */
+	__HAL_RCC_BDMA_CLK_ENABLE();
+
+	/* DMA interrupt init */
+	/* BDMA_Channel0_IRQn interrupt configuration */
+	HAL_NVIC_SetPriority(BDMA_Channel0_IRQn, 5, 0);
+	HAL_NVIC_EnableIRQ(BDMA_Channel0_IRQn);
+
+}
+
+/**
+ * Enable DMA controller clock
+ */
 static void MX_DMA_Init(void)
 {
 
@@ -1251,6 +1539,9 @@ static void MX_DMA_Init(void)
 	/* DMA1_Stream0_IRQn interrupt configuration */
 	HAL_NVIC_SetPriority(DMA1_Stream0_IRQn, 5, 0);
 	HAL_NVIC_EnableIRQ(DMA1_Stream0_IRQn);
+	/* DMA1_Stream1_IRQn interrupt configuration */
+	HAL_NVIC_SetPriority(DMA1_Stream1_IRQn, 5, 0);
+	HAL_NVIC_EnableIRQ(DMA1_Stream1_IRQn);
 
 }
 
@@ -1483,7 +1774,8 @@ void StartTaskFromGui(void *argument)
 			VFOhasChangedforDisplay = TRUE;
 			VFOhasChangedforSI5351 = TRUE;
 			oldStateBand = stateBand;
-			sendDatatoSI5351();
+			newDataToBeSendToSI5351 = TRUE;
+			//sendDatatoSI5351();
 		}
 
 		if ((oldStateBand != stateBand) && (stateBand == 40))
@@ -1494,7 +1786,8 @@ void StartTaskFromGui(void *argument)
 			VFOhasChangedforDisplay = TRUE;
 			VFOhasChangedforSI5351 = TRUE;
 			oldStateBand = stateBand;
-			sendDatatoSI5351();
+			newDataToBeSendToSI5351 = TRUE;
+			//sendDatatoSI5351();
 		}
 
 		if ((oldStateBand != stateBand) && (stateBand == 80))
@@ -1505,7 +1798,8 @@ void StartTaskFromGui(void *argument)
 			VFOhasChangedforDisplay = TRUE;
 			VFOhasChangedforSI5351 = TRUE;
 			oldStateBand = stateBand;
-			sendDatatoSI5351();
+			newDataToBeSendToSI5351 = TRUE;
+			//sendDatatoSI5351();
 		}
 		if (oldStateStepSize != stateStepSize)
 		{
@@ -1514,7 +1808,8 @@ void StartTaskFromGui(void *argument)
 			VFOhasChangedforDisplay = TRUE;
 			VFOhasChangedforSI5351 = TRUE;
 			oldStateStepSize = stateStepSize;
-			sendDatatoSI5351();
+			newDataToBeSendToSI5351 = TRUE;
+			//sendDatatoSI5351();
 		}
 		osDelay(100);
 	}
@@ -1534,7 +1829,7 @@ void StartTaskFFT(void *argument)
 	/* Infinite loop */
 	for (;;)
 	{
-		if (adcBusy == FALSE && graphHasBeenDisplayed == TRUE)
+		if (newADCDataAvailable == TRUE)
 		{
 
 			uint16_t k = 0;
@@ -1618,15 +1913,35 @@ void StartTaskFFT(void *argument)
 
 			if (osMessageQueueGetCount(dynGraphQueueHandle) == 0)
 				osMessageQueuePut(dynGraphQueueHandle, &data, 0U, 0);
-
+			newADCDataAvailable = FALSE;
 			HAL_ADCEx_MultiModeStart_DMA(&hadc1, adcDualInputBuffer, INPUT_SAMPLES);
-			adcBusy = TRUE;
-			graphHasBeenDisplayed = FALSE;
 		}
-
 		osDelay(50);
 	}
 	/* USER CODE END StartTaskFFT */
+}
+
+/* USER CODE BEGIN Header_StartTaskFRSync */
+/**
+ * @brief Function implementing the myTaskFrameRate thread.
+ * @param argument: Not used
+ * @retval None
+ */
+/* USER CODE END Header_StartTaskFRSync */
+void StartTaskFRSync(void *argument)
+{
+	/* USER CODE BEGIN StartTaskFRSync */
+	/* Infinite loop */
+	for (;;)
+	{
+		if (newDataToBeSendToSI5351 == TRUE)
+		{
+			sendDatatoSI5351();
+			newDataToBeSendToSI5351 = FALSE;
+		}
+		osDelay(30);
+	}
+	/* USER CODE END StartTaskFRSync */
 }
 
 /* MPU Configuration */
@@ -1713,7 +2028,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 	/* USER CODE BEGIN Callback 0 */
 	if (htim->Instance == TIM6)
 	{
-		//readyToSendI2C = FALSE;
+//readyToSendI2C = FALSE;
 	}
 	/* USER CODE END Callback 0 */
 	if (htim->Instance == TIM6)
@@ -1721,7 +2036,17 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 		HAL_IncTick();
 	}
 	/* USER CODE BEGIN Callback 1 */
-
+	if (htim->Instance == TIM1)
+	{
+		if (newADCDataAvailable == TRUE)
+		{
+			newADCDataAvailable = FALSE;
+		}
+		else
+		{
+			newADCDataAvailable = TRUE;
+		}
+	}
 	/* USER CODE END Callback 1 */
 }
 
