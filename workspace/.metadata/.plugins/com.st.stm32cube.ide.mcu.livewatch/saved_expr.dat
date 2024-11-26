@@ -1,1 +1,6 @@
-newADCDataAvailable
+counter
+dataFromMemory
+infoOfMemory
+ospiTestStop
+ospiTestStart
+ospi_counter

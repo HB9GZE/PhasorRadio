@@ -23,6 +23,8 @@ extern uint16_t stateStepSize;
 }
 #endif
 
+extern uint8_t startTimerA;
+
 #ifndef FALSE     /* in case these macros already exist */
 #define FALSE 0   /* values of boolean */
 #endif
@@ -44,7 +46,7 @@ void Model::tick()
 	uint16_t newSmeterValue;
 	float newVFOValue;
 	QueueElement dataReceived;
-	//startTimerA = TRUE;
+	startTimerA = TRUE;
 
 	if (osMessageQueueGet(sMeterQueueHandle, &newSmeterValue, 0U, 0) == osOK)
 	{
