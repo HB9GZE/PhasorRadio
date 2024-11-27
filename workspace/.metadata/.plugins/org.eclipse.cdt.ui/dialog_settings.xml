@@ -11,4 +11,14 @@
 	<section name="OptionalMessageDialog.hide.">
 		<item key="askReindex.detail" value="0"/>
 	</section>
+	<section name="org.eclipse.cdt.internal.ui.includebrowser.IBViewPart">
+		<item key="inactiveFilter" value="false"/>
+		<item key="systemFilter" value="false"/>
+		<item key="includedBy" value="true"/>
+		<item key="showFolders" value="false"/>
+	</section>
+	<section name="RenameInformationPopup">
+	</section>
+	<section name="CRenameRefactoringInputPage">
+	</section>
 </section>
