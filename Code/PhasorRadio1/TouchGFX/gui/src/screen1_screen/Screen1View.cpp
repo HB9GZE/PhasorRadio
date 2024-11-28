@@ -3,7 +3,7 @@
 #include <touchgfx/Bitmap.hpp>
 #include <touchgfx/widgets/PixelDataWidget.hpp>
 
-#include <string.h> // memcpy
+#include <string.h> // needed for memcpy
 
 #define PIXEL_W 341
 #define PIXEL_H 80
