@@ -474,7 +474,7 @@ int main(void)
 	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_13, GPIO_PIN_RESET); //set input bandpass to 40m
 	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_12, GPIO_PIN_SET); //LSB
 	si5351_Init(correction);
-	si5351_CalcIQ(vfo_40m_5351, &pllConf, &outConf);
+	si5351_CalcIQ(vfo_40m_5351, &pllConf, &outConf); //use only calc next time!
 
 	/*
 	 * `phaseOffset` is a 7bit value, calculated from Fpll, Fclk and desired phase shift.
