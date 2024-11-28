@@ -144,9 +144,9 @@ float vfo_20m = 14074.0;
 //float vfo_80m_dec = 0; //_dec for handling the fine tuning (with 1/10th decimal fraction)
 //float vfo_40m_dec = 0; //_dec for handling the fine tuning (with 1/10th decimal fraction)
 //float vfo_20m_dec = 0; //_dec for handling the fine tuning (with 1/10th decimal fraction)
-uint32_t vfo_80m_5351 = 3573000;
-uint32_t vfo_40m_5351 = 7074000;
-uint32_t vfo_20m_5351 = 14074000;
+uint32_t vfo_80m_5351 = 14292000; // 3573 * 4
+uint32_t vfo_40m_5351 = 28296000; // 7074 * 4
+uint32_t vfo_20m_5351 = 56296000; // 14074 * 4
 uint8_t VFOhasChangedforDisplay;
 uint8_t VFOhasChangedforSI5351;
 uint8_t vfoDataHasChanged;
@@ -226,15 +226,15 @@ void stepSizeChanged()
 		{
 		case BAND_80M:
 			vfo_80m_5351 = (vfo_80m_5351 / 1000) * 1000;
-			vfo_80m = (float) (vfo_80m_5351) / 1000.0;
+			vfo_80m = (float) (vfo_80m_5351) / 4000.0;
 			break;
 		case BAND_40M:
 			vfo_40m_5351 = (vfo_40m_5351 / 1000) * 1000;
-			vfo_40m = (float) (vfo_40m_5351) / 1000.0;
+			vfo_40m = (float) (vfo_40m_5351) / 4000.0;
 			break;
 		case BAND_20M:
 			vfo_20m_5351 = (vfo_20m_5351 / 1000) * 1000;
-			vfo_20m = (float) (vfo_20m_5351) / 1000.0;
+			vfo_20m = (float) (vfo_20m_5351) / 4000.0;
 			break;
 		}
 	}
@@ -244,15 +244,15 @@ void stepSizeChanged()
 		{
 		case BAND_80M:
 			vfo_80m_5351 = (vfo_80m_5351 / 100) * 100;
-			vfo_80m = (float) (vfo_80m_5351) / 1000.0;
+			vfo_80m = (float) (vfo_80m_5351) / 4000.0;
 			break;
 		case BAND_40M:
 			vfo_40m_5351 = (vfo_40m_5351 / 100) * 100;
-			vfo_40m = (float) (vfo_40m_5351) / 1000.0;
+			vfo_40m = (float) (vfo_40m_5351) / 4000.0;
 			break;
 		case BAND_20M:
 			vfo_20m_5351 = (vfo_20m_5351 / 100) * 100;
-			vfo_20m = (float) (vfo_20m_5351) / 1000.0;
+			vfo_20m = (float) (vfo_20m_5351) / 4000.0;
 			break;
 		}
 	}
@@ -262,15 +262,15 @@ void stepSizeChanged()
 		{
 		case BAND_80M:
 			vfo_80m_5351 = (vfo_80m_5351 / 10) * 10;
-			vfo_80m = (float) (vfo_80m_5351) / 1000.0;
+			vfo_80m = (float) (vfo_80m_5351) / 4000.0;
 			break;
 		case BAND_40M:
 			vfo_40m_5351 = (vfo_40m_5351 / 10) * 10;
-			vfo_40m = (float) (vfo_40m_5351) / 1000.0;
+			vfo_40m = (float) (vfo_40m_5351) / 4000.0;
 			break;
 		case BAND_20M:
 			vfo_20m_5351 = (vfo_20m_5351 / 10) * 10;
-			vfo_20m = (float) (vfo_20m_5351) / 1000.0;
+			vfo_20m = (float) (vfo_20m_5351) / 4000.0;
 			break;
 		}
 	}
@@ -289,13 +289,13 @@ void HAL_TIM_IC_CaptureCallback(TIM_HandleTypeDef *htim)
 				switch (stateBand)
 				{
 				case BAND_80M:
-					vfo_80m_5351 = vfo_80m_5351 - stateStepSize;
+					vfo_80m_5351 = vfo_80m_5351 - (4 * stateStepSize);
 					break;
 				case BAND_40M:
-					vfo_40m_5351 = vfo_40m_5351 - stateStepSize;
+					vfo_40m_5351 = vfo_40m_5351 - (4 * stateStepSize);
 					break;
 				case BAND_20M:
-					vfo_20m_5351 = vfo_20m_5351 - stateStepSize;
+					vfo_20m_5351 = vfo_20m_5351 - (4 * stateStepSize);
 					break;
 				}
 				VFOhasChangedforSI5351 = TRUE;
@@ -307,13 +307,13 @@ void HAL_TIM_IC_CaptureCallback(TIM_HandleTypeDef *htim)
 				switch (stateBand)
 				{
 				case BAND_80M:
-					vfo_80m_5351 = vfo_80m_5351 + stateStepSize;
+					vfo_80m_5351 = vfo_80m_5351 + (4 * stateStepSize);
 					break;
 				case BAND_40M:
-					vfo_40m_5351 = vfo_40m_5351 + stateStepSize;
+					vfo_40m_5351 = vfo_40m_5351 + (4 * stateStepSize);
 					break;
 				case BAND_20M:
-					vfo_20m_5351 = vfo_20m_5351 + stateStepSize;
+					vfo_20m_5351 = vfo_20m_5351 + (4 * stateStepSize);
 					break;
 				}
 				VFOhasChangedforSI5351 = TRUE;
@@ -324,13 +324,13 @@ void HAL_TIM_IC_CaptureCallback(TIM_HandleTypeDef *htim)
 			switch (stateBand)
 			{
 			case BAND_80M:
-				vfo_80m = ((float) (vfo_80m_5351)) / 1000.0;
+				vfo_80m = ((float) (vfo_80m_5351)) / 4000.0;
 				break;
 			case BAND_40M:
-				vfo_40m = ((float) (vfo_40m_5351)) / 1000.0;
+				vfo_40m = ((float) (vfo_40m_5351)) / 4000.0;
 				break;
 			case BAND_20M:
-				vfo_20m = ((float) (vfo_20m_5351)) / 1000.0;
+				vfo_20m = ((float) (vfo_20m_5351)) / 4000.0;
 				break;
 			}
 
@@ -356,13 +356,19 @@ void sendDatatoSI5351(void)
 			si5351_CalcIQ(vfo_20m_5351, &pllConf, &outConf);
 			break;
 		}
-		phaseOffset = (uint8_t) outConf.div;
+//		phaseOffset = (uint8_t) outConf.div;
+//
+//		si5351_SetupOutput(0, SI5351_PLL_A, SI5351_DRIVE_STRENGTH_6MA, &outConf, 0);
+//		//si5351_SetupOutput(2, SI5351_PLL_A, SI5351_DRIVE_STRENGTH_6MA, &outConf, phaseOffset);
+//		//si5351_EnableOutputs((0 << 0) | (0 << 2));
+//		si5351_SetupPLL_No_Reset(SI5351_PLL_A, &pllConf);
+//		si5351_EnableOutputs((0 << 0) | (1 << 2));
 
-		si5351_SetupOutput(0, SI5351_PLL_A, SI5351_DRIVE_STRENGTH_6MA, &outConf, 0);
-		si5351_SetupOutput(2, SI5351_PLL_A, SI5351_DRIVE_STRENGTH_6MA, &outConf, phaseOffset);
-		//si5351_EnableOutputs((0 << 0) | (0 << 2));
-		si5351_SetupPLL(SI5351_PLL_A, &pllConf);
+		si5351_SetupOutput(2, SI5351_PLL_A, SI5351_DRIVE_STRENGTH_4MA, &outConf, 0);
+		si5351_SetupPLL_No_Reset(SI5351_PLL_A, &pllConf);
 		//si5351_EnableOutputs((1 << 0) | (1 << 2));
+		//si5351_EnableOutputs(1 << 2);
+
 		VFOhasChangedforSI5351 = FALSE;
 	}
 }
@@ -463,7 +469,7 @@ int main(void)
 	}
 
 	oldStateBand = stateBand = 40;
-	vfo_40m_5351 = 7074000;
+	vfo_40m_5351 = 28296000;
 	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_12, GPIO_PIN_SET); //set input bandpass to 40m
 	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_13, GPIO_PIN_RESET); //set input bandpass to 40m
 	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_12, GPIO_PIN_SET); //LSB
@@ -485,7 +491,7 @@ int main(void)
 	 * This automatically gives 90° phase shift between two channels if you pass
 	 *  0 and out_conf.div as a phaseOffset for these channels.
 	 */
-	phaseOffset = (uint8_t) outConf.div;
+	//phaseOffset = (uint8_t) outConf.div;
 //si5351_SetupOutput(0, SI5351_PLL_A, SI5351_DRIVE_STRENGTH_4MA, &outConf, 0);
 //si5351_SetupOutput(2, SI5351_PLL_A, SI5351_DRIVE_STRENGTH_4MA, &outConf,phaseOffset);
 	/*
@@ -494,10 +500,12 @@ int main(void)
 	 * However since _SetupPLL() always resets the PLL this would only cause
 	 * sending extra I2C commands.
 	 */
-	si5351_SetupOutput(0, SI5351_PLL_A, SI5351_DRIVE_STRENGTH_2MA, &outConf, 0);
-	si5351_SetupOutput(2, SI5351_PLL_A, SI5351_DRIVE_STRENGTH_2MA, &outConf, phaseOffset);
+	//si5351_SetupOutput(0, SI5351_PLL_A, SI5351_DRIVE_STRENGTH_6MA, &outConf, 0);
+	si5351_SetupOutput(2, SI5351_PLL_A, SI5351_DRIVE_STRENGTH_6MA, &outConf, 0);
+	//si5351_SetupOutput(2, SI5351_PLL_A, SI5351_DRIVE_STRENGTH_6MA, 0, 0);
 	si5351_SetupPLL(SI5351_PLL_A, &pllConf);
-	si5351_EnableOutputs((1 << 0) | (1 << 2));
+	//si5351_EnableOutputs((1 << 0) | (1 << 2));
+	si5351_EnableOutputs(1 << 2);
 
   /* USER CODE END 2 */
 
@@ -1490,6 +1498,7 @@ void StartTaskFromGui(void *argument)
 			VFOhasChangedforDisplay = TRUE;
 			VFOhasChangedforSI5351 = TRUE;
 			oldStateBand = stateBand;
+			sendDatatoSI5351();
 		}
 
 		if ((oldStateBand != stateBand) && (stateBand == 40))
@@ -1500,6 +1509,7 @@ void StartTaskFromGui(void *argument)
 			VFOhasChangedforDisplay = TRUE;
 			VFOhasChangedforSI5351 = TRUE;
 			oldStateBand = stateBand;
+			sendDatatoSI5351();
 		}
 
 		if ((oldStateBand != stateBand) && (stateBand == 80))
@@ -1510,7 +1520,9 @@ void StartTaskFromGui(void *argument)
 			VFOhasChangedforDisplay = TRUE;
 			VFOhasChangedforSI5351 = TRUE;
 			oldStateBand = stateBand;
+			sendDatatoSI5351();
 		}
+
 		if (oldStateStepSize != stateStepSize)
 		{
 			stepSizeChanged();
