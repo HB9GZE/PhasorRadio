@@ -15146,7 +15146,7 @@
 				)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "1.5nF"
 			(at 85.09 227.33 90)
 			(effects
 				(font

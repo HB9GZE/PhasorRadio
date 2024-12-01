@@ -133,7 +133,7 @@ const osMessageQueueAttr_t dynGraphQueue_attributes = {
 
 //config SI5351
 uint8_t phaseOffset;
-const int32_t correction = 108630; //the higher the correction, the lower the frequency
+const int32_t correction = 0; //the higher the correction, the lower the frequency
 si5351PLLConfig_t pllConf;
 si5351OutputConfig_t outConf;
 
@@ -347,13 +347,13 @@ void sendDatatoSI5351(void)
 		switch (stateBand)
 		{
 		case BAND_80M:
-			si5351_CalcIQ(vfo_80m_5351, &pllConf, &outConf);
+			si5351_Calc(vfo_80m_5351, &pllConf, &outConf);
 			break;
 		case BAND_40M:
-			si5351_CalcIQ(vfo_40m_5351, &pllConf, &outConf);
+			si5351_Calc(vfo_40m_5351, &pllConf, &outConf);
 			break;
 		case BAND_20M:
-			si5351_CalcIQ(vfo_20m_5351, &pllConf, &outConf);
+			si5351_Calc(vfo_20m_5351, &pllConf, &outConf);
 			break;
 		}
 //		phaseOffset = (uint8_t) outConf.div;
@@ -364,10 +364,10 @@ void sendDatatoSI5351(void)
 //		si5351_SetupPLL_No_Reset(SI5351_PLL_A, &pllConf);
 //		si5351_EnableOutputs((0 << 0) | (1 << 2));
 
-		si5351_SetupOutput(2, SI5351_PLL_A, SI5351_DRIVE_STRENGTH_4MA, &outConf, 0);
+		si5351_SetupOutput(0, SI5351_PLL_A, SI5351_DRIVE_STRENGTH_6MA, &outConf, 0);
 		si5351_SetupPLL_No_Reset(SI5351_PLL_A, &pllConf);
 		//si5351_EnableOutputs((1 << 0) | (1 << 2));
-		//si5351_EnableOutputs(1 << 2);
+		//si5351_EnableOutputs(1 << 0);
 
 		VFOhasChangedforSI5351 = FALSE;
 	}
@@ -375,8 +375,6 @@ void sendDatatoSI5351(void)
 
 void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef *hadc)
 {
-	//HAL_GPIO_WritePin(GPIOA, GPIO_PIN_12, GPIO_PIN_RESET);
-
 	uint16_t j = 0;
 
 	for (uint16_t i = 0; i < 2 * INPUT_SAMPLES; i++)
@@ -457,7 +455,7 @@ int main(void)
   /* USER CODE BEGIN 2 */
 	HAL_TIM_Encoder_Start_IT(&htim23, TIM_CHANNEL_ALL);
 	HAL_ADCEx_Calibration_Start(&hadc1, ADC_CALIB_OFFSET, ADC_SINGLE_ENDED);
-	//HAL_ADCEx_Calibration_Start(&hadc2, ADC_CALIB_OFFSET, ADC_SINGLE_ENDED);
+	HAL_ADCEx_Calibration_Start(&hadc2, ADC_CALIB_OFFSET, ADC_SINGLE_ENDED);
 
 	HAL_TIM_Base_Start(&htim1);
 	HAL_ADCEx_MultiModeStart_DMA(&hadc1, adcDualInputBuffer, INPUT_SAMPLES);
@@ -472,9 +470,11 @@ int main(void)
 	vfo_40m_5351 = 28296000;
 	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_12, GPIO_PIN_SET); //set input bandpass to 40m
 	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_13, GPIO_PIN_RESET); //set input bandpass to 40m
-	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_12, GPIO_PIN_SET); //LSB
+	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_12, GPIO_PIN_RESET); //LSB
+	HAL_GPIO_WritePin(GPIOG, GPIO_PIN_5, GPIO_PIN_SET); //no TX
+	HAL_GPIO_WritePin(GPIOH, GPIO_PIN_12, GPIO_PIN_RESET);//no Tx
 	si5351_Init(correction);
-	si5351_CalcIQ(vfo_40m_5351, &pllConf, &outConf); //use only calc next time!
+	si5351_Calc(vfo_40m_5351, &pllConf, &outConf);
 
 	/*
 	 * `phaseOffset` is a 7bit value, calculated from Fpll, Fclk and desired phase shift.
@@ -501,11 +501,11 @@ int main(void)
 	 * sending extra I2C commands.
 	 */
 	//si5351_SetupOutput(0, SI5351_PLL_A, SI5351_DRIVE_STRENGTH_6MA, &outConf, 0);
-	si5351_SetupOutput(2, SI5351_PLL_A, SI5351_DRIVE_STRENGTH_6MA, &outConf, 0);
+	si5351_SetupOutput(0, SI5351_PLL_A, SI5351_DRIVE_STRENGTH_6MA, &outConf, 0);
 	//si5351_SetupOutput(2, SI5351_PLL_A, SI5351_DRIVE_STRENGTH_6MA, 0, 0);
 	si5351_SetupPLL(SI5351_PLL_A, &pllConf);
 	//si5351_EnableOutputs((1 << 0) | (1 << 2));
-	si5351_EnableOutputs(1 << 2);
+	si5351_EnableOutputs(1 << 0);
 
   /* USER CODE END 2 */
 
@@ -690,7 +690,7 @@ static void MX_ADC1_Init(void)
   hadc1.Init.ClockPrescaler = ADC_CLOCK_ASYNC_DIV1;
   hadc1.Init.Resolution = ADC_RESOLUTION_14B;
   hadc1.Init.ScanConvMode = ADC_SCAN_DISABLE;
-  hadc1.Init.EOCSelection = ADC_EOC_SEQ_CONV;
+  hadc1.Init.EOCSelection = ADC_EOC_SINGLE_CONV;
   hadc1.Init.LowPowerAutoWait = DISABLE;
   hadc1.Init.ContinuousConvMode = DISABLE;
   hadc1.Init.NbrOfConversion = 1;
@@ -698,7 +698,7 @@ static void MX_ADC1_Init(void)
   hadc1.Init.ExternalTrigConv = ADC_EXTERNALTRIG_T1_TRGO;
   hadc1.Init.ExternalTrigConvEdge = ADC_EXTERNALTRIGCONVEDGE_RISING;
   hadc1.Init.ConversionDataManagement = ADC_CONVERSIONDATA_DMA_ONESHOT;
-  hadc1.Init.Overrun = ADC_OVR_DATA_PRESERVED;
+  hadc1.Init.Overrun = ADC_OVR_DATA_OVERWRITTEN;
   hadc1.Init.LeftBitShift = ADC_LEFTBITSHIFT_NONE;
   hadc1.Init.OversamplingMode = DISABLE;
   hadc1.Init.Oversampling.Ratio = 1;
@@ -721,7 +721,7 @@ static void MX_ADC1_Init(void)
   */
   sConfig.Channel = ADC_CHANNEL_1;
   sConfig.Rank = ADC_REGULAR_RANK_1;
-  sConfig.SamplingTime = ADC_SAMPLETIME_1CYCLE_5;
+  sConfig.SamplingTime = ADC_SAMPLETIME_8CYCLES_5;
   sConfig.SingleDiff = ADC_SINGLE_ENDED;
   sConfig.OffsetNumber = ADC_OFFSET_NONE;
   sConfig.Offset = 0;
@@ -766,7 +766,7 @@ static void MX_ADC2_Init(void)
   hadc2.Init.NbrOfConversion = 1;
   hadc2.Init.DiscontinuousConvMode = DISABLE;
   hadc2.Init.ConversionDataManagement = ADC_CONVERSIONDATA_DR;
-  hadc2.Init.Overrun = ADC_OVR_DATA_PRESERVED;
+  hadc2.Init.Overrun = ADC_OVR_DATA_OVERWRITTEN;
   hadc2.Init.LeftBitShift = ADC_LEFTBITSHIFT_NONE;
   hadc2.Init.OversamplingMode = DISABLE;
   hadc2.Init.Oversampling.Ratio = 1;
@@ -779,7 +779,7 @@ static void MX_ADC2_Init(void)
   */
   sConfig.Channel = ADC_CHANNEL_0;
   sConfig.Rank = ADC_REGULAR_RANK_1;
-  sConfig.SamplingTime = ADC_SAMPLETIME_1CYCLE_5;
+  sConfig.SamplingTime = ADC_SAMPLETIME_8CYCLES_5;
   sConfig.SingleDiff = ADC_SINGLE_ENDED;
   sConfig.OffsetNumber = ADC_OFFSET_NONE;
   sConfig.Offset = 0;
@@ -1306,6 +1306,9 @@ static void MX_GPIO_Init(void)
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOB, MCU_ACTIVE_Pin|FRAME_RATE_Pin|GPIO_PIN_13|GPIO_PIN_12, GPIO_PIN_RESET);
 
+  /*Configure GPIO pin Output Level */
+  HAL_GPIO_WritePin(GPIOH, GPIO_PIN_12, GPIO_PIN_SET);
+
   /*Configure GPIO pins : PE3 PE14 */
   GPIO_InitStruct.Pin = GPIO_PIN_3|GPIO_PIN_14;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
@@ -1354,6 +1357,13 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
+
+  /*Configure GPIO pin : PH12 */
+  GPIO_InitStruct.Pin = GPIO_PIN_12;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(GPIOH, &GPIO_InitStruct);
 
   /*Configure GPIO pin : VSYNC_FREQ_Pin */
   GPIO_InitStruct.Pin = VSYNC_FREQ_Pin;
@@ -1471,21 +1481,23 @@ void StartTaskFromGui(void *argument)
 		if (stateRXTX == FALSE)
 		{
 			HAL_GPIO_WritePin(GPIOG, GPIO_PIN_5, GPIO_PIN_SET);
+			HAL_GPIO_WritePin(GPIOH, GPIO_PIN_12, GPIO_PIN_RESET);
 		}
 		else
 		{
 			HAL_GPIO_WritePin(GPIOG, GPIO_PIN_5, GPIO_PIN_RESET);
+			HAL_GPIO_WritePin(GPIOH, GPIO_PIN_12, GPIO_PIN_SET);
 		}
 
 		if (stateLSBUSB != lastStateLSBUSB)
 		{
 			if (stateLSBUSB == 0)
 			{
-				HAL_GPIO_WritePin(GPIOA, GPIO_PIN_12, GPIO_PIN_SET); //LSB
+				HAL_GPIO_WritePin(GPIOA, GPIO_PIN_12, GPIO_PIN_RESET); //LSB
 			}
 			else
 			{
-				HAL_GPIO_WritePin(GPIOA, GPIO_PIN_12, GPIO_PIN_RESET); //USB
+				HAL_GPIO_WritePin(GPIOA, GPIO_PIN_12, GPIO_PIN_SET); //USB
 			}
 			lastStateLSBUSB = stateLSBUSB;
 		}
