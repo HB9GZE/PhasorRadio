@@ -62,6 +62,7 @@
 /* Private variables ---------------------------------------------------------*/
 ADC_HandleTypeDef hadc1;
 ADC_HandleTypeDef hadc2;
+ADC_HandleTypeDef hadc3;
 DMA_HandleTypeDef hdma_adc1;
 
 CRC_HandleTypeDef hcrc;
@@ -201,6 +202,7 @@ static void MX_CRC_Init(void);
 static void MX_TIM1_Init(void);
 static void MX_I2C3_Init(void);
 static void MX_ADC2_Init(void);
+static void MX_ADC3_Init(void);
 void StartDefaultTask(void *argument);
 extern void TouchGFX_Task(void *argument);
 void StartTaskToGui(void *argument);
@@ -375,21 +377,24 @@ void sendDatatoSI5351(void)
 
 void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef *hadc)
 {
-	uint16_t j = 0;
-
-	for (uint16_t i = 0; i < 2 * INPUT_SAMPLES; i++)
+	if (hadc == &hadc1)
 	{
-		if (i % 2 == 0)
+		uint16_t j = 0;
+
+		for (uint16_t i = 0; i < 2 * INPUT_SAMPLES; i++)
 		{
-			fftComplexIntBuffer[i] = adcDualInputBuffer[j]; //real vector, I
+			if (i % 2 == 0)
+			{
+				fftComplexIntBuffer[i] = adcDualInputBuffer[j]; //real vector, I
+			}
+			else
+			{
+				fftComplexIntBuffer[i] = (adcDualInputBuffer[j] >> 16); //imaginary vector, Q
+				j++;
+			}
 		}
-		else
-		{
-			fftComplexIntBuffer[i] = (adcDualInputBuffer[j] >> 16); //imaginary vector, Q
-			j++;
-		}
+		adcBusy = FALSE;
 	}
-	adcBusy = FALSE;
 }
 
 /* USER CODE END 0 */
@@ -449,6 +454,7 @@ int main(void)
   MX_TIM1_Init();
   MX_I2C3_Init();
   MX_ADC2_Init();
+  MX_ADC3_Init();
   MX_TouchGFX_Init();
   /* Call PreOsInit function */
   MX_TouchGFX_PreOSInit();
@@ -459,7 +465,6 @@ int main(void)
 
 	HAL_TIM_Base_Start(&htim1);
 	HAL_ADCEx_MultiModeStart_DMA(&hadc1, adcDualInputBuffer, INPUT_SAMPLES);
-
 
 	for (uint16_t i = 0; i < INPUT_SAMPLES; i++)
 	{
@@ -472,39 +477,11 @@ int main(void)
 	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_13, GPIO_PIN_RESET); //set input bandpass to 40m
 	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_12, GPIO_PIN_RESET); //LSB
 	HAL_GPIO_WritePin(GPIOG, GPIO_PIN_5, GPIO_PIN_SET); //no TX
-	HAL_GPIO_WritePin(GPIOH, GPIO_PIN_12, GPIO_PIN_RESET);//no Tx
+	HAL_GPIO_WritePin(GPIOH, GPIO_PIN_12, GPIO_PIN_RESET); //no Tx
 	si5351_Init(correction);
 	si5351_Calc(vfo_40m_5351, &pllConf, &outConf);
-
-	/*
-	 * `phaseOffset` is a 7bit value, calculated from Fpll, Fclk and desired phase shift.
-	 * To get N° phase shift the value should be round( (N/360)*(4*Fpll/Fclk) )
-	 * Two channels should use the same PLL to make it work. There are other restrictions.
-	 * Please see AN619 for more details.
-	 *
-	 * si5351_CalcIQ() chooses PLL and MS parameters so that:
-	 *   Fclk in [1.4..100] MHz
-	 *   out_conf.div in [9..127]
-	 *   out_conf.num = 0
-	 *   out_conf.denum = 1
-	 *   Fpll = out_conf.div * Fclk.
-	 * This automatically gives 90° phase shift between two channels if you pass
-	 *  0 and out_conf.div as a phaseOffset for these channels.
-	 */
-	//phaseOffset = (uint8_t) outConf.div;
-//si5351_SetupOutput(0, SI5351_PLL_A, SI5351_DRIVE_STRENGTH_4MA, &outConf, 0);
-//si5351_SetupOutput(2, SI5351_PLL_A, SI5351_DRIVE_STRENGTH_4MA, &outConf,phaseOffset);
-	/*
-	 * The order is important! Setup the channels first, then setup the PLL.
-	 * Alternatively you could reset the PLL after setting up PLL and channels.
-	 * However since _SetupPLL() always resets the PLL this would only cause
-	 * sending extra I2C commands.
-	 */
-	//si5351_SetupOutput(0, SI5351_PLL_A, SI5351_DRIVE_STRENGTH_6MA, &outConf, 0);
 	si5351_SetupOutput(0, SI5351_PLL_A, SI5351_DRIVE_STRENGTH_6MA, &outConf, 0);
-	//si5351_SetupOutput(2, SI5351_PLL_A, SI5351_DRIVE_STRENGTH_6MA, 0, 0);
 	si5351_SetupPLL(SI5351_PLL_A, &pllConf);
-	//si5351_EnableOutputs((1 << 0) | (1 << 2));
 	si5351_EnableOutputs(1 << 0);
 
   /* USER CODE END 2 */
@@ -688,7 +665,7 @@ static void MX_ADC1_Init(void)
   */
   hadc1.Instance = ADC1;
   hadc1.Init.ClockPrescaler = ADC_CLOCK_ASYNC_DIV1;
-  hadc1.Init.Resolution = ADC_RESOLUTION_14B;
+  hadc1.Init.Resolution = ADC_RESOLUTION_12B;
   hadc1.Init.ScanConvMode = ADC_SCAN_DISABLE;
   hadc1.Init.EOCSelection = ADC_EOC_SINGLE_CONV;
   hadc1.Init.LowPowerAutoWait = DISABLE;
@@ -758,7 +735,7 @@ static void MX_ADC2_Init(void)
   */
   hadc2.Instance = ADC2;
   hadc2.Init.ClockPrescaler = ADC_CLOCK_ASYNC_DIV1;
-  hadc2.Init.Resolution = ADC_RESOLUTION_14B;
+  hadc2.Init.Resolution = ADC_RESOLUTION_12B;
   hadc2.Init.ScanConvMode = ADC_SCAN_DISABLE;
   hadc2.Init.EOCSelection = ADC_EOC_SINGLE_CONV;
   hadc2.Init.LowPowerAutoWait = DISABLE;
@@ -791,6 +768,69 @@ static void MX_ADC2_Init(void)
   /* USER CODE BEGIN ADC2_Init 2 */
 
   /* USER CODE END ADC2_Init 2 */
+
+}
+
+/**
+  * @brief ADC3 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_ADC3_Init(void)
+{
+
+  /* USER CODE BEGIN ADC3_Init 0 */
+
+  /* USER CODE END ADC3_Init 0 */
+
+  ADC_ChannelConfTypeDef sConfig = {0};
+
+  /* USER CODE BEGIN ADC3_Init 1 */
+
+  /* USER CODE END ADC3_Init 1 */
+
+  /** Common config
+  */
+  hadc3.Instance = ADC3;
+  hadc3.Init.ClockPrescaler = ADC_CLOCK_ASYNC_DIV1;
+  hadc3.Init.Resolution = ADC_RESOLUTION_12B;
+  hadc3.Init.DataAlign = ADC3_DATAALIGN_RIGHT;
+  hadc3.Init.ScanConvMode = ADC_SCAN_DISABLE;
+  hadc3.Init.EOCSelection = ADC_EOC_SINGLE_CONV;
+  hadc3.Init.LowPowerAutoWait = DISABLE;
+  hadc3.Init.ContinuousConvMode = DISABLE;
+  hadc3.Init.NbrOfConversion = 1;
+  hadc3.Init.DiscontinuousConvMode = DISABLE;
+  hadc3.Init.ExternalTrigConv = ADC_SOFTWARE_START;
+  hadc3.Init.ExternalTrigConvEdge = ADC_EXTERNALTRIGCONVEDGE_NONE;
+  hadc3.Init.DMAContinuousRequests = DISABLE;
+  hadc3.Init.SamplingMode = ADC_SAMPLING_MODE_NORMAL;
+  hadc3.Init.ConversionDataManagement = ADC_CONVERSIONDATA_DR;
+  hadc3.Init.Overrun = ADC_OVR_DATA_PRESERVED;
+  hadc3.Init.LeftBitShift = ADC_LEFTBITSHIFT_NONE;
+  hadc3.Init.OversamplingMode = DISABLE;
+  hadc3.Init.Oversampling.Ratio = ADC3_OVERSAMPLING_RATIO_2;
+  if (HAL_ADC_Init(&hadc3) != HAL_OK)
+  {
+    Error_Handler();
+  }
+
+  /** Configure Regular Channel
+  */
+  sConfig.Channel = ADC_CHANNEL_0;
+  sConfig.Rank = ADC_REGULAR_RANK_1;
+  sConfig.SamplingTime = ADC3_SAMPLETIME_2CYCLES_5;
+  sConfig.SingleDiff = ADC_SINGLE_ENDED;
+  sConfig.OffsetNumber = ADC_OFFSET_NONE;
+  sConfig.Offset = 0;
+  sConfig.OffsetSign = ADC3_OFFSET_SIGN_NEGATIVE;
+  if (HAL_ADC_ConfigChannel(&hadc3, &sConfig) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN ADC3_Init 2 */
+
+  /* USER CODE END ADC3_Init 2 */
 
 }
 
@@ -1571,7 +1611,7 @@ void StartTaskFFT(void *argument)
 				{
 					k++;
 				}
-				fftComplexFloatBuffer[i] = (fftComplexIntBuffer[i]) * 0.0001 * hanningWIN[k]; //* Hanning Window
+				fftComplexFloatBuffer[i] = (fftComplexIntBuffer[i]) * 0.001 * hanningWIN[k]; //* Hanning Window and scaling
 			}
 
 			if (INPUT_SAMPLES == 2048)
@@ -1620,40 +1660,40 @@ void StartTaskFFT(void *argument)
 				}
 			}
 
-		if (INPUT_SAMPLES == 2048 && stateWFBW == 2)
-		{
-			for (uint16_t i = 683; i < 1366; i += 2)
+			if (INPUT_SAMPLES == 2048 && stateWFBW == 2)
 			{
-				dynamicGraphValue[j] = (int) ((fftAdjustedMagnitudeBuffer[i] + fftAdjustedMagnitudeBuffer[i + 1]) / 2);
-				if (dynamicGraphValue[j] > 50)
-					dynamicGraphValue[j] = 50;
-				j++;
+				for (uint16_t i = 683; i < 1366; i += 2)
+				{
+					dynamicGraphValue[j] = (int) ((fftAdjustedMagnitudeBuffer[i] + fftAdjustedMagnitudeBuffer[i + 1]) / 2);
+					if (dynamicGraphValue[j] > 50)
+						dynamicGraphValue[j] = 50;
+					j++;
+				}
 			}
+
+			if (INPUT_SAMPLES == 2048 && stateWFBW == 3) //16k BW
+			{
+				for (uint16_t i = 854; i < 1196; i++)
+				{
+					dynamicGraphValue[j] = (int) fftAdjustedMagnitudeBuffer[i];
+					if (dynamicGraphValue[j] > 50)
+						dynamicGraphValue[j] = 50;
+					j++;
+				}
+			}
+
+			memcpy(data.dynGraphData, dynamicGraphValue, sizeof(dynamicGraphValue));
+
+			if (osMessageQueueGetCount(dynGraphQueueHandle) == 0)
+				osMessageQueuePut(dynGraphQueueHandle, &data, 0U, 0);
+
+			HAL_ADCEx_MultiModeStart_DMA(&hadc1, adcDualInputBuffer, INPUT_SAMPLES);
+			adcBusy = TRUE;
+			graphHasBeenDisplayed = FALSE;
 		}
 
-		if (INPUT_SAMPLES == 2048 && stateWFBW == 3) //16k BW
-		{
-			for (uint16_t i = 854; i < 1196; i++)
-			{
-				dynamicGraphValue[j] = (int) fftAdjustedMagnitudeBuffer[i];
-				if (dynamicGraphValue[j] > 50)
-					dynamicGraphValue[j] = 50;
-				j++;
-			}
-		}
-
-		memcpy(data.dynGraphData, dynamicGraphValue, sizeof(dynamicGraphValue));
-
-		if (osMessageQueueGetCount(dynGraphQueueHandle) == 0)
-			osMessageQueuePut(dynGraphQueueHandle, &data, 0U, 0);
-
-		HAL_ADCEx_MultiModeStart_DMA(&hadc1, adcDualInputBuffer, INPUT_SAMPLES);
-		adcBusy = TRUE;
-		graphHasBeenDisplayed = FALSE;
+		osDelay(20);
 	}
-
-	osDelay(20);
-}
   /* USER CODE END StartTaskFFT */
 }
 
@@ -1738,10 +1778,10 @@ void MPU_Config(void)
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 {
   /* USER CODE BEGIN Callback 0 */
-if (htim->Instance == TIM6)
-{
-	//readyToSendI2C = FALSE;
-}
+	if (htim->Instance == TIM6)
+	{
+		//readyToSendI2C = FALSE;
+	}
   /* USER CODE END Callback 0 */
   if (htim->Instance == TIM6) {
     HAL_IncTick();
@@ -1758,7 +1798,7 @@ if (htim->Instance == TIM6)
 void Error_Handler(void)
 {
   /* USER CODE BEGIN Error_Handler_Debug */
-/* User can add his own implementation to report the HAL error return state */
+	/* User can add his own implementation to report the HAL error return state */
 
   /* USER CODE END Error_Handler_Debug */
 }
