@@ -24503,7 +24503,7 @@
 		(dnp no)
 		(uuid "08dd6697-e3bb-4f16-ac8d-cd0b8e8eccea")
 		(property "Reference" "R9"
-			(at 171.958 309.626 90)
+			(at 170.434 309.626 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38525,7 +38525,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 183.134 309.626 90)
+			(at 184.15 309.626 90)
 			(effects
 				(font
 					(size 1.27 1.27)

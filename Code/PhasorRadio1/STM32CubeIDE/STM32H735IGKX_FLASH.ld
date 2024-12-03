@@ -145,6 +145,12 @@ SECTIONS
     _edata = .;        /* define a global symbol at data end */
     
   } >RAM_D1 AT> FLASH
+  
+    /* D2 RAM accessible to DMA */
+  .dma_d2_ram (NOLOAD) :
+  {
+    *(.dma_d2_ram)
+  } >RAM_D2
 
   /* Uninitialized data section into "RAM_D1" Ram type memory */
   . = ALIGN(4);
