@@ -45,6 +45,8 @@ Drivers/BSP/STM32H735G-DK/stm32h735g_discovery_ts.o: \
  ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr_ex.h \
  ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim.h \
  ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h \
+ ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h \
+ ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h \
  C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/Drivers/BSP/STM32H735G-DK/stm32h735g_discovery_errno.h \
  C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/Drivers/BSP/STM32H735G-DK/../Components/ft5336/ft5336.h \
  C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/Drivers/BSP/STM32H735G-DK/../Components/ft5336/ft5336_reg.h \
@@ -96,6 +98,8 @@ C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/Drivers/BSP/STM32H735G-DK/stm32h735
 ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr_ex.h:
 ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim.h:
 ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h:
 C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/Drivers/BSP/STM32H735G-DK/stm32h735g_discovery_errno.h:
 C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/Drivers/BSP/STM32H735G-DK/../Components/ft5336/ft5336.h:
 C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/Drivers/BSP/STM32H735G-DK/../Components/ft5336/ft5336_reg.h:
