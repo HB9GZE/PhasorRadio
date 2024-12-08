@@ -13,11 +13,8 @@
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/UIEventListener.hpp:88:18:virtual void touchgfx::UIEventListener::handlePendingScreenTransition()	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/UIEventListener.hpp:93:13:touchgfx::UIEventListener::~UIEventListener()	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/UIEventListener.hpp:93:13:virtual touchgfx::UIEventListener::~UIEventListener()	1
-../../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/VectorFontRenderer.hpp:33:13:touchgfx::VectorFontRenderer::~VectorFontRenderer()	1
-../../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/VectorFontRenderer.hpp:33:13:virtual touchgfx::VectorFontRenderer::~VectorFontRenderer()	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/lcd/LCD.hpp:64:13:touchgfx::LCD::~LCD()	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/lcd/LCD.hpp:64:13:virtual touchgfx::LCD::~LCD()	1
-../../Middlewares/ST/touchgfx/framework/include/touchgfx/lcd/LCD.hpp:285:10:void touchgfx::LCD::setVectorFontRenderer(touchgfx::VectorFontRenderer*)	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Application.hpp:72:18:virtual void touchgfx::Application::changeToStartScreen()	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Application.hpp:91:18:virtual void touchgfx::Application::appSwitchScreen(uint8_t)	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Application.hpp:104:18:virtual void touchgfx::Application::requestRedraw(touchgfx::Rect&)	1
@@ -65,9 +62,9 @@
 ../../TouchGFX/target/TouchGFXHAL.hpp:51:5:TouchGFXHAL::TouchGFXHAL(touchgfx::DMA_Interface&, touchgfx::LCD&, touchgfx::TouchController&, uint16_t, uint16_t)	1
 ../../Middlewares/ST/touchgfx/framework/include/platform/driver/touch/TouchController.hpp:26:7:constexpr touchgfx::TouchController::TouchController()	1
 ../../TouchGFX/target/STM32TouchController.hpp:40:5:STM32TouchController::STM32TouchController()	1
-C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/TouchGFX/target/generated/TouchGFXConfiguration.cpp:42:6:void touchgfx_init()	1
-C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/TouchGFX/target/generated/TouchGFXConfiguration.cpp:64:6:void touchgfx_components_init()	1
-C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/TouchGFX/target/generated/TouchGFXConfiguration.cpp:68:6:void touchgfx_taskEntry()	1
+C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/TouchGFX/target/generated/TouchGFXConfiguration.cpp:40:6:void touchgfx_init()	1
+C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/TouchGFX/target/generated/TouchGFXConfiguration.cpp:60:6:void touchgfx_components_init()	1
+C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/TouchGFX/target/generated/TouchGFXConfiguration.cpp:64:6:void touchgfx_taskEntry()	1
 ../../TouchGFX/gui/include/gui/common/FrontendHeap.hpp:6:7:FrontendHeap::~FrontendHeap()	1
 ../../TouchGFX/gui/include/gui/common/FrontendHeap.hpp:6:7:virtual FrontendHeap::~FrontendHeap()	1
 ../../Middlewares/ST/touchgfx/framework/include/common/Partition.hpp:42:7:touchgfx::Partition<touchgfx::meta::TypeList<touchgfx::NoTransition, touchgfx::meta::TypeList<touchgfx::meta::Nil, touchgfx::meta::Nil> >, 1>::~Partition()	1
@@ -80,13 +77,11 @@ C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/TouchGFX/target/generated/TouchGFXC
 ../../TouchGFX/target/TouchGFXHAL.hpp:35:7:virtual TouchGFXHAL::~TouchGFXHAL()	1
 ../../TouchGFX/generated/fonts/include/fonts/ApplicationFontProvider.hpp:33:7:ApplicationFontProvider::~ApplicationFontProvider()	1
 ../../TouchGFX/generated/fonts/include/fonts/ApplicationFontProvider.hpp:33:7:virtual ApplicationFontProvider::~ApplicationFontProvider()	1
-../../Middlewares/ST/touchgfx/framework/include/touchgfx/VectorFontRendererImpl.hpp:29:7:touchgfx::VectorFontRendererImpl::~VectorFontRendererImpl()	1
-../../Middlewares/ST/touchgfx/framework/include/touchgfx/VectorFontRendererImpl.hpp:29:7:virtual touchgfx::VectorFontRendererImpl::~VectorFontRendererImpl()	1
 ../../Middlewares/ST/touchgfx/framework/include/platform/driver/lcd/LCD24bpp.hpp:39:7:touchgfx::LCD24bpp::~LCD24bpp()	1
 ../../Middlewares/ST/touchgfx/framework/include/platform/driver/lcd/LCD24bpp.hpp:39:7:virtual touchgfx::LCD24bpp::~LCD24bpp()	1
 ../../TouchGFX/target/STM32TouchController.hpp:36:7:STM32TouchController::~STM32TouchController()	1
 ../../TouchGFX/target/STM32TouchController.hpp:36:7:virtual STM32TouchController::~STM32TouchController()	1
-C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/TouchGFX/target/generated/TouchGFXConfiguration.cpp:77:1:void __static_initialization_and_destruction_0(int, int)	5
+C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/TouchGFX/target/generated/TouchGFXConfiguration.cpp:73:1:void __static_initialization_and_destruction_0(int, int)	5
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:424:8:touchgfx::Callback<FrontendApplicationBase>::~Callback()	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:424:8:virtual touchgfx::Callback<FrontendApplicationBase>::~Callback()	1
 ../../TouchGFX/target/CortexMMCUInstrumentation.hpp:20:7:touchgfx::CortexMMCUInstrumentation::~CortexMMCUInstrumentation()	1
@@ -105,5 +100,5 @@ C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/TouchGFX/target/generated/TouchGFXC
 ../../Middlewares/ST/touchgfx/framework/include/common/Partition.hpp:74:25:const void* touchgfx::Partition<ListOfTypes, NUMBER_OF_ELEMENTS>::element(uint16_t) const [with ListOfTypes = touchgfx::meta::TypeList<Screen1Presenter, touchgfx::meta::TypeList<touchgfx::meta::Nil, touchgfx::meta::Nil> >; short unsigned int NUMBER_OF_ELEMENTS = 1]	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:449:18:void touchgfx::Callback<dest_type, void, void, void>::execute() [with dest_type = FrontendApplicationBase]	2
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:459:18:bool touchgfx::Callback<dest_type, void, void, void>::isValid() const [with dest_type = FrontendApplicationBase]	5
-C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/TouchGFX/target/generated/TouchGFXConfiguration.cpp:77:1:cpp)	1
-C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/TouchGFX/target/generated/TouchGFXConfiguration.cpp:77:1:cpp)	1
+C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/TouchGFX/target/generated/TouchGFXConfiguration.cpp:73:1:cpp)	1
+C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/TouchGFX/target/generated/TouchGFXConfiguration.cpp:73:1:cpp)	1
