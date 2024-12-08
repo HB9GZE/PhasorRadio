@@ -1,10 +1,7 @@
-14:56:24 **** Incremental Build of configuration Debug for project STM32H735G-DK ****
+15:24:53 **** Incremental Build of configuration Debug for project STM32H735G-DK ****
 make -j16 all 
-arm-none-eabi-size  STM32H735G-DK.elf 
-   text	   data	    bss	    dec	    hex	filename
- 668158	    732	1442800	2111690	 2038ca	STM32H735G-DK.elf
-Finished building: default.size.stdout
- 
+make: *** No rule to make target 'C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/TouchGFX/target/CortexMMCUInstrumentation.cpp', needed by 'Application/User/TouchGFX/target/CortexMMCUInstrumentation.o'.  Stop.
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
 
-14:56:25 Build Finished. 0 errors, 0 warnings. (took 431ms)
+15:24:53 Build Failed. 1 errors, 0 warnings. (took 611ms)
 

@@ -1,6 +1,6 @@
 Drivers/BSP/Components/s70kl1281.o: \
- C:/Users/fabadmin/PhasorRadio/Code/PhasorRadio1/Drivers/BSP/Components/s70kl1281/s70kl1281.c \
- C:/Users/fabadmin/PhasorRadio/Code/PhasorRadio1/Drivers/BSP/Components/s70kl1281/s70kl1281.h \
+ C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/Drivers/BSP/Components/s70kl1281/s70kl1281.c \
+ C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/Drivers/BSP/Components/s70kl1281/s70kl1281.h \
  ../../Core/Inc/s70kl1281_conf.h \
  ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h \
  ../../Core/Inc/stm32h7xx_hal_conf.h \
@@ -47,7 +47,7 @@ Drivers/BSP/Components/s70kl1281.o: \
  ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h \
  ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h \
  ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h
-C:/Users/fabadmin/PhasorRadio/Code/PhasorRadio1/Drivers/BSP/Components/s70kl1281/s70kl1281.h:
+C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/Drivers/BSP/Components/s70kl1281/s70kl1281.h:
 ../../Core/Inc/s70kl1281_conf.h:
 ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:
 ../../Core/Inc/stm32h7xx_hal_conf.h:

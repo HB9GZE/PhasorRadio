@@ -1,5 +1,5 @@
 Application/User/generated/ApplicationFontProvider.o: \
- C:/Users/fabadmin/PhasorRadio/Code/PhasorRadio1/TouchGFX/generated/fonts/src/ApplicationFontProvider.cpp \
+ C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/TouchGFX/generated/fonts/src/ApplicationFontProvider.cpp \
  ../../TouchGFX/generated/fonts/include/fonts/ApplicationFontProvider.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/FontManager.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Font.hpp \

@@ -20,7 +20,6 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "cmsis_os.h"
-#include "app_touchgfx.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -120,7 +119,7 @@ osThreadId_t myTaskFromGuiHandle;
 const osThreadAttr_t myTaskFromGui_attributes = {
   .name = "myTaskFromGui",
   .stack_size = 1024 * 4,
-  .priority = (osPriority_t) osPriorityHigh,
+  .priority = (osPriority_t) osPriorityNormal,
 };
 /* Definitions for myTaskFFT */
 osThreadId_t myTaskFFTHandle;
@@ -564,9 +563,6 @@ int main(void)
   MX_DAC1_Init();
   MX_OPAMP1_Init();
   MX_UART4_Init();
-  MX_TouchGFX_Init();
-  /* Call PreOsInit function */
-  MX_TouchGFX_PreOSInit();
   /* USER CODE BEGIN 2 */
 	HAL_TIM_Encoder_Start_IT(&htim23, TIM_CHANNEL_ALL);
 	HAL_ADCEx_Calibration_Start(&hadc1, ADC_CALIB_OFFSET, ADC_SINGLE_ENDED);

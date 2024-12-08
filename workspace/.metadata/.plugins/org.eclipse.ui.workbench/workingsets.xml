@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workingSetManager>
+<workingSet editPageId="org.eclipse.cdt.ui.CElementWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1733666841469_1" label="PhasorRadio" name="PhasorRadio">
+<item factoryID="org.eclipse.cdt.ui.PersistableCElementFactory" path="/STM32H735G-DK" type="4"/>
+</workingSet>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1723361728876_0" label="Window Working Set" name="Aggregate for window 1723361728876"/>
+<mruList name="PhasorRadio"/>
 </workingSetManager>
