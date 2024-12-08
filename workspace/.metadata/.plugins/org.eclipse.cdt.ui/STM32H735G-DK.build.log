@@ -1,7 +1,7 @@
-15:40:46 **** Incremental Build of configuration Debug for project STM32H735G-DK ****
+15:52:53 **** Incremental Build of configuration Debug for project STM32H735G-DK ****
 make all 
 make: *** No rule to make target 'C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/TouchGFX/target/CortexMMCUInstrumentation.cpp', needed by 'Application/User/TouchGFX/target/CortexMMCUInstrumentation.o'.  Stop.
 "make all" terminated with exit code 2. Build might be incomplete.
 
-15:40:47 Build Failed. 1 errors, 0 warnings. (took 385ms)
+15:52:54 Build Failed. 1 errors, 0 warnings. (took 383ms)
 
