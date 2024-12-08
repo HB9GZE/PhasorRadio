@@ -44,7 +44,7 @@ Application/User/Core/si5351.o: ../Application/User/Core/si5351.c \
  ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h \
  ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h \
  ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h \
- C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/STM32CubeIDE/SI5351/si5351.h
+ C:/Users/fabadmin/PhasorRadio/Code/PhasorRadio1/STM32CubeIDE/SI5351/si5351.h
 ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:
 ../../Core/Inc/stm32h7xx_hal_conf.h:
 ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h:
@@ -90,4 +90,4 @@ Application/User/Core/si5351.o: ../Application/User/Core/si5351.c \
 ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h:
 ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:
 ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h:
-C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/STM32CubeIDE/SI5351/si5351.h:
+C:/Users/fabadmin/PhasorRadio/Code/PhasorRadio1/STM32CubeIDE/SI5351/si5351.h:
