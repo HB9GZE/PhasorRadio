@@ -492,10 +492,10 @@ void SendDatatoUART(float inputData[INPUT_SAMPLES])
 			}
 			else
 			{
-				transmitData[i] = 0x2c; //Komma
+				transmitData[i] = 0x0d; //CR, \r
 			}
 		}
-		transmitData[4095] = 0x0d; //CR, \r
+		//transmitData[4095] = 0x0d; //CR, \r
 
 		HAL_UART_Transmit_DMA(&huart4, transmitData, 2 * INPUT_SAMPLES);
 		uart4Counter = 0;
@@ -1928,7 +1928,7 @@ void StartTaskFFT(void *argument)
 			}
 
 			arm_cmplx_mag_f32(fftComplexFloatBuffer, fftOutputComplexMagnitudeBuffer, INPUT_SAMPLES);
-			//SendDatatoUART(fftOutputComplexMagnitudeBuffer);
+			SendDatatoUART(fftOutputComplexMagnitudeBuffer);
 			//fftOutputComplexMagnitudeBuffer[0] = 0;
 			fftOutputComplexMagnitudeBuffer[1] = 0;
 			fftOutputComplexMagnitudeBuffer[2047] = 0;
