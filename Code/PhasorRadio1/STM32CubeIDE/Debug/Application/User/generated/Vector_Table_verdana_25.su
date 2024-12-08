@@ -1,0 +1,6 @@
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Font.hpp:169:13:touchgfx::Font::~Font()	16	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Font.hpp:169:13:virtual touchgfx::Font::~Font()	16	static
+C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/TouchGFX/generated/fonts/src/Vector_Table_verdana_25.cpp:24:199:void __tcf_0()	8	static
+C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/TouchGFX/generated/fonts/src/Vector_Table_verdana_25.cpp:22:32:touchgfx::GeneratedVectorFont& getFont_vector_verdana_25()	24	static
+../../TouchGFX/generated/fonts/include/fonts/GeneratedFont.hpp:91:7:touchgfx::GeneratedVectorFont::~GeneratedVectorFont()	16	static
+../../TouchGFX/generated/fonts/include/fonts/GeneratedFont.hpp:91:7:virtual touchgfx::GeneratedVectorFont::~GeneratedVectorFont()	16	static

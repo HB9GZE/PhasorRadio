@@ -84,13 +84,13 @@ Application/User/TouchGFX/target/generated/TouchGFXConfiguration.o: \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp \
  ../../TouchGFX/generated/images/include/BitmapDatabase.hpp \
  ../../TouchGFX/generated/images/include/images/BitmapDatabase.hpp \
+ ../../Middlewares/ST/touchgfx/framework/include/touchgfx/VectorFontRendererImpl.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/platform/driver/lcd/LCD24bpp.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/lcd/LCD24DebugPrinter.hpp \
- ../../TouchGFX/target/generated/STM32DMA.hpp \
- ../../TouchGFX/target/TouchGFXHAL.hpp \
- ../../TouchGFX/target/generated/TouchGFXGeneratedHAL.hpp \
- ../../TouchGFX/target/CortexMMCUInstrumentation.hpp \
- ../../TouchGFX/target/STM32TouchController.hpp \
+ C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/STM32CubeIDE/Application/User/TouchGFX/target/generated/STM32DMA.hpp \
+ C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/STM32CubeIDE/Application/User/TouchGFX/target/generated/TouchGFXHAL.hpp \
+ C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/STM32CubeIDE/Application/User/TouchGFX/target/generated/TouchGFXGeneratedHAL.hpp \
+ C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/STM32CubeIDE/Application/User/TouchGFX/target/generated/STM32TouchController.hpp \
  ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h \
  ../../Core/Inc/stm32h7xx_hal_conf.h \
  ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h \
@@ -220,13 +220,13 @@ Application/User/TouchGFX/target/generated/TouchGFXConfiguration.o: \
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:
 ../../TouchGFX/generated/images/include/BitmapDatabase.hpp:
 ../../TouchGFX/generated/images/include/images/BitmapDatabase.hpp:
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/VectorFontRendererImpl.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/platform/driver/lcd/LCD24bpp.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/lcd/LCD24DebugPrinter.hpp:
-../../TouchGFX/target/generated/STM32DMA.hpp:
-../../TouchGFX/target/TouchGFXHAL.hpp:
-../../TouchGFX/target/generated/TouchGFXGeneratedHAL.hpp:
-../../TouchGFX/target/CortexMMCUInstrumentation.hpp:
-../../TouchGFX/target/STM32TouchController.hpp:
+C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/STM32CubeIDE/Application/User/TouchGFX/target/generated/STM32DMA.hpp:
+C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/STM32CubeIDE/Application/User/TouchGFX/target/generated/TouchGFXHAL.hpp:
+C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/STM32CubeIDE/Application/User/TouchGFX/target/generated/TouchGFXGeneratedHAL.hpp:
+C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/STM32CubeIDE/Application/User/TouchGFX/target/generated/STM32TouchController.hpp:
 ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:
 ../../Core/Inc/stm32h7xx_hal_conf.h:
 ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h:

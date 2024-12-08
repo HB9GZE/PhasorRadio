@@ -20,6 +20,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "cmsis_os.h"
+#include "app_touchgfx.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -119,7 +120,7 @@ osThreadId_t myTaskFromGuiHandle;
 const osThreadAttr_t myTaskFromGui_attributes = {
   .name = "myTaskFromGui",
   .stack_size = 1024 * 4,
-  .priority = (osPriority_t) osPriorityNormal,
+  .priority = (osPriority_t) osPriorityHigh,
 };
 /* Definitions for myTaskFFT */
 osThreadId_t myTaskFFTHandle;
@@ -242,7 +243,6 @@ void PeriphCommonClock_Config(void);
 static void MPU_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_DMA_Init(void);
-static void MX_DMA2D_Init(void);
 static void MX_OCTOSPI1_Init(void);
 static void MX_OCTOSPI2_Init(void);
 static void MX_TIM23_Init(void);
@@ -258,6 +258,7 @@ static void MX_TIM8_Init(void);
 static void MX_DAC1_Init(void);
 static void MX_OPAMP1_Init(void);
 static void MX_UART4_Init(void);
+static void MX_DMA2D_Init(void);
 void StartDefaultTask(void *argument);
 extern void TouchGFX_Task(void *argument);
 void StartTaskToGui(void *argument);
@@ -488,6 +489,7 @@ void SendDatatoUART(float inputData[INPUT_SAMPLES])
 			if (i % 2 == 0)
 			{
 				transmitData[i] = (uint8_t) (inputData[i] * scaler);
+				transmitData[i] = 0xff;
 			}
 			else
 			{
@@ -547,7 +549,6 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_DMA_Init();
-  MX_DMA2D_Init();
   MX_OCTOSPI1_Init();
   MX_OCTOSPI2_Init();
   MX_TIM23_Init();
@@ -563,6 +564,10 @@ int main(void)
   MX_DAC1_Init();
   MX_OPAMP1_Init();
   MX_UART4_Init();
+  MX_DMA2D_Init();
+  MX_TouchGFX_Init();
+  /* Call PreOsInit function */
+  MX_TouchGFX_PreOSInit();
   /* USER CODE BEGIN 2 */
 	HAL_TIM_Encoder_Start_IT(&htim23, TIM_CHANNEL_ALL);
 	HAL_ADCEx_Calibration_Start(&hadc1, ADC_CALIB_OFFSET, ADC_SINGLE_ENDED);

@@ -1,7 +1,14 @@
-15:52:53 **** Incremental Build of configuration Debug for project STM32H735G-DK ****
+22:24:27 **** Build of configuration Debug for project STM32H735G-DK ****
 make all 
-make: *** No rule to make target 'C:/ProjectsOnC/PhasorRadio/Code/PhasorRadio1/TouchGFX/target/CortexMMCUInstrumentation.cpp', needed by 'Application/User/TouchGFX/target/CortexMMCUInstrumentation.o'.  Stop.
+arm-none-eabi-gcc "C:/ProjectsOnC/TryNewClone/PhasorRadio/Code/PhasorRadio1/Core/Src/system_stm32h7xx.c" -mcpu=cortex-m7 -std=gnu11 -g -DUSE_HAL_DRIVER -DARM_MATH_CM7 -DUSE_BPP=24 -DDEBUG -DSTM32H735xx -DUSE_PWR_DIRECT_SMPS_SUPPLY -c -I"C:/ProjectsOnC/TryNewClone/PhasorRadio/Code/PhasorRadio1/STM32CubeIDE/Drivers/CMSIS/DSP/Include" -I../../Core/Inc -I"C:/ProjectsOnC/TryNewClone/PhasorRadio/Code/PhasorRadio1/STM32CubeIDE/SI5351" -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Middlewares/Third_Party/FreeRTOS/Source/include -I../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -I../../Drivers/BSP/Components/Common -I../../Drivers/BSP/STM32H735G-DK -I../../Middlewares/ST/touchgfx/framework/include -I../../TouchGFX/generated/fonts/include -I../../TouchGFX/generated/gui_generated/include -I../../TouchGFX/generated/images/include -I../../TouchGFX/generated/texts/include -I../../TouchGFX/gui/include -I../../TouchGFX/generated/videos/include -I"C:/ProjectsOnC/TryNewClone/PhasorRadio/Code/PhasorRadio1/STM32CubeIDE/Application" -I"C:/ProjectsOnC/TryNewClone/PhasorRadio/Code/PhasorRadio1/TouchGFX/generated" -I"C:/ProjectsOnC/TryNewClone/PhasorRadio/Code/PhasorRadio1/TouchGFX/target/generated" -I"C:/ProjectsOnC/TryNewClone/PhasorRadio/Code/PhasorRadio1/TouchGFX/target" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/CMSIS/system_stm32h7xx.d" -MT"Drivers/CMSIS/system_stm32h7xx.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/CMSIS/system_stm32h7xx.o"
+In file included from ../../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:158,
+                 from C:/ProjectsOnC/TryNewClone/PhasorRadio/Code/PhasorRadio1/Core/Src/system_stm32h7xx.c:48:
+../../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h735xx.h:225:10: fatal error: core_cm7.h: No such file or directory
+  225 | #include "core_cm7.h"                     /*!< Cortex-M7 processor and core peripherals      */
+      |          ^~~~~~~~~~~~
+compilation terminated.
+make: *** [Drivers/CMSIS/subdir.mk:19: Drivers/CMSIS/system_stm32h7xx.o] Error 1
 "make all" terminated with exit code 2. Build might be incomplete.
 
-15:52:54 Build Failed. 1 errors, 0 warnings. (took 383ms)
+22:24:27 Build Failed. 2 errors, 0 warnings. (took 229ms)
 

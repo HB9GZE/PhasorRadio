@@ -16,7 +16,9 @@ RM := rm -rf
 -include Drivers/BSP/Components/subdir.mk
 -include Application/User/gui/subdir.mk
 -include Application/User/generated/subdir.mk
+-include Application/User/TouchGFX/target/generated/subdir.mk
 -include Application/User/TouchGFX/target/subdir.mk
+-include Application/User/TouchGFX/App/subdir.mk
 -include Application/User/Startup/subdir.mk
 -include Application/User/Core/subdir.mk
 -include objects.mk

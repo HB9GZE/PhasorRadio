@@ -14,7 +14,7 @@
               
       <ProjectName>STM32H735G-DK</ProjectName>
            
-      <ProjectNature>CPP</ProjectNature>
+      <ProjectNature>Cpp</ProjectNature>
        
       <Secure/>
             
@@ -91,6 +91,12 @@
           <Cincludes>
             		        
             <include>Core\Inc</include>
+                    
+            <include>TouchGFX\App</include>
+                    
+            <include>TouchGFX\target\generated</include>
+                    
+            <include>TouchGFX\target</include>
                     
             <include>Drivers\STM32H7xx_HAL_Driver\Inc</include>
                     
@@ -578,7 +584,81 @@
               </file>
                               
             </group>
-                                          
+                              
+            <group>
+                   
+              <name>TouchGFX</name>
+              <group>
+                     
+                <name>target</name>
+                <group>
+                       
+                  <name>generated</name>
+                          
+                  <file>
+                                
+                    <name>TouchGFX\target\generated\TouchGFXConfiguration.cpp</name>
+                            
+                  </file>
+                          
+                  <file>
+                                
+                    <name>TouchGFX\target\generated\TouchGFXGeneratedHAL.cpp</name>
+                            
+                  </file>
+                          
+                  <file>
+                                
+                    <name>TouchGFX\target\generated\STM32DMA.cpp</name>
+                            
+                  </file>
+                          
+                  <file>
+                                
+                    <name>TouchGFX\target\generated\OSWrappers.cpp</name>
+                            
+                  </file>
+                      
+                </group>
+                    
+              </group>
+              <group>
+                     
+                <name>App</name>
+                        
+                <file>
+                              
+                  <name>TouchGFX\App\app_touchgfx.c</name>
+                          
+                </file>
+                    
+              </group>
+              <group>
+                     
+                <name>target</name>
+                        
+                <file>
+                              
+                  <name>TouchGFX\target\TouchGFXHAL.cpp</name>
+                          
+                </file>
+                        
+                <file>
+                              
+                  <name>TouchGFX\target\STM32TouchController.cpp</name>
+                          
+                </file>
+                        
+                <file>
+                              
+                  <name>TouchGFX\target\TouchGFXGPIO.cpp</name>
+                          
+                </file>
+                    
+              </group>
+                  
+            </group>
+                        
           </group>
                    
         </group>
